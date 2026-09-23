@@ -37,6 +37,12 @@ function usFacet(facets){
  }
  return null;
 }
+function validJobPath(path){
+ if(typeof path!=='string'||!path.startsWith('/job/'))return false;
+ // Dots inside a title slug are harmless. Reject actual traversal segments,
+ // including encoded dots or separators, before constructing the detail URL.
+ return !path.split(/[?#]/,1)[0].replace(/%2f|%5c/gi,'/').split(/[\\/]/).some(segment=>/^\.{1,2}$/.test(segment.replace(/%2e/gi,'.')));
+}
 export async function fetchWorkday(source,fetchJSON,{isCandidate=()=>true,now=Date.now()}={}){
  const base=workdayEndpoint(source),postings=new Map();
  let facets=null;
@@ -52,11 +58,14 @@ export async function fetchWorkday(source,fetchJSON,{isCandidate=()=>true,now=Da
    if(offset===0){total=data.total;if(total<0||total>5000)throw Error('Unexpected Workday search size');}
    if(!data.jobPostings.length&&offset<total)throw Error('Incomplete Workday pagination');
    for(const job of data.jobPostings){
-    if(typeof job.externalPath!=='string'||!job.externalPath.startsWith('/job/')||job.externalPath.includes('..'))throw Error('Invalid Workday job path');
+    // Some boards include placeholder entries with neither a title nor a path.
+    // Validate paths only for actual job rows; relevant malformed rows still fail.
+    const candidate=Boolean(job&&typeof job.title==='string'&&job.title.trim()&&isCandidate(job.title)&&!/30\+\s+Days Ago/i.test(job.postedOn||''));
+    if(!validJobPath(job?.externalPath)){if(!candidate)continue;throw Error('Invalid Workday job path');}
     if(seenPaths.has(job.externalPath))throw Error('Repeated Workday pagination result');
     seenPaths.add(job.externalPath);
     // The public listing already marks these as older than the requested window.
-    if(!isCandidate(job.title)||/30\+\s+Days Ago/i.test(job.postedOn||''))continue;
+    if(!candidate)continue;
     postings.set(job.externalPath,job);
    }
    offset+=data.jobPostings.length;if(!data.jobPostings.length)break;

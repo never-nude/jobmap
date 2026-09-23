@@ -65,6 +65,21 @@ test('Workday rejects missing or repeated later pages instead of silently trunca
   await assert.rejects(()=>fetchWorkday(source,fetcher),repeated?/Repeated/:/Incomplete/);
  }
 });
+test('Workday ignores non-job placeholders and allows dots within a job title slug',async()=>{
+ const path='/job/US-CA-Santa-Clara/Mechanical-Engineer---R-D..._JR123',details=[];
+ const fetcher=async(url,init)=>{
+  if(url.endsWith('/jobs'))return {total:2,jobPostings:[{}, {title:'Mechanical Engineer',externalPath:path,postedOn:'Posted Today'}]};
+  details.push(url);return {jobPostingInfo:{...info,externalUrl:`https://${source.host}/${source.board}${path}`}};
+ };
+ const jobs=await fetchWorkday(source,fetcher,{isCandidate:candidateTitle,now:Date.parse('2026-09-23')});
+ assert.equal(jobs.length,1);assert.equal(details.length,1);assert.ok(details[0].endsWith(path));
+});
+test('Workday rejects traversal segments and missing paths in relevant listings',async()=>{
+ for(const path of [undefined,'/job/../private','/job/%2e%2e/private','/job/.%2e/private','/job/folder%2f..%2fprivate','/job/folder%5c..%5cprivate']){
+  const fetcher=async()=>({total:1,jobPostings:[{title:'Mechanical Engineer',externalPath:path,postedOn:'Posted Today'}]});
+  await assert.rejects(()=>fetchWorkday(source,fetcher,{isCandidate:candidateTitle}),/Invalid Workday job path/);
+ }
+});
 test('Workday finds physical engineering roles outside mechanical searches while filtering unrelated titles',async()=>{
  const searches=[],details=[];
  const fetcher=async(url,init)=>{
