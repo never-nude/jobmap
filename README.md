@@ -1,4 +1,4 @@
-# Jobmap
+# Jobs for Dave · Jobmap
 
 A public, permanently dark U.S. map of mechanical engineering openings with employer-published base salary minima of **$100,000/year or more**. No API keys or paid services are required.
 
@@ -50,3 +50,7 @@ A successful feed replaces that employer's previous openings, removing closed jo
 - [Leaflet](https://leafletjs.com) 1.9.4, BSD-2-Clause; license in `vendor/LEAFLET-LICENSE`.
 
 Job facts and application links belong to their respective employers. The application makes no hiring decisions and accepts no applications itself.
+
+## Sharing
+
+Share https://never-nude.github.io/jobmap/. Open Graph and Twitter metadata use **Jobs for Dave**, with a 1200 × 630 JPEG card. Messaging services choose how to display and cache previews. The card’s map uses us-atlas state boundaries (ISC license in `vendor/US-ATLAS-LICENSE`); it is an illustrative snapshot and the website has the current listings.
