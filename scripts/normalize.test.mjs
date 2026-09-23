@@ -18,6 +18,7 @@ test('salary decodes employer HTML and uses the minimum across levels',()=>{
  assert.equal(salary({},'greenhouse','Compensation: Level 2 $110,000 - $145,000. Level 3 $140,000 - $190,000. Your base salary depends on level.').min,110000);
  assert.equal(salary({},'greenhouse','Base salary $95,000 - $145,000. Senior $140,000 - $190,000.'),null);
  assert.equal(salary({},'greenhouse','Annual salary $100k–$150k').max,150000);
+ assert.equal(salary({},'greenhouse','Annual base salary $130000 - $190000').min,130000);
 });
 test('work setting requires evidence; hybrid hardware and onsite benefits do not qualify',()=>{
  assert.equal(workMode({},'Boston, MA','Develop hybrid electric vehicles. On-site gym.'),'Not specified');

@@ -12,7 +12,7 @@ export function salary(job,type,text){
  if(all.length){if(all.some(c=>c.currencyCode!=='USD'||c.interval!=='1 YEAR'||!Number.isFinite(c.minValue)||c.minValue<100000))return null;return range(Math.min(...all.map(c=>c.minValue)),Math.max(...all.map(c=>c.maxValue??c.minValue)),'Employer salary field');}
  }
  // Only dollar ranges near explicit annual/base salary language. Never annualize hourly rates.
- const re=/\$\s*(\d{2,3}(?:,\d{3})?(?:\.\d+)?\s*[kK]?)\s*(?:[-–—]|to)\s*\$?\s*(\d{2,3}(?:,\d{3})?(?:\.\d+)?\s*[kK]?)/g;
+ const re=/\$\s*((?:\d{1,3}(?:,\d{3})+|\d{2,7})(?:\.\d+)?\s*[kK]?)\s*(?:[-–—]|to)\s*\$?\s*((?:\d{1,3}(?:,\d{3})+|\d{2,7})(?:\.\d+)?\s*[kK]?)/g;
  const ranges=[];
  for(const m of text.matchAll(re)){
  const context=text.slice(Math.max(0,m.index-500),m.index+m[0].length+500);
