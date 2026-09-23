@@ -27,7 +27,7 @@ To regenerate the outlines, download the unprojected `states-10m.json` from [us-
 
 ## Publishing
 
-The workflow `.github/workflows/refresh.yml` fetches jobs, checks normalization rules, commits the snapshot, then deploys the static website to GitHub Pages. Set **Settings → Pages → Source → GitHub Actions** once. Manual refresh is available through **Actions → Refresh jobs and deploy map → Run workflow**. It also runs when source changes are pushed to main.
+The workflow `.github/workflows/refresh.yml` fetches jobs, checks normalization rules, commits the snapshot, then deploys the static website to GitHub Pages. Published styles and first-party module imports receive a shared commit version so updates request fresh assets instead of reusing previously cached URLs. Set **Settings → Pages → Source → GitHub Actions** once. Manual refresh is available through **Actions → Refresh jobs and deploy map → Run workflow**. It also runs when source changes are pushed to main.
 
 The workflow uses the repository's automatic `GITHUB_TOKEN`; no personal token is needed. Source commits made by the workflow do not recursively trigger another workflow. Scheduled data commits also keep the repository active, though GitHub can still disable schedules or Actions because of account policies. The UI flags snapshots older than 75 minutes.
 

@@ -42,6 +42,7 @@ jobs:
           cp data/jobs.json _site/data/
           cp vendor/leaflet.js vendor/leaflet.css vendor/LEAFLET-LICENSE vendor/US-ATLAS-LICENSE _site/vendor/
           cp -R vendor/profile _site/vendor/profile
+          node scripts/version-assets.mjs _site "$(git rev-parse HEAD)"
           touch _site/.nojekyll
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
