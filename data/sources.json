@@ -1,0 +1,302 @@
+[
+  {
+    "type": "greenhouse",
+    "slug": "andurilindustries",
+    "company": "Anduril Industries"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "spacex",
+    "company": "SpaceX"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "rocketlab",
+    "company": "Rocket Lab"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "relativity",
+    "company": "Relativity Space"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "vast",
+    "company": "Vast"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "figureai",
+    "company": "Figure AI"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "nuro",
+    "company": "Nuro"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "astranis",
+    "company": "Astranis"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "redwoodmaterials",
+    "company": "Redwood Materials"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "flyzipline",
+    "company": "Zipline"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "stokespacetechnologies",
+    "company": "Stoke Space"
+  },
+  {
+    "type": "ashby",
+    "slug": "physicalintelligence",
+    "company": "Physical Intelligence"
+  },
+  {
+    "type": "ashby",
+    "slug": "crusoe",
+    "company": "Crusoe"
+  },
+  {
+    "type": "ashby",
+    "slug": "rainmaker",
+    "company": "Rainmaker"
+  },
+  {
+    "type": "ashby",
+    "slug": "FormEnergy",
+    "company": "Form Energy"
+  },
+  {
+    "type": "ashby",
+    "slug": "saronic",
+    "company": "Saronic"
+  },
+  {
+    "type": "lever",
+    "slug": "zoox",
+    "company": "Zoox"
+  },
+  {
+    "type": "lever",
+    "slug": "shieldai",
+    "company": "Shield AI"
+  },
+  {
+    "type": "lever",
+    "slug": "cfsenergy",
+    "company": "Commonwealth Fusion Systems"
+  },
+  {
+    "type": "lever",
+    "slug": "hermeus",
+    "company": "Hermeus"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "carbon",
+    "company": "Carbon, Inc."
+  },
+  {
+    "type": "greenhouse",
+    "slug": "formlabs",
+    "company": "Formlabs"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "fictiv",
+    "company": "Fictiv"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "agilityrobotics",
+    "company": "Agility Robotics"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "xometry",
+    "company": "Xometry"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "apptronik",
+    "company": "Apptronik"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "oklo",
+    "company": "Oklo"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "rondoenergy",
+    "company": "Rondo Energy"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "wing",
+    "company": "Wing"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "verkada",
+    "company": "Verkada"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "pathrobotics",
+    "company": "Path Robotics"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "axon",
+    "company": "Axon"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "lucidmotors",
+    "company": "Lucid Motors"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "planetlabs",
+    "company": "Planet"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "lightmatter",
+    "company": "Lightmatter"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "psiquantum",
+    "company": "PsiQuantum"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "ionq",
+    "company": "IonQ"
+  },
+  {
+    "type": "ashby",
+    "slug": "1x",
+    "company": "1X"
+  },
+  {
+    "type": "ashby",
+    "slug": "skydio",
+    "company": "Skydio"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "vardaspace",
+    "company": "Varda Space Industries"
+  },
+  {
+    "type": "ashby",
+    "slug": "hadrian-automation",
+    "company": "Hadrian"
+  },
+  {
+    "type": "lever",
+    "slug": "rigetti",
+    "company": "Rigetti Computing"
+  },
+  {
+    "type": "ashby",
+    "slug": "lambda",
+    "company": "Lambda"
+  },
+  {
+    "type": "ashby",
+    "slug": "pivotrobotics",
+    "company": "Pivot Robotics"
+  },
+  {
+    "type": "ashby",
+    "slug": "dandy",
+    "company": "Dandy"
+  },
+  {
+    "type": "ashby",
+    "slug": "openai",
+    "company": "OpenAI"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "atomicmachines",
+    "company": "Atomic Machines"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "hevenaerotech",
+    "company": "Heven AeroTech"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "machindustries",
+    "company": "Mach Industries"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "neuralink",
+    "company": "Neuralink"
+  },
+  {
+    "type": "smartrecruiters",
+    "slug": "BoschGroup",
+    "company": "Bosch Group"
+  },
+  {
+    "type": "smartrecruiters",
+    "slug": "AECOM2",
+    "company": "AECOM"
+  },
+  {
+    "type": "smartrecruiters",
+    "slug": "WesternDigital",
+    "company": "Western Digital"
+  },
+  {
+    "type": "smartrecruiters",
+    "slug": "Ramboll3",
+    "company": "Ramboll"
+  },
+  {
+    "type": "smartrecruiters",
+    "slug": "VeoliaEnvironnementSA",
+    "company": "Veolia Environnement SA"
+  },
+  {
+    "type": "smartrecruiters",
+    "slug": "TurnerTownsend",
+    "company": "Turner & Townsend"
+  },
+  {
+    "type": "smartrecruiters",
+    "slug": "AFRY",
+    "company": "AFRY"
+  },
+  {
+    "type": "smartrecruiters",
+    "slug": "ASSYSTEM",
+    "company": "ASSYSTEM"
+  },
+  {
+    "type": "smartrecruiters",
+    "slug": "Socotec",
+    "company": "SOCOTEC"
+  },
+  {
+    "type": "smartrecruiters",
+    "slug": "BESIX",
+    "company": "BESIX"
+  }
+]
