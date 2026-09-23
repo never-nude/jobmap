@@ -3,8 +3,8 @@
 A public, permanently dark U.S. map of mechanical engineering openings with employer-published base salary minima of **$100,000/year or more**. No API keys or paid services are required.
 
 - Position, company, salary, location, work setting, skills / experience, and direct employer application links.
-- Age colors: **blue 0–7 days → green 8–14 → yellow 15–30 → red 31+**. Unknown dates are gray. A grouped pin uses its newest listing's color.
-- Search, work-setting, and **Energy & related only** filters; a gentle energy-sector preference within each posting-age band by default; mobile layout. Choose **Newest listed** for strict date order.
+- Age colors: **blue 0–7 days → green 8–14 → yellow 15–30 → red 31+**. Unknown dates are gray. Colored pins represent individual jobs. Neutral numbered pins show city totals; opening one shows posting-age counts and its newest jobs first.
+- Search, work-setting, and **Energy & related only** filters; **Newest listed** by default; mobile layout.
 - GitHub Actions checks employer feeds every half hour, at :07 and :37 UTC. Scheduling is best effort and can be delayed by GitHub. The browser fetches the newest snapshot every 30 minutes and on return to the tab.
 
 ## Run locally
@@ -18,6 +18,12 @@ python3 -m http.server 4173
 ```
 
 Open http://localhost:4173. Source configuration is in `data/sources.json`.
+
+## Map view
+
+The map opens with the contiguous 48 states in view, including on narrow phone screens. **U.S. overview** restores that view. State outlines are bundled with the website so the background does not depend on a separate tile server. Alaska and Hawaii remain available by panning or selecting their jobs. Resizing refits the overview but preserves a manually chosen view.
+
+To regenerate the outlines, download the unprojected `states-10m.json` from [us-atlas 3](https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json), then run `node scripts/build-states.mjs path/to/states-10m.json`. The converter validates all 50 states plus D.C., closed rings, and Alaska’s date-line continuity.
 
 ## Publishing
 
@@ -35,11 +41,11 @@ Cloudflare Worker code and deployment instructions are in `worker/`. After deplo
 
 A compact **Added this week** sidebar lists the six most recently discovered active jobs, with a link to filter all additions from the past seven days. On smaller screens it becomes a collapsed panel below the map and results. This is the date first seen on this map, separate from the employer posting date used by pin colors. `firstSeenAt` persists through updates, outages, and removal/reappearance using the snapshot’s `firstSeenById` history. Existing listings are seeded from their prior snapshot timestamp when tracking is introduced.
 
-## Energy-sector emphasis
+## Optional energy filter
 
-All qualifying mechanical engineering openings remain visible by default. **Recent + energy** puts energy-connected jobs first within each age band (0–7, 8–14, 15–30, 31+ days; undated last), then sorts by posting date. A newer age band always leads an older one. **Energy & related only** narrows the list and map together.
+All qualifying mechanical engineering openings are visible by default, sorted by newest posting date with undated jobs last. There are no energy-priority rankings or badges. **Energy & related only** optionally narrows the list and map together.
 
-Labels come from verified energy-employer sectors or explicit energy terms in the job title. Each labeled job explains the connection in its details. These are sector hints, not qualification or personal-fit scores. Generic terms such as “power” or “thermal” alone do not qualify. Employer evidence and matching rules live in `energy.mjs`. Salary thresholds, work-setting labels, and posting-age colors are unchanged.
+The filter matches verified energy-employer sectors or explicit energy terms in the job title. Generic terms such as “power” or “thermal” alone do not qualify. Employer evidence and matching rules live in `energy.mjs`. These are sector signals, not qualification or personal-fit scores.
 
 ## Data rules and limits
 
@@ -62,7 +68,7 @@ A successful feed replaces that employer's previous openings, removing closed jo
 - [Lever Postings API](https://github.com/lever/postings-api)
 - [SmartRecruiters Posting API](https://developers.smartrecruiters.com/docs/posting-api) — public U.S. postings with pagination and per-posting details.
 - [GeoNames cities1000](https://download.geonames.org/export/dump/) — CC BY 4.0; compact U.S. subset included. Rows contain name, state, latitude, longitude, population.
-- [OpenStreetMap](https://www.openstreetmap.org/copyright) map data and standard tiles; normal interactive use only, no bulk prefetching.
+- [U.S. Census boundaries via us-atlas](https://github.com/topojson/us-atlas) — bundled vector state outlines, ISC license in `vendor/US-ATLAS-LICENSE`. No external map tiles or tile API keys.
 - [Leaflet](https://leafletjs.com) 1.9.4, BSD-2-Clause; license in `vendor/LEAFLET-LICENSE`.
 
 Job facts and application links belong to their respective employers. The application makes no hiring decisions and accepts no applications itself.
