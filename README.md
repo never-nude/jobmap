@@ -4,7 +4,7 @@ A public, permanently dark U.S. map of mechanical engineering openings with empl
 
 - Position, company, salary, location, work setting, skills / experience, and direct employer application links.
 - Age colors: **blue 0–7 days → green 8–14 → yellow 15–30 → red 31+**. Unknown dates are gray. A grouped pin uses its newest listing's color.
-- Search and work-setting filters; newest-first default; mobile layout.
+- Search, work-setting, and **Energy & related only** filters; a gentle energy-sector preference within each posting-age band by default; mobile layout. Choose **Newest listed** for strict date order.
 - GitHub Actions checks employer feeds every half hour, at :07 and :37 UTC. Scheduling is best effort and can be delayed by GitHub. The browser fetches the newest snapshot every 30 minutes and on return to the tab.
 
 ## Run locally
@@ -13,7 +13,7 @@ Requires Node 22+ and Python 3. No npm dependencies.
 
 ```sh
 node scripts/refresh.mjs
-node --test scripts/normalize.test.mjs
+node --test scripts/*.test.mjs
 python3 -m http.server 4173
 ```
 
@@ -24,6 +24,12 @@ Open http://localhost:4173. Source configuration is in `data/sources.json`.
 The workflow `.github/workflows/refresh.yml` fetches jobs, checks normalization rules, commits the snapshot, then deploys the static website to GitHub Pages. Set **Settings → Pages → Source → GitHub Actions** once. Manual refresh is available through **Actions → Refresh jobs and deploy map → Run workflow**. It also runs when source changes are pushed to main.
 
 The workflow uses the repository's automatic `GITHUB_TOKEN`; no personal token is needed. Source commits made by the workflow do not recursively trigger another workflow. Scheduled data commits also keep the repository active, though GitHub can still disable schedules or Actions because of account policies. The UI flags snapshots older than 75 minutes.
+
+## Energy-sector emphasis
+
+All qualifying mechanical engineering openings remain visible by default. **Recent + energy** puts energy-connected jobs first within each age band (0–7, 8–14, 15–30, 31+ days; undated last), then sorts by posting date. A newer age band always leads an older one. **Energy & related only** narrows the list and map together.
+
+Labels come from verified energy-employer sectors or explicit energy terms in the job title. Each labeled job explains the connection in its details. These are sector hints, not qualification or personal-fit scores. Generic terms such as “power” or “thermal” alone do not qualify. Employer evidence and matching rules live in `energy.mjs`. Salary thresholds, work-setting labels, and posting-age colors are unchanged.
 
 ## Data rules and limits
 

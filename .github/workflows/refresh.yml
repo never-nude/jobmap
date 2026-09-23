@@ -22,7 +22,7 @@ jobs:
         with:
           node-version: '22'
       - name: Verify normalization and lifecycle rules
-        run: node --test scripts/normalize.test.mjs
+        run: node --test scripts/*.test.mjs
       - name: Refresh public employer feeds
         run: node scripts/refresh.mjs
       - name: Save current snapshot
@@ -38,7 +38,7 @@ jobs:
       - name: Prepare public website
         run: |
           mkdir -p _site/data _site/vendor
-          cp index.html style.css app.js age.mjs icon.svg jobs-for-dave.jpg _site/
+          cp index.html style.css app.js age.mjs energy.mjs icon.svg jobs-for-dave.jpg _site/
           cp data/jobs.json _site/data/
           cp vendor/leaflet.js vendor/leaflet.css vendor/LEAFLET-LICENSE _site/vendor/
           touch _site/.nojekyll
