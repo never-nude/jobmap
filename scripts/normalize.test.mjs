@@ -61,3 +61,50 @@ test('SmartRecruiters requires a public active posting and annual USD pay',()=>{
  assert.equal(normalize({...base,active:false},source,cities,now),null);
  assert.equal(normalize({...base,compensation:{...base.compensation,period:'HOURLY'}},source,cities,now),null);
 });
+const observedJob=(id,extra={})=>({id,sourceId:'test',url:`https://example.com/${id}`,checkedAt:now,...extra});
+const feed=jobs=>[{ok:true,source:{slug:'test'},total:jobs.length,jobs}];
+test('first discovery stays stable through employer updates and does not use the posting date',()=>{
+ const original='2026-09-01T12:00:00.000Z';
+ const previous={generatedAt:'2026-09-22T12:00:00Z',jobs:[observedJob('existing',{firstSeenAt:original})]};
+ const result=reconcile(previous,feed([
+ observedJob('existing',{postedAt:now,title:'Updated title'}),
+ observedJob('new',{postedAt:'2025-01-01T00:00:00Z'}),
+ ]),now);
+ assert.equal(result.jobs.find(j=>j.id==='existing').firstSeenAt,original);
+ assert.equal(result.jobs.find(j=>j.id==='new').firstSeenAt,new Date(now).toISOString());
+ assert.deepEqual(result.firstSeenById,{existing:original,new:new Date(now).toISOString()});
+});
+test('first-discovery history survives an empty feed and a later reappearance',()=>{
+ const first=reconcile(null,feed([observedJob('returning')]),now);
+ const empty=reconcile(first,feed([]),'2026-09-24T12:00:00Z');
+ assert.equal(empty.jobs.length,0);
+ assert.deepEqual(empty.firstSeenById,first.firstSeenById);
+ const later=reconcile(empty,feed([observedJob('returning',{checkedAt:'2026-10-01T12:00:00Z'})]),'2026-10-01T12:00:00Z');
+ assert.equal(later.jobs[0].firstSeenAt,new Date(now).toISOString());
+});
+test('legacy snapshots migrate from valid observation dates, including disappearing jobs',()=>{
+ const generatedAt='2026-09-20T12:00:00Z',checkedAt='2026-09-19T12:00:00Z';
+ const previous={generatedAt,jobs:[observedJob('present',{checkedAt,postedAt:'2025-01-01T00:00:00Z'}),observedJob('gone',{checkedAt:'invalid'})]};
+ const result=reconcile(previous,feed([observedJob('present')]),now);
+ assert.equal(result.jobs[0].firstSeenAt,new Date(checkedAt).toISOString());
+ assert.equal(result.firstSeenById.gone,new Date(generatedAt).toISOString());
+ const fallback=reconcile({generatedAt:'invalid',jobs:[observedJob('checked',{checkedAt})]},feed([observedJob('checked')]),now);
+ assert.equal(fallback.jobs[0].firstSeenAt,new Date(checkedAt).toISOString());
+});
+test('invalid and future first-discovery timestamps fall back to known observations',()=>{
+ const previous={generatedAt:'invalid',firstSeenById:{invalid:'bad date',future:'2099-01-01T00:00:00Z',saved:'2026-09-01T12:00:00Z'},jobs:[observedJob('saved',{firstSeenAt:'2099-01-01T00:00:00Z'})]};
+ const result=reconcile(previous,feed([observedJob('invalid'),observedJob('future'),observedJob('saved')]),now);
+ assert.equal(result.firstSeenById.invalid,new Date(now).toISOString());
+ assert.equal(result.firstSeenById.future,new Date(now).toISOString());
+ assert.equal(result.firstSeenById.saved,'2026-09-01T12:00:00.000Z');
+});
+test('failed feeds retain first-discovery dates, including after stale jobs expire',()=>{
+ const first=reconcile(null,feed([observedJob('outage')]),now);
+ const failed=[{ok:false,source:{slug:'test'},error:'timeout'}];
+ const stale=reconcile(first,failed,'2026-09-23T13:00:00Z');
+ assert.equal(stale.jobs[0].stale,true);
+ assert.equal(stale.jobs[0].firstSeenAt,first.jobs[0].firstSeenAt);
+ const expired=reconcile(stale,failed,'2026-09-25T12:00:00Z');
+ assert.equal(expired.jobs.length,0);
+ assert.deepEqual(expired.firstSeenById,first.firstSeenById);
+});

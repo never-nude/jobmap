@@ -1,0 +1,13 @@
+{
+  "name": "jobs-for-dave-worker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "check": "wrangler deploy --dry-run --outdir .wrangler/dry-run",
+    "deploy": "wrangler deploy"
+  },
+  "engines": { "node": ">=22" },
+  "devDependencies": { "wrangler": "4.136.3" }
+}

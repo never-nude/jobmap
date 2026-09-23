@@ -1,0 +1,4 @@
+# Fill this only in an ignored .dev.vars file. Never commit a real code.
+ACCESS_CODE=
+# Optional exact local frontend origin. Omit in production.
+LOCAL_DEV_ORIGIN=http://127.0.0.1:4173

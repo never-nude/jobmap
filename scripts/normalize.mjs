@@ -88,9 +88,19 @@ export function normalize(job,source,cities,now){
  return {id:`${source.type}:${source.slug}:${job.id}`,sourceId:source.slug,title,company:source.company,location,geo,locations:locations.map(l=>({label:l.label,...l.geo})),salary:pay,workMode:workMode(job,location,text),facts:facts(text,job.department||job.departments?.[0]?.name||job.categories?.team),employmentType:job.employmentType||job.categories?.commitment||(job.metadata||[]).find(m=>/employment type/i.test(m.name))?.value||null,postedAt,postedLabel:['ashby','smartrecruiters'].includes(source.type)?'Published / republished':source.type==='lever'?'First listed':'First published',updatedAt:job.updated_at||null,checkedAt:now,url,applyUrl,stale:false};
 }
 export function reconcile(previous,results,now){
+ // Keep the first observation even after a job leaves the active snapshot.
+ // Employer posting dates can change on a repost and are a separate clock.
+ const validSeen=value=>typeof value==='string'&&Number.isFinite(Date.parse(value))&&Date.parse(value)<=Date.parse(now)?new Date(value).toISOString():null;
+ const firstSeen=new Map(Object.entries(previous?.firstSeenById||{}).map(([id,date])=>[id,validSeen(date)]).filter(([,date])=>date));
+ for(const job of previous?.jobs||[]){
+ const known=validSeen(job.firstSeenAt)||firstSeen.get(job.id);
+ const baseline=[validSeen(previous.generatedAt),validSeen(job.checkedAt)].filter(Boolean).sort()[0];
+ if(known||baseline)firstSeen.set(job.id,known||baseline);
+ }
  const jobs=[],sources=[];
  for(const r of results){if(r.ok){jobs.push(...r.jobs);sources.push({...r.source,ok:true,checkedAt:now,total:r.total,matches:r.jobs.length});}
  else {const old=(previous?.jobs||[]).filter(j=>j.sourceId===r.source.slug&&new Date(now)-new Date(j.checkedAt)<24*3600000);jobs.push(...old.map(j=>({...j,stale:true})));sources.push({...r.source,ok:false,checkedAt:previous?.sources?.find(s=>s.slug===r.source.slug)?.checkedAt||null,matches:old.length,error:r.error});}}
- const unique=[...new Map(jobs.map(j=>[j.url.replace(/\?.*/,''),j])).values()];unique.sort((a,b)=>(b.postedAt||'').localeCompare(a.postedAt||''));
- return {schemaVersion:1,generatedAt:now,refreshMinutes:30,salaryMinimum:100000,sources,jobs:unique};
+ const observed=jobs.map(job=>{const firstSeenAt=firstSeen.get(job.id)||new Date(now).toISOString();firstSeen.set(job.id,firstSeenAt);return {...job,firstSeenAt};});
+ const unique=[...new Map(observed.map(j=>[j.url.replace(/\?.*/,''),j])).values()];unique.sort((a,b)=>(b.postedAt||'').localeCompare(a.postedAt||''));
+ return {schemaVersion:1,generatedAt:now,refreshMinutes:30,salaryMinimum:100000,firstSeenById:Object.fromEntries(firstSeen),sources,jobs:unique};
 }

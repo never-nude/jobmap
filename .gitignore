@@ -2,3 +2,7 @@
 _site/
 node_modules/
 *.tmp
+
+.wrangler/
+.dev.vars*
+.env*

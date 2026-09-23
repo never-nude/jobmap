@@ -25,6 +25,16 @@ The workflow `.github/workflows/refresh.yml` fetches jobs, checks normalization 
 
 The workflow uses the repository's automatic `GITHUB_TOKEN`; no personal token is needed. Source commits made by the workflow do not recursively trigger another workflow. Scheduled data commits also keep the repository active, though GitHub can still disable schedules or Actions because of account policies. The UI flags snapshots older than 75 minutes.
 
+## Application profile and Cloudflare drafts
+
+**My application profile** opens a private profile editor. CV text is kept on the device unless the user explicitly generates a cover letter; remembering a profile is optional. LinkedIn information can be pasted into the editable profile. The Cloudflare API verifies the selected active job, reads its original employer description, and drafts a letter based on supplied experience. The user edits and downloads/copies the letter, then applies through the employer’s site. It never submits applications.
+
+Cloudflare Worker code and deployment instructions are in `worker/`. After deployment and access-code setup, set the public Worker origin in `backend-config.js`; never commit credentials or CVs. Until that origin is configured, drafting remains disabled with a setup notice. The map and local profile still work.
+
+## Recent additions
+
+A compact **Added this week** sidebar lists the six most recently discovered active jobs, with a link to filter all additions from the past seven days. On smaller screens it becomes a collapsed panel below the map and results. This is the date first seen on this map, separate from the employer posting date used by pin colors. `firstSeenAt` persists through updates, outages, and removal/reappearance using the snapshot’s `firstSeenById` history. Existing listings are seeded from their prior snapshot timestamp when tracking is introduced.
+
 ## Energy-sector emphasis
 
 All qualifying mechanical engineering openings remain visible by default. **Recent + energy** puts energy-connected jobs first within each age band (0–7, 8–14, 15–30, 31+ days; undated last), then sorts by posting date. A newer age band always leads an older one. **Energy & related only** narrows the list and map together.
