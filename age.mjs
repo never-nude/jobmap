@@ -1,15 +1,19 @@
+export function isRecentPosting(postedAt,now=Date.now()){
+ const posted=typeof postedAt==='string'?Date.parse(postedAt):NaN;
+ return Number.isFinite(now)&&Number.isFinite(posted)&&posted<=now&&now-posted<=30*86400000;
+}
+
 export function jobAge(postedAt,now=Date.now()){
  const posted=Date.parse(postedAt);
  if(!postedAt||!Number.isFinite(posted)||posted>now)return {key:'unknown',color:'#7c8996',label:'Date unavailable',days:null};
  const elapsed=now-posted,days=Math.floor(elapsed/86400000);
- return {key:elapsed<=7*86400000?'green':elapsed<=30*86400000?'yellow':'red',color:elapsed<=7*86400000?'#20916b':elapsed<=30*86400000?'#d4a600':'#d24c4c',label:days===0?'Listed today':`${days}d ago`,days};
+ return {key:elapsed<=7*86400000?'green':elapsed<=14*86400000?'yellow':'red',color:elapsed<=7*86400000?'#20916b':elapsed<=14*86400000?'#d4a600':'#d24c4c',label:days===0?'Listed today':`${days}d ago`,days};
 }
 
 export const AGE_BANDS=[
  {key:'green',label:'Past week',color:'#20916b'},
- {key:'yellow',label:'8–30 days',color:'#d4a600'},
- {key:'red',label:'Over 30 days',color:'#d24c4c'},
- {key:'unknown',label:'No date',color:'#7c8996'}
+ {key:'yellow',label:'8–14 days',color:'#d4a600'},
+ {key:'red',label:'15–30 days',color:'#d24c4c'}
 ];
 const postedTime=job=>Number.isFinite(Date.parse(job?.postedAt))?Date.parse(job.postedAt):-Infinity;
 export function compareNewest(a,b){const aTime=postedTime(a),bTime=postedTime(b);return aTime===bTime?0:bTime-aTime;}
@@ -22,7 +26,7 @@ export function recentPostedCount(jobs,now=Date.now()){
 }
 export function ageBreakdown(jobs,now=Date.now()){
  const counts=new Map(AGE_BANDS.map(b=>[b.key,0]));
- for(const job of jobs){const key=jobAge(job.postedAt,now).key;counts.set(key,counts.get(key)+1);}
+ for(const job of jobs){if(!isRecentPosting(job.postedAt,now))continue;const key=jobAge(job.postedAt,now).key;counts.set(key,counts.get(key)+1);}
  return AGE_BANDS.map(b=>({...b,count:counts.get(b.key)})).filter(b=>b.count);
 }
 

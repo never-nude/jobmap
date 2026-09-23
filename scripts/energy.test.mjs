@@ -43,9 +43,9 @@ const sort=jobs=>jobs.sort((a,b)=>compareEnergy(a,b,now)).map(j=>j.id);
 
 test('energy emphasis stays inside the existing age color bands',()=>{
  assert.deepEqual(sort([
-  job('unknown-energy',null,true),job('red-energy',31,true),job('yellow-energy',30,true),
-  job('yellow-mid-energy',14,true),job('green-energy',7,true),job('today',0),
-  job('yellow-recent',8),job('yellow-new',15),job('red-new',31),job('unknown',null),
+  job('unknown-energy',null,true),job('red-energy',30,true),job('yellow-energy',13,true),
+  job('yellow-mid-energy',10,true),job('green-energy',7,true),job('today',0),
+  job('yellow-recent',8),job('yellow-new',14),job('red-new',30),job('unknown',null),
  ]),['green-energy','today','yellow-mid-energy','yellow-energy','yellow-recent','yellow-new','red-energy','red-new','unknown-energy','unknown']);
 });
 

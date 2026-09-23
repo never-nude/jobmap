@@ -15,7 +15,7 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -38,7 +38,7 @@ jobs:
       - name: Prepare public website
         run: |
           mkdir -p _site/data _site/vendor
-          cp index.html style.css app.js age.mjs us-states.mjs energy.mjs application.js application.css backend-config.js icon.svg jobs-for-dave.jpg _site/
+          cp index.html style.css app.js age.mjs marker-layout.mjs us-states.mjs energy.mjs application.js application.css backend-config.js icon.svg jobs-for-dave.jpg _site/
           cp data/jobs.json _site/data/
           cp vendor/leaflet.js vendor/leaflet.css vendor/LEAFLET-LICENSE vendor/US-ATLAS-LICENSE _site/vendor/
           cp -R vendor/profile _site/vendor/profile

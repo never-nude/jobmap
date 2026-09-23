@@ -130,7 +130,7 @@ async function generate() {
   if (!el('application-reviewed').checked) { status('Review your profile text, then select the consent checkbox.', true); el('application-reviewed').focus(); return; }
   const access = el('application-access').value.trim();
   if (!access) { status('Enter the site’s private drafting access code.', true); el('application-access').focus(); return; }
-  const body = JSON.stringify({ profileText, job: { id: activeJob.id, title: activeJob.title, company: activeJob.company, url: safeUrl(activeJob.url || activeJob.applyUrl) }, notes: el('application-notes').value.trim() });
+  const body = JSON.stringify({ profileText, job: { id: activeJob.id }, notes: el('application-notes').value.trim() });
   if (new TextEncoder().encode(body).byteLength > 32768) { status('Your profile and notes contain too much text for one draft. Shorten them and try again.', true); return; }
   const request = new AbortController(); pending = request; setBusy(true);
   const timeout = setTimeout(() => request.abort('timeout'), 60000);

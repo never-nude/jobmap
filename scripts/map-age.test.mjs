@@ -1,17 +1,17 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {jobAge,AGE_BANDS,compareNewest,ageBreakdown,agePie,recentPostedCount} from '../age.mjs';
+import {jobAge,AGE_BANDS,compareNewest,ageBreakdown,agePie,recentPostedCount,isRecentPosting} from '../age.mjs';
 
 test('posting colors use exact elapsed week and month boundaries',()=>{
  const now=Date.parse('2026-09-23T12:00:00Z'),day=86400000;
- const cases=[[0,'green'],[7*day,'green'],[7*day+1,'yellow'],[7.9*day,'yellow'],[30*day,'yellow'],[30*day+1,'red']];
+ const cases=[[0,'green'],[7*day,'green'],[7*day+1,'yellow'],[7.9*day,'yellow'],[14*day,'yellow'],[14*day+1,'red'],[30*day,'red']];
  for(const [elapsed,key] of cases){
   const age=jobAge(new Date(now-elapsed).toISOString(),now);
   assert.equal(age.key,key,`Age at ${elapsed} milliseconds`);
   assert.equal(age.color,{green:'#20916b',yellow:'#d4a600',red:'#d24c4c'}[key]);
  }
  assert.equal(jobAge(new Date(now-7.9*day).toISOString(),now).label,'7d ago');
- assert.deepEqual(AGE_BANDS.map(({key,label})=>[key,label]),[['green','Past week'],['yellow','8–30 days'],['red','Over 30 days'],['unknown','No date']]);
+ assert.deepEqual(AGE_BANDS.map(({key,label})=>[key,label]),[['green','Past week'],['yellow','8–14 days'],['red','15–30 days']]);
 });
 
 test('future and invalid posting dates have unknown age rather than appearing recent',()=>{
@@ -32,41 +32,42 @@ test('newest order uses posting time regardless of sector, discovery date or tim
  assert.deepEqual(jobs.sort(compareNewest).map(j=>j.id),['newest','one-hour-older','older-energy','unknown','invalid']);
 });
 
-test('city breakdown reports every age including missing dates without recoloring a total',()=>{
+test('city breakdown includes only postings within thirty days and preserves all three age bands',()=>{
  const now=Date.parse('2026-09-23T12:00:00Z');
  const jobs=[0,7,8,14,15,30,31,90,null].map(days=>({postedAt:days===null?null:new Date(now-days*86400000).toISOString(),firstSeenAt:new Date(now).toISOString()}));
  const bands=ageBreakdown(jobs,now);
- assert.deepEqual(bands.map(({key,count})=>[key,count]),[['green',2],['yellow',4],['red',2],['unknown',1]]);
- assert.equal(bands.reduce((n,b)=>n+b.count,0),jobs.length);
+ assert.deepEqual(bands.map(({key,count})=>[key,count]),[['green',2],['yellow',2],['red',2]]);
+ assert.equal(bands.reduce((n,b)=>n+b.count,0),6);
  assert.deepEqual(ageBreakdown([],now),[]);
 });
 
 test('city pie proportions represent each job in posting-age order from twelve o’clock',()=>{
  const now=Date.parse('2026-09-23T12:00:00Z');
- const jobs=[90,0,8,31,15,9,null,1,32,14].map(days=>({postedAt:days===null?null:new Date(now-days*86400000).toISOString()}));
+ const jobs=[0,1,8,9,14,15,16,20,30,5].map(days=>({postedAt:days===null?null:new Date(now-days*86400000).toISOString()}));
  const {bands,gradient}=agePie(jobs,now);
- assert.deepEqual(bands.map(({key,count})=>[key,count]),[['green',2],['yellow',4],['red',3],['unknown',1]]);
- assert.equal(gradient,'conic-gradient(from 0deg, #20916b 0% 20%, #d4a600 20% 60%, #d24c4c 60% 90%, #7c8996 90% 100%)');
+ assert.deepEqual(bands.map(({key,count})=>[key,count]),[['green',3],['yellow',3],['red',4]]);
+ assert.equal(gradient,'conic-gradient(from 0deg, #20916b 0% 30%, #d4a600 30% 60%, #d24c4c 60% 100%)');
 });
 
-test('city pie keeps missing, invalid and future dates in the unknown wedge',()=>{
+test('city pie excludes missing, invalid, future and expired postings',()=>{
  const now=Date.parse('2026-09-23T12:00:00Z');
  const jobs=[{postedAt:'2026-09-23T00:00:00Z'},{postedAt:null},{postedAt:'invalid'},{},{postedAt:new Date(now+1).toISOString()}];
+ jobs.push({postedAt:'2026-08-01'});
  const {bands,gradient}=agePie(jobs,now);
- assert.deepEqual(bands.map(({key,count})=>[key,count]),[['green',1],['unknown',4]]);
- assert.equal(gradient,'conic-gradient(from 0deg, #20916b 0% 20%, #7c8996 20% 100%)');
+ assert.deepEqual(bands.map(({key,count})=>[key,count]),[['green',1]]);
+ assert.equal(gradient,'conic-gradient(from 0deg, #20916b 0% 100%)');
 });
 
 test('city pie uses a complete circle when all jobs share one age band',()=>{
  const now=Date.parse('2026-09-23T12:00:00Z');
- const {bands,gradient}=agePie([{postedAt:'2026-07-01'},{postedAt:'2026-08-01'}],now);
+ const {bands,gradient}=agePie([{postedAt:'2026-09-01'},{postedAt:'2026-09-02'}],now);
  assert.deepEqual(bands.map(({key,count})=>[key,count]),[['red',2]]);
  assert.equal(gradient,'conic-gradient(from 0deg, #d24c4c 0% 100%)');
 });
 
 test('city pie retains fractional wedges without gaps or rounding whole-job proportions',()=>{
  const now=Date.parse('2026-09-23T12:00:00Z');
- const {gradient}=agePie([{postedAt:'2026-09-23'},{postedAt:'2026-08-01'},{postedAt:'2026-08-02'}],now);
+ const {gradient}=agePie([{postedAt:'2026-09-23'},{postedAt:'2026-09-01'},{postedAt:'2026-09-02'}],now);
  const stops=[...gradient.matchAll(/#[a-f0-9]+ ([\d.]+)% ([\d.]+)%/g)].map(match=>[Number(match[1]),Number(match[2])]);
  assert.equal(stops.length,2);
  assert.equal(stops[0][0],0);
@@ -104,4 +105,23 @@ test('recent posting boundary compares actual times across timezone offsets',()=
   {postedAt:'2026-09-16T07:59:59-04:00'},
  ],now),1);
  assert.equal(recentPostedCount([],now),0);
+});
+
+
+test('only finite employer posting dates within thirty days are eligible, including exact boundaries',()=>{
+ const now=Date.parse('2026-09-23T12:00:00Z'),cutoff=now-30*86400000;
+ for(const time of [now,now-1,cutoff+1,cutoff])assert.equal(isRecentPosting(new Date(time).toISOString(),now),true);
+ for(const postedAt of [new Date(now+1).toISOString(),new Date(cutoff-1).toISOString(),'invalid','',null,undefined,Infinity,now])assert.equal(isRecentPosting(postedAt,now),false);
+ for(const invalidNow of [NaN,Infinity,-Infinity])assert.equal(isRecentPosting('2026-09-23T12:00:00Z',invalidNow),false);
+});
+
+test('recency follows elapsed time across timezone offsets and expires without a new feed',()=>{
+ const now=Date.parse('2026-09-23T12:00:00Z'),postedAt='2026-08-24T08:00:00-04:00';
+ assert.equal(isRecentPosting(postedAt,now),true);
+ assert.equal(isRecentPosting(postedAt,now+1),false);
+ assert.equal(isRecentPosting('2026-08-24T07:59:59-04:00',now),false);
+ const cached=[{postedAt,firstSeenAt:'2026-09-23T12:00:00Z',updatedAt:'2026-09-23T12:00:00Z'},{postedAt:null,firstSeenAt:'2026-09-23T12:00:00Z'}];
+ assert.equal(cached.filter(job=>isRecentPosting(job.postedAt,now)).length,1);
+ assert.equal(cached.filter(job=>isRecentPosting(job.postedAt,now+1)).length,0);
+ assert.deepEqual(agePie(cached,now+1),{bands:[],gradient:'none'});
 });

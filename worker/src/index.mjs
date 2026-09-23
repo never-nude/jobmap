@@ -1,4 +1,6 @@
 // This Worker stores only usage counters. Never log profile, prompt, draft or token.
+import {isWorkdayHost,workdayEndpoint,workdayPath,workdayJob} from '../../scripts/workday.mjs';
+import {appleDetailUrl,appleJobDetail} from '../../scripts/apple.mjs';
 export const MODEL = '@cf/google/gemma-4-26b-a4b-it';
 export const JOBS_URL = 'https://never-nude.github.io/jobmap/data/jobs.json';
 export const SITE_ORIGIN = 'https://never-nude.github.io';
@@ -11,6 +13,7 @@ const encoder = new TextEncoder();
 const applicationHosts = new Set([
   'jobs.lever.co', 'jobs.eu.lever.co', 'boards.greenhouse.io',
   'job-boards.greenhouse.io', 'jobs.ashbyhq.com', 'jobs.smartrecruiters.com',
+  'jobs.apple.com',
   // Custom employer career links already present in this map. Still never fetched.
   'lucidmotors.com', 'careers.formlabs.com', 'www.zipline.com', 'wing.com',
   'www.agilityrobotics.com', 'www.psiquantum.com',
@@ -101,7 +104,7 @@ export function validateInput(body) {
   const job = body.job;
   if (!job || typeof job !== 'object' || Array.isArray(job)) throw new APIError(400, 'Choose a job from the map.');
   const id = field(job.id, 'Job ID', 200, true);
-  if (!/^(greenhouse|ashby|lever|smartrecruiters):[a-zA-Z0-9_-]{1,80}:[a-zA-Z0-9_-]{1,100}$/.test(id)) {
+  if (!/^(greenhouse|ashby|lever|smartrecruiters|workday|apple):[a-zA-Z0-9][a-zA-Z0-9_.-]{0,79}:[a-zA-Z0-9_-]{1,100}$/.test(id)) {
     throw new APIError(400, 'Choose a supported job from the map.');
   }
   // These optional fields are accepted for clients, but never used as model facts.
@@ -110,19 +113,19 @@ export function validateInput(body) {
   const url = field(job.url, 'Job URL', 2048);
   if (url) {
     let parsed; try { parsed = new URL(url); } catch { throw new APIError(400, 'Invalid job URL.'); }
-    if (parsed.protocol !== 'https:' || !applicationHosts.has(parsed.hostname) || parsed.username || parsed.password || parsed.port) {
+    if (parsed.protocol !== 'https:' || (!applicationHosts.has(parsed.hostname) && !isWorkdayHost(parsed.hostname)) || parsed.username || parsed.password || parsed.port) {
       throw new APIError(400, 'Use an official supported employer application link.');
     }
   }
   return {profileText, notes, id};
 }
 
-async function fetchJSON(url, fetcher) {
+async function fetchDocument(url, fetcher, accept = 'application/json', limit = SOURCE_LIMIT) {
   const source = url === JOBS_URL ? 'job map feed' : 'employer feed';
   let response;
   try {
     response = await fetcher(url, {
-      headers: {Accept: 'application/json',
+      headers: {Accept: accept,
         'User-Agent': 'JobsForDave/1.0 (+https://never-nude.github.io/jobmap/; public job descriptions)'}, redirect: 'manual',
       signal: AbortSignal.timeout(15000), cf: {cacheTtl: 0},
     });
@@ -134,7 +137,11 @@ async function fetchJSON(url, fetcher) {
   }
   if (url !== JOBS_URL && [404, 410].includes(response.status)) throw new APIError(409, 'This position is no longer available from its employer.');
   if (!response.ok) throw new APIError(502, `The ${source} is temporarily unavailable (HTTP ${response.status}). Try again later.`);
-  try { return JSON.parse(await limitedText(response, SOURCE_LIMIT, 502)); }
+  return limitedText(response, limit, 502);
+}
+
+async function fetchJSON(url, fetcher) {
+  try { return JSON.parse(await fetchDocument(url, fetcher)); }
   catch (error) { if (error instanceof APIError) throw error; throw new APIError(502, 'The employer returned an unreadable job description.'); }
 }
 
@@ -157,6 +164,14 @@ function checkClosure(job) {
   }
 }
 
+function checkPostingDate(postedAt) {
+  const posted = typeof postedAt === 'string' && postedAt.trim() ? Date.parse(postedAt) : NaN;
+  const now = Date.now();
+  if (!Number.isFinite(posted) || posted > now || now - posted > 30 * 86400000) {
+    throw new APIError(409, 'Choose a position posted within the last 30 days. Refresh the map to see current jobs.');
+  }
+}
+
 export async function resolveJob(id, fetcher = (url, init) => fetch(url, init)) {
   // Every external URL starts from our constant feed or a fixed ATS API origin.
   // User-provided URLs, LinkedIn links and profile links are never fetched.
@@ -164,6 +179,7 @@ export async function resolveJob(id, fetcher = (url, init) => fetch(url, init)) 
   if (!Array.isArray(snapshot.jobs)) throw new APIError(502, 'The job map is temporarily unavailable.');
   const listed = snapshot.jobs.find(job => job.id === id);
   if (!listed) throw new APIError(409, 'This position is no longer on the map. Refresh and choose another job.');
+  checkPostingDate(listed.postedAt);
   const [type, slug, postingId] = id.split(':');
   const board = encodeURIComponent(slug), key = encodeURIComponent(postingId);
   let description, title;
@@ -195,6 +211,41 @@ export async function resolveJob(id, fetcher = (url, init) => fetch(url, init)) 
     description = plainText(Object.values(job.jobAd?.sections || {}).map(section =>
       `${section?.title || ''}\n${section?.text || ''}`).join('\n\n'));
     title = job.name;
+  } else if (type === 'workday') {
+    const source = Array.isArray(snapshot.sources) && snapshot.sources.find(source => source.type === 'workday' && source.slug === slug);
+    if (!source) throw new APIError(502, 'This employer board is temporarily unavailable.');
+    let endpoint, path;
+    try {
+      endpoint = workdayEndpoint(source);
+      path = workdayPath(listed.url, source);
+    } catch { throw new APIError(502, 'This employer board is temporarily unavailable.'); }
+    const data = await fetchJSON(endpoint + path, fetcher);
+    if (String(data?.jobPostingInfo?.jobReqId) !== postingId) throw new APIError(502, 'The employer returned a different position.');
+    let job;
+    try { job = workdayJob(data, source); }
+    catch { throw new APIError(502, 'The employer returned an unreadable job description.'); }
+    if (!job) throw new APIError(409, 'This position is no longer advertised by its employer.');
+    checkClosure(job);
+    checkPostingDate(job.createdAt);
+    description = plainText(job.content); title = job.title;
+  } else if (type === 'apple') {
+    const source = Array.isArray(snapshot.sources) && snapshot.sources.find(source => source.type === 'apple' && source.slug === slug);
+    if (slug !== 'apple' || !source) throw new APIError(502, 'This employer board is temporarily unavailable.');
+    let url;
+    try {
+      const listedUrl = new URL(listed.url);
+      const path = listedUrl.pathname.match(/^\/en-us\/details\/([^/]+)\/([-a-z0-9]+)$/);
+      if (listedUrl.protocol !== 'https:' || listedUrl.host !== 'jobs.apple.com' || listedUrl.username || listedUrl.password || !path || path[1] !== postingId) throw Error('Invalid Apple URL');
+      url = appleDetailUrl(postingId, path[2]);
+    } catch { throw new APIError(502, 'This employer board is temporarily unavailable.'); }
+    const html = await fetchDocument(url, fetcher, 'text/html', 8000000);
+    let job;
+    try { job = appleJobDetail(html, postingId); }
+    catch { throw new APIError(502, 'The employer returned an unreadable job description.'); }
+    if (!job) throw new APIError(409, 'This position is no longer advertised by its employer.');
+    checkPostingDate(job.createdAt);
+    checkClosure(job);
+    description = plainText(job.content); title = job.title;
   } else { throw new APIError(400, 'Unsupported employer feed.'); }
   if (!description || description.length < 80) throw new APIError(502, 'The employer did not provide enough detail to draft a grounded letter.');
   return {id, title: String(title || listed.title).slice(0, 300),

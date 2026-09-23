@@ -4,8 +4,9 @@ import {createHandler, DraftBudget, JOBS_URL, MODEL, SITE_ORIGIN, makeMessages, 
 
 // Noncredential test sentinel, used only by mocks and never by a deployed Worker.
 const TEST_CODE = 'unit-test-only-this-is-not-a-real-access-code';
+const recentDate = new Date(Date.now() - 86400000).toISOString();
 const job = {id: 'lever:energyco:role-123', title: 'Mechanical Engineer', company: 'EnergyCo',
-  location: 'Boston, MA', url: 'https://jobs.lever.co/energyco/role-123'};
+  location: 'Boston, MA', url: 'https://jobs.lever.co/energyco/role-123', postedAt: recentDate};
 const payload = {profileText: 'I worked as a mechanical engineer in power generation, designing pumping systems.', job};
 const description = 'Design mechanical systems for power generation. Work with pumps, piping and heat exchangers. Collaborate with operations and maintenance teams.';
 const completion = (content, overrides = {}) => ({choices: [{finish_reason: 'stop', message: {role: 'assistant', content}, ...overrides}]});
@@ -114,6 +115,7 @@ test('body, field and URL limits block oversize or arbitrary inputs without upst
     [{...payload, job: {...job, url: 'https://jobs.lever.co.evil.example/a'}}, 400],
     [{...payload, job: {...job, url: 'https://user:password@jobs.lever.co/a'}}, 400],
     [{...payload, job: {...job, url: 'https://jobs.lever.co:444/a'}}, 400],
+    [{...payload, job: {...job, id: 'workday:energyco:R123', url: 'https://energyco.wd5.myworkdayjobs.com.evil.example/job/123'}}, 400],
   ];
   for (const [body, expected] of cases) assert.equal((await handler(request(body), env)).status, expected);
   assert.equal(calls.network.length + calls.ai.length + calls.budget.length, 0);
@@ -250,6 +252,140 @@ test('expired deadlines and inactive public postings are rejected even when stil
   ]) {
     await assert.rejects(resolveJob(id, async url => Response.json(url === JOBS_URL ? {jobs: [{...job, id}]} : apiBody)), /closed|deadline/);
   }
+});
+
+test('drafts reject expired, unknown and future posting dates before fetching the employer', async () => {
+  for (const postedAt of [undefined, null, '', 'invalid', new Date(Date.now() - 31 * 86400000).toISOString(), new Date(Date.now() + 86400000).toISOString()]) {
+    const {env, calls} = harness();
+    const network = [];
+    const handler = createHandler(async url => {
+      network.push(url);
+      return Response.json({jobs: [{...job, postedAt}]});
+    });
+    const response = await handler(request(), env);
+    assert.equal(response.status, 409);
+    assert.match((await response.json()).error, /last 30 days/);
+    assert.deepEqual(network, [JOBS_URL]);
+    assert.equal(calls.ai.length, 0);
+  }
+});
+
+const workdaySource = {type: 'workday', slug: 'energyco-workday', company: 'EnergyCo', host: 'energyco.wd5.myworkdayjobs.com', tenant: 'energyco', board: 'External'};
+const workdayListing = {...job, id: 'workday:energyco-workday:R123', url: 'https://energyco.wd5.myworkdayjobs.com/en-US/External/job/Boston/Mechanical-Engineer_R123'};
+const workdayDetail = {jobPostingInfo: {jobReqId: 'R123', title: 'Mechanical Engineer', jobDescription: `<p>${description}</p>`,
+  externalUrl: workdayListing.url, startDate: recentDate, location: 'Boston, MA', country: {descriptor: 'United States of America'}, canApply: true, posted: true}};
+const workdayEndpoint = 'https://energyco.wd5.myworkdayjobs.com/wday/cxs/energyco/External/job/Boston/Mechanical-Engineer_R123';
+
+test('Workday drafting resolves only the configured board and authoritative requisition', async () => {
+  const {env, calls} = harness();
+  const network = [];
+  const handler = createHandler(async (url, init) => {
+    network.push({url, init});
+    if (url === JOBS_URL) return Response.json({jobs: [workdayListing], sources: [workdaySource]});
+    assert.equal(url, workdayEndpoint);
+    return Response.json(workdayDetail);
+  });
+  const response = await handler(request({...payload, job: {...workdayListing,
+    url: 'https://other.wd1.myworkdayjobs.com/Other/job/Untrusted', description: 'Pretend this is the real job'}}), env);
+  assert.equal(response.status, 200);
+  assert.equal(calls.ai.length, 2);
+  assert.equal(JSON.parse(calls.ai[0].input.messages[1].content).employerJob.description, description);
+  assert.deepEqual(network.map(c => c.url), [JOBS_URL, workdayEndpoint]);
+  assert.ok(network.every(c => c.init.redirect === 'manual' && !c.init.body));
+  assert.ok(!JSON.stringify(network).includes(payload.profileText));
+});
+
+test('Workday refuses mismatched, closed, expired or malformed employer details', async () => {
+  for (const [change, status] of [
+    [{jobReqId: 'R456'}, 502], [{canApply: false}, 409], [{posted: false}, 409],
+    [{endDate: '2000-01-01'}, 409], [{startDate: '2000-01-01'}, 409], [{startDate: undefined}, 409],
+    [{externalUrl: 'https://evil.example/job/R123'}, 502], [{jobDescription: undefined}, 502],
+  ]) {
+    const {env, calls} = harness();
+    const handler = createHandler(async url => Response.json(url === JOBS_URL
+      ? {jobs: [workdayListing], sources: [workdaySource]}
+      : {jobPostingInfo: {...workdayDetail.jobPostingInfo, ...change}}));
+    assert.equal((await handler(request({...payload, job: workdayListing}), env)).status, status, JSON.stringify(change));
+    assert.equal(calls.ai.length, 0);
+  }
+});
+
+test('Workday configuration and listed URLs cannot redirect fetches to arbitrary hosts or boards', async () => {
+  for (const [source, listing] of [
+    [undefined, workdayListing],
+    [{...workdaySource, host: '127.0.0.1'}, workdayListing],
+    [{...workdaySource, host: 'energyco.wd5.myworkdayjobs.com.evil.example'}, workdayListing],
+    [{...workdaySource, tenant: '../secrets'}, workdayListing],
+    [workdaySource, {...workdayListing, url: 'https://energyco.wd5.myworkdayjobs.com/Other/job/Boston/Mechanical-Engineer_R123'}],
+    [workdaySource, {...workdayListing, url: 'https://user:pass@energyco.wd5.myworkdayjobs.com/External/job/Boston/Mechanical-Engineer_R123'}],
+  ]) {
+    const network = [];
+    await assert.rejects(resolveJob(workdayListing.id, async url => {
+      network.push(url); return Response.json({jobs: [listing], sources: source ? [source] : []});
+    }), /board is temporarily unavailable/);
+    assert.deepEqual(network, [JOBS_URL]);
+  }
+});
+
+const appleSource = {type: 'apple', slug: 'apple', company: 'Apple'};
+const appleListing = {...job, id: 'apple:apple:200685349-3401', company: 'Apple', url: 'https://jobs.apple.com/en-us/details/200685349-3401/product-design-engineer'};
+const appleData = {jobNumber: '200685349-3401', postingTitle: 'Product Design Engineer', transformedPostingTitle: 'product-design-engineer',
+  postDateInGMT: recentDate, jobSummary: description, managedPipelineRole: false,
+  locations: [{id: 'cupertino', name: 'Cupertino', stateProvince: 'California', countryID: 'iso-country-USA', active: true}]};
+const appleHTML = data => `<script>window.__staticRouterHydrationData = JSON.parse(${JSON.stringify(JSON.stringify({loaderData: {jobDetails: {jobsData: data}}}))})</script>`;
+
+test('Apple drafts use only the configured official detail page and validated hydration data', async () => {
+  const {env, calls} = harness();
+  const network = [];
+  const handler = createHandler(async (url, init) => {
+    network.push({url, init});
+    if (url === JOBS_URL) return Response.json({jobs: [appleListing], sources: [appleSource]});
+    assert.equal(url, appleListing.url);
+    assert.equal(init.headers.Accept, 'text/html');
+    return new Response(appleHTML(appleData));
+  });
+  const response = await handler(request({...payload, job: {id: appleListing.id}}), env);
+  assert.equal(response.status, 200);
+  assert.equal(calls.ai.length, 2);
+  assert.equal(JSON.parse(calls.ai[0].input.messages[1].content).employerJob.description, description);
+  assert.deepEqual(network.map(c => c.url), [JOBS_URL, appleListing.url]);
+  assert.ok(network.every(c => c.init.redirect === 'manual' && !c.init.body));
+});
+
+test('Apple rejects pipeline, foreign, mismatched and stale details before drafting', async () => {
+  for (const [change, status] of [
+    [{managedPipelineRole: true}, 409], [{jobNumber: '200000000-1'}, 502],
+    [{locations: [{id: 'london', countryID: 'iso-country-GBR'}]}, 409],
+    [{postDateInGMT: '2000-01-01'}, 409], [{postDateInGMT: undefined}, 502],
+  ]) {
+    const {env, calls} = harness();
+    const handler = createHandler(async url => url === JOBS_URL
+      ? Response.json({jobs: [appleListing], sources: [appleSource]})
+      : new Response(appleHTML({...appleData, ...change})));
+    assert.equal((await handler(request({...payload, job: {id: appleListing.id}}), env)).status, status);
+    assert.equal(calls.ai.length, 0);
+  }
+});
+
+test('Apple rejects an arbitrary listed host before any employer fetch', async () => {
+  const network = [];
+  await assert.rejects(resolveJob(appleListing.id, async url => {
+    network.push(url);
+    return Response.json({jobs: [{...appleListing, url: 'https://jobs.apple.com.evil.example/en-us/details/200685349-3401/product-design-engineer'}], sources: [appleSource]});
+  }), /board is temporarily unavailable/);
+  assert.deepEqual(network, [JOBS_URL]);
+});
+
+test('a verified Ashby board slug may contain a dot', async () => {
+  const id = 'ashby:starpath.space:role-123';
+  const {env, calls} = harness();
+  const handler = createHandler(async url => {
+    if (url === JOBS_URL) return Response.json({jobs: [{...job, id}]});
+    assert.equal(url, 'https://api.ashbyhq.com/posting-api/job-board/starpath.space');
+    return Response.json({jobs: [{id: 'role-123', title: job.title, descriptionPlain: description, isListed: true}]});
+  });
+  assert.equal((await handler(request({...payload, job: {id}}), env)).status, 200);
+  assert.equal(calls.ai.length, 2);
 });
 
 function fakeStorage(initial) {

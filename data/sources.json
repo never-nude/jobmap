@@ -298,5 +298,529 @@
     "type": "smartrecruiters",
     "slug": "BESIX",
     "company": "BESIX"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "salientmotion",
+    "company": "Salient Motion"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "stratolaunch",
+    "company": "Stratolaunch"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "muonspace",
+    "company": "Muon Space"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "chaosindustries",
+    "company": "CHAOS Industries"
+  },
+  {
+    "type": "ashby",
+    "slug": "periodic-labs",
+    "company": "Periodic Labs"
+  },
+  {
+    "type": "lever",
+    "slug": "dexterity",
+    "company": "Dexterity"
+  },
+  {
+    "type": "ashby",
+    "slug": "etched",
+    "company": "Etched"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "asteralabs",
+    "company": "Astera Labs"
+  },
+  {
+    "type": "ashby",
+    "slug": "apex-technology-inc",
+    "company": "Apex Space"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "k2spacecorporation",
+    "company": "K2 Space"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "trueanomalyinc",
+    "company": "True Anomaly"
+  },
+  {
+    "type": "lever",
+    "slug": "CesiumAstro",
+    "company": "CesiumAstro"
+  },
+  {
+    "type": "ashby",
+    "slug": "d-matrix",
+    "company": "d-Matrix"
+  },
+  {
+    "type": "ashby",
+    "slug": "anysignal",
+    "company": "AnySignal"
+  },
+  {
+    "type": "ashby",
+    "slug": "eightsleep",
+    "company": "Eight Sleep"
+  },
+  {
+    "type": "ashby",
+    "slug": "fab2",
+    "company": "fab2 (formerly Atomic Semi)"
+  },
+  {
+    "type": "ashby",
+    "slug": "allen-control-systems",
+    "company": "Allen Control Systems"
+  },
+  {
+    "type": "ashby",
+    "slug": "gradientrobotics",
+    "company": "Gradient Robotics"
+  },
+  {
+    "type": "ashby",
+    "slug": "beyondreachlabs",
+    "company": "Beyond Reach Labs"
+  },
+  {
+    "type": "ashby",
+    "slug": "observable-space",
+    "company": "Observable Space"
+  },
+  {
+    "type": "ashby",
+    "slug": "substrate",
+    "company": "Substrate"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "parallel",
+    "company": "Parallel Systems"
+  },
+  {
+    "type": "ashby",
+    "slug": "reliable-robotics",
+    "company": "Reliable Robotics"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "intrinsicrobotics",
+    "company": "Intrinsic"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "divergent",
+    "company": "Divergent"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "outrider",
+    "company": "Outrider"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "archer56",
+    "company": "Archer"
+  },
+  {
+    "type": "ashby",
+    "slug": "droyd",
+    "company": "Droyd"
+  },
+  {
+    "type": "ashby",
+    "slug": "cerebras",
+    "company": "Cerebras"
+  },
+  {
+    "type": "ashby",
+    "slug": "starpath.space",
+    "company": "Starpath Robotics"
+  },
+  {
+    "type": "ashby",
+    "slug": "dexmate",
+    "company": "Dexmate"
+  },
+  {
+    "type": "ashby",
+    "slug": "impulse",
+    "company": "Impulse Labs"
+  },
+  {
+    "type": "ashby",
+    "slug": "9-mothers",
+    "company": "9 Mothers"
+  },
+  {
+    "type": "ashby",
+    "slug": "rhoda-ai",
+    "company": "Rhoda AI"
+  },
+  {
+    "type": "ashby",
+    "slug": "antares",
+    "company": "Antares"
+  },
+  {
+    "type": "ashby",
+    "slug": "radiant-industries",
+    "company": "Radiant Industries"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "pacificfusion",
+    "company": "Pacific Fusion"
+  },
+  {
+    "type": "smartrecruiters",
+    "slug": "CRB",
+    "company": "CRB"
+  },
+  {
+    "type": "ashby",
+    "slug": "fluidstack",
+    "company": "Fluidstack"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "amperesand",
+    "company": "Amperesand"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "bluecurrent",
+    "company": "Blue Current"
+  },
+  {
+    "type": "ashby",
+    "slug": "helion",
+    "company": "Helion Energy"
+  },
+  {
+    "type": "lever",
+    "slug": "mainspringenergy",
+    "company": "Mainspring Energy"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "antora",
+    "company": "Antora Energy"
+  },
+  {
+    "type": "ashby",
+    "slug": "base-power",
+    "company": "Base Power"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "cannondesign",
+    "company": "CannonDesign"
+  },
+  {
+    "type": "lever",
+    "slug": "charmindustrial",
+    "company": "Charm Industrial"
+  },
+  {
+    "type": "smartrecruiters",
+    "slug": "CoffmanEngineersInc",
+    "company": "Coffman Engineers"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "coreweave",
+    "company": "CoreWeave"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "dlrgroup",
+    "company": "DLR Group"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "eh2",
+    "company": "Electric Hydrogen"
+  },
+  {
+    "type": "ashby",
+    "slug": "focused",
+    "company": "Focused Energy"
+  },
+  {
+    "type": "ashby",
+    "slug": "forgeatomics",
+    "company": "Forge Atomics"
+  },
+  {
+    "type": "ashby",
+    "slug": "fourier",
+    "company": "Fourier"
+  },
+  {
+    "type": "ashby",
+    "slug": "fuse",
+    "company": "Fuse"
+  },
+  {
+    "type": "ashby",
+    "slug": "heirloomcarbon",
+    "company": "Heirloom Carbon"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "kairospower",
+    "company": "Kairos Power"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "nebius",
+    "company": "Nebius"
+  },
+  {
+    "type": "ashby",
+    "slug": "overviewenergy",
+    "company": "Overview Energy"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "peakenergy",
+    "company": "Peak Energy"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "silananotechnologies",
+    "company": "Sila"
+  },
+  {
+    "type": "ashby",
+    "slug": "solcoa",
+    "company": "Solcoa Industries"
+  },
+  {
+    "type": "greenhouse",
+    "slug": "standardnuclearinc",
+    "company": "Standard Nuclear"
+  },
+  {
+    "type": "ashby",
+    "slug": "t1energy",
+    "company": "T1 Energy"
+  },
+  {
+    "type": "ashby",
+    "slug": "teragenenergy",
+    "company": "Teragen Energy"
+  },
+  {
+    "type": "ashby",
+    "slug": "terranova",
+    "company": "Terranova"
+  },
+  {
+    "type": "workday",
+    "slug": "nvidia",
+    "company": "NVIDIA",
+    "host": "nvidia.wd5.myworkdayjobs.com",
+    "tenant": "nvidia",
+    "board": "NVIDIAExternalCareerSite"
+  },
+  {
+    "type": "workday",
+    "slug": "blueorigin",
+    "company": "Blue Origin",
+    "host": "blueorigin.wd5.myworkdayjobs.com",
+    "tenant": "blueorigin",
+    "board": "BlueOrigin"
+  },
+  {
+    "type": "workday",
+    "slug": "amat",
+    "company": "Applied Materials",
+    "host": "amat.wd1.myworkdayjobs.com",
+    "tenant": "amat",
+    "board": "External"
+  },
+  {
+    "type": "workday",
+    "slug": "gevernova",
+    "company": "GE Vernova",
+    "host": "gevernova.wd5.myworkdayjobs.com",
+    "tenant": "gevernova",
+    "board": "Vernova_ExternalSite"
+  },
+  {
+    "type": "workday",
+    "slug": "ngc",
+    "company": "Northrop Grumman",
+    "host": "ngc.wd1.myworkdayjobs.com",
+    "tenant": "ngc",
+    "board": "Northrop_Grumman_External_Site"
+  },
+  {
+    "type": "apple",
+    "slug": "apple",
+    "company": "Apple"
+  },
+  {
+    "type": "workday",
+    "slug": "geaerospace",
+    "company": "GE Aerospace",
+    "host": "geaerospace.wd5.myworkdayjobs.com",
+    "tenant": "geaerospace",
+    "board": "GE_ExternalSite"
+  },
+  {
+    "type": "workday",
+    "slug": "boeing",
+    "company": "Boeing",
+    "host": "boeing.wd1.myworkdayjobs.com",
+    "tenant": "boeing",
+    "board": "EXTERNAL_CAREERS"
+  },
+  {
+    "type": "workday",
+    "slug": "jci",
+    "company": "Johnson Controls",
+    "host": "jci.wd5.myworkdayjobs.com",
+    "tenant": "jci",
+    "board": "JCI"
+  },
+  {
+    "type": "workday",
+    "slug": "medtronic",
+    "company": "Medtronic",
+    "host": "medtronic.wd1.myworkdayjobs.com",
+    "tenant": "medtronic",
+    "board": "MedtronicCareers"
+  },
+  {
+    "type": "workday",
+    "slug": "stryker",
+    "company": "Stryker",
+    "host": "stryker.wd1.myworkdayjobs.com",
+    "tenant": "stryker",
+    "board": "StrykerCareers"
+  },
+  {
+    "type": "workday",
+    "slug": "rtx",
+    "company": "RTX",
+    "host": "globalhr.wd5.myworkdayjobs.com",
+    "tenant": "globalhr",
+    "board": "REC_RTX_Ext_Gateway"
+  },
+  {
+    "type": "workday",
+    "slug": "carrier",
+    "company": "Carrier",
+    "host": "carrier.wd5.myworkdayjobs.com",
+    "tenant": "carrier",
+    "board": "jobs"
+  },
+  {
+    "type": "workday",
+    "slug": "gehealthcare",
+    "company": "GE HealthCare",
+    "host": "gehc.wd5.myworkdayjobs.com",
+    "tenant": "gehc",
+    "board": "GEHC_ExternalSite"
+  },
+  {
+    "type": "workday",
+    "slug": "thermofisher",
+    "company": "Thermo Fisher Scientific",
+    "host": "thermofisher.wd5.myworkdayjobs.com",
+    "tenant": "thermofisher",
+    "board": "ThermoFisherCareers"
+  },
+  {
+    "type": "workday",
+    "slug": "caterpillar",
+    "company": "Caterpillar",
+    "host": "cat.wd5.myworkdayjobs.com",
+    "tenant": "cat",
+    "board": "CaterpillarCareers"
+  },
+  {
+    "type": "workday",
+    "slug": "rockwellautomation",
+    "company": "Rockwell Automation",
+    "host": "rockwellautomation.wd1.myworkdayjobs.com",
+    "tenant": "rockwellautomation",
+    "board": "External_Rockwell_Automation"
+  },
+  {
+    "type": "workday",
+    "slug": "abbott",
+    "company": "Abbott",
+    "host": "abbott.wd5.myworkdayjobs.com",
+    "tenant": "abbott",
+    "board": "abbottcareers"
+  },
+  {
+    "type": "workday",
+    "slug": "kla",
+    "company": "KLA",
+    "host": "kla.wd1.myworkdayjobs.com",
+    "tenant": "kla",
+    "board": "Search"
+  },
+  {
+    "type": "workday",
+    "slug": "leidos",
+    "company": "Leidos",
+    "host": "leidos.wd5.myworkdayjobs.com",
+    "tenant": "leidos",
+    "board": "External"
+  },
+  {
+    "type": "workday",
+    "slug": "parsons",
+    "company": "Parsons",
+    "host": "parsons.wd5.myworkdayjobs.com",
+    "tenant": "parsons",
+    "board": "Search"
+  },
+  {
+    "type": "workday",
+    "slug": "caci",
+    "company": "CACI",
+    "host": "caci.wd1.myworkdayjobs.com",
+    "tenant": "caci",
+    "board": "External"
+  },
+  {
+    "type": "workday",
+    "slug": "generalmotors",
+    "company": "General Motors",
+    "host": "generalmotors.wd5.myworkdayjobs.com",
+    "tenant": "generalmotors",
+    "board": "Careers_GM"
+  },
+  {
+    "type": "workday",
+    "slug": "jabil",
+    "company": "Jabil",
+    "host": "jabil.wd5.myworkdayjobs.com",
+    "tenant": "jabil",
+    "board": "Jabil_Careers"
+  },
+  {
+    "type": "smartrecruiters",
+    "slug": "Intuitive",
+    "company": "Intuitive"
   }
 ]
