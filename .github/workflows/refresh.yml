@@ -18,6 +18,9 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
+        with:
+          # A queued run's original commit may predate the previous refresh snapshot.
+          ref: main
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
