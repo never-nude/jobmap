@@ -3,7 +3,7 @@
 A public, permanently dark U.S. map of mechanical engineering openings with employer-published base salary minima of **$100,000/year or more**. No API keys or paid services are required.
 
 - Position, company, salary, location, work setting, skills / experience, and direct employer application links.
-- Age colors: **blue 0–7 days → green 8–14 → yellow 15–30 → red 31+**. Unknown dates are gray. Colored pins represent individual jobs. Neutral numbered pins show city totals; opening one shows posting-age counts and its newest jobs first.
+- Age colors: **blue 0–7 days → green 8–14 → yellow 15–30 → red 31+**. Unknown dates are gray. Colored pins represent individual jobs. City circles use proportional pie slices for each age band, with the total job count in the center. Hover or open one for exact age counts and its newest jobs first. Slices use the currently filtered jobs, including a gray slice for missing dates. A steady pale-blue halo highlights locations with at least one job posted within the last seven days; the city detail gives the exact recent count. The halo uses the employer posting date, not first discovery/import time.
 - Search, work-setting, and **Energy & related only** filters; **Newest listed** by default; mobile layout.
 - GitHub Actions checks employer feeds every half hour, at :07 and :37 UTC. Scheduling is best effort and can be delayed by GitHub. The browser fetches the newest snapshot every 30 minutes and on return to the tab.
 

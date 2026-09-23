@@ -13,8 +13,29 @@ export const AGE_BANDS=[
 ];
 const postedTime=job=>Number.isFinite(Date.parse(job?.postedAt))?Date.parse(job.postedAt):-Infinity;
 export function compareNewest(a,b){const aTime=postedTime(a),bTime=postedTime(b);return aTime===bTime?0:bTime-aTime;}
+export function recentPostedCount(jobs,now=Date.now()){
+ const cutoff=now-7*86400000;
+ return jobs.reduce((count,job)=>{
+  const posted=postedTime(job);
+  return count+(Number.isFinite(posted)&&posted>=cutoff&&posted<=now?1:0);
+ },0);
+}
 export function ageBreakdown(jobs,now=Date.now()){
  const counts=new Map(AGE_BANDS.map(b=>[b.key,0]));
  for(const job of jobs){const key=jobAge(job.postedAt,now).key;counts.set(key,counts.get(key)+1);}
  return AGE_BANDS.map(b=>({...b,count:counts.get(b.key)})).filter(b=>b.count);
+}
+
+export function agePie(jobs,now=Date.now()){
+ const bands=ageBreakdown(jobs,now),total=bands.reduce((sum,band)=>sum+band.count,0);
+ if(!total)return {bands,gradient:'none'};
+ let counted=0;
+ const stops=bands.map(band=>{
+  const start=counted/total*100;
+  counted+=band.count;
+  const end=counted/total*100;
+  return `${band.color} ${start}% ${end}%`;
+ });
+ // CSS's zero-degree origin is 12 o'clock; paired stops keep wedges sharp.
+ return {bands,gradient:`conic-gradient(from 0deg, ${stops.join(', ')})`};
 }
