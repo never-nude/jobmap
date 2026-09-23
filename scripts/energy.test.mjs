@@ -44,9 +44,9 @@ const sort=jobs=>jobs.sort((a,b)=>compareEnergy(a,b,now)).map(j=>j.id);
 test('energy emphasis stays inside the existing age color bands',()=>{
  assert.deepEqual(sort([
   job('unknown-energy',null,true),job('red-energy',31,true),job('yellow-energy',30,true),
-  job('green-energy',14,true),job('blue-energy',7,true),job('today',0),
-  job('green-new',8),job('yellow-new',15),job('red-new',31),job('unknown',null),
- ]),['blue-energy','today','green-energy','green-new','yellow-energy','yellow-new','red-energy','red-new','unknown-energy','unknown']);
+  job('yellow-mid-energy',14,true),job('green-energy',7,true),job('today',0),
+  job('yellow-recent',8),job('yellow-new',15),job('red-new',31),job('unknown',null),
+ ]),['green-energy','today','yellow-mid-energy','yellow-energy','yellow-recent','yellow-new','red-energy','red-new','unknown-energy','unknown']);
 });
 
 test('recency breaks same-sector ties and equal dates preserve stable order',()=>{

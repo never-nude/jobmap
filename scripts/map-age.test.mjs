@@ -1,6 +1,25 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {compareNewest,ageBreakdown,agePie,recentPostedCount} from '../age.mjs';
+import {jobAge,AGE_BANDS,compareNewest,ageBreakdown,agePie,recentPostedCount} from '../age.mjs';
+
+test('posting colors use exact elapsed week and month boundaries',()=>{
+ const now=Date.parse('2026-09-23T12:00:00Z'),day=86400000;
+ const cases=[[0,'green'],[7*day,'green'],[7*day+1,'yellow'],[7.9*day,'yellow'],[30*day,'yellow'],[30*day+1,'red']];
+ for(const [elapsed,key] of cases){
+  const age=jobAge(new Date(now-elapsed).toISOString(),now);
+  assert.equal(age.key,key,`Age at ${elapsed} milliseconds`);
+  assert.equal(age.color,{green:'#20916b',yellow:'#d4a600',red:'#d24c4c'}[key]);
+ }
+ assert.equal(jobAge(new Date(now-7.9*day).toISOString(),now).label,'7d ago');
+ assert.deepEqual(AGE_BANDS.map(({key,label})=>[key,label]),[['green','Past week'],['yellow','8–30 days'],['red','Over 30 days'],['unknown','No date']]);
+});
+
+test('future and invalid posting dates have unknown age rather than appearing recent',()=>{
+ const now=Date.parse('2026-09-23T12:00:00Z');
+ for(const postedAt of [new Date(now+1).toISOString(),'invalid',null,undefined,'']){
+  assert.deepEqual(jobAge(postedAt,now),{key:'unknown',color:'#7c8996',label:'Date unavailable',days:null});
+ }
+});
 
 test('newest order uses posting time regardless of sector, discovery date or timezone',()=>{
  const jobs=[
@@ -17,7 +36,7 @@ test('city breakdown reports every age including missing dates without recolorin
  const now=Date.parse('2026-09-23T12:00:00Z');
  const jobs=[0,7,8,14,15,30,31,90,null].map(days=>({postedAt:days===null?null:new Date(now-days*86400000).toISOString(),firstSeenAt:new Date(now).toISOString()}));
  const bands=ageBreakdown(jobs,now);
- assert.deepEqual(bands.map(({key,count})=>[key,count]),[['blue',2],['green',2],['yellow',2],['red',2],['unknown',1]]);
+ assert.deepEqual(bands.map(({key,count})=>[key,count]),[['green',2],['yellow',4],['red',2],['unknown',1]]);
  assert.equal(bands.reduce((n,b)=>n+b.count,0),jobs.length);
  assert.deepEqual(ageBreakdown([],now),[]);
 });
@@ -26,16 +45,16 @@ test('city pie proportions represent each job in posting-age order from twelve o
  const now=Date.parse('2026-09-23T12:00:00Z');
  const jobs=[90,0,8,31,15,9,null,1,32,14].map(days=>({postedAt:days===null?null:new Date(now-days*86400000).toISOString()}));
  const {bands,gradient}=agePie(jobs,now);
- assert.deepEqual(bands.map(({key,count})=>[key,count]),[['blue',2],['green',3],['yellow',1],['red',3],['unknown',1]]);
- assert.equal(gradient,'conic-gradient(from 0deg, #2278d0 0% 20%, #20916b 20% 50%, #d4a600 50% 60%, #d24c4c 60% 90%, #7c8996 90% 100%)');
+ assert.deepEqual(bands.map(({key,count})=>[key,count]),[['green',2],['yellow',4],['red',3],['unknown',1]]);
+ assert.equal(gradient,'conic-gradient(from 0deg, #20916b 0% 20%, #d4a600 20% 60%, #d24c4c 60% 90%, #7c8996 90% 100%)');
 });
 
-test('city pie keeps missing and invalid dates in the unknown wedge',()=>{
+test('city pie keeps missing, invalid and future dates in the unknown wedge',()=>{
  const now=Date.parse('2026-09-23T12:00:00Z');
- const jobs=[{postedAt:'2026-09-23T00:00:00Z'},{postedAt:null},{postedAt:'invalid'},{}];
+ const jobs=[{postedAt:'2026-09-23T00:00:00Z'},{postedAt:null},{postedAt:'invalid'},{},{postedAt:new Date(now+1).toISOString()}];
  const {bands,gradient}=agePie(jobs,now);
- assert.deepEqual(bands.map(({key,count})=>[key,count]),[['blue',1],['unknown',3]]);
- assert.equal(gradient,'conic-gradient(from 0deg, #2278d0 0% 25%, #7c8996 25% 100%)');
+ assert.deepEqual(bands.map(({key,count})=>[key,count]),[['green',1],['unknown',4]]);
+ assert.equal(gradient,'conic-gradient(from 0deg, #20916b 0% 20%, #7c8996 20% 100%)');
 });
 
 test('city pie uses a complete circle when all jobs share one age band',()=>{
@@ -65,6 +84,7 @@ test('recent postings include the exact seven-day cutoff and now, excluding futu
  const jobs=[now,cutoff,now-12*3600000,cutoff-1,now+1].map(time=>({postedAt:new Date(time).toISOString()}));
  jobs.push({postedAt:null},{postedAt:'invalid'},{postedAt:''},{});
  assert.equal(recentPostedCount(jobs,now),3);
+ assert.equal(ageBreakdown(jobs,now).find(band=>band.key==='green').count,recentPostedCount(jobs,now));
 });
 
 test('recent posting count uses employer dates rather than discovery dates',()=>{

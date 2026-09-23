@@ -63,7 +63,7 @@ function clearFilters(){$('search').value='';$('mode').value='all';$('energy-onl
 function drawPins(){if(!map)return;layer.clearLayers();markers.clear();const groups=new Map();for(const j of filtered){for(const geo of allLocations(j)){if(!Number.isFinite(geo.lat)||!Number.isFinite(geo.lng))continue;const key=`${geo.lat},${geo.lng}`;if(!groups.has(key))groups.set(key,[]);if(!groups.get(key).some(x=>x.id===j.id))groups.get(key).push({...j,geo});}}
  for(const jobs of groups.values()){
  const newest=[...jobs].sort(compareNewest)[0],age=jobAge(newest.postedAt),grouped=jobs.length>1,size=grouped?32:16,pie=grouped?agePie(jobs):null,recent=recentPostedCount(jobs);
- const location=newest.geo.city||newest.location,breakdown=pie?.bands.map(b=>`${b.count} ${b.label==='No date'?'with no posting date':`posted ${b.label} ago`}`).join('; ');
+ const location=newest.geo.city||newest.location,breakdown=pie?.bands.map(b=>`${b.count} ${{green:'posted in the past week',yellow:'posted 8–30 days ago',red:'posted over 30 days ago',unknown:'with no posting date'}[b.key]}`).join('; ');
  const title=grouped?`${location}: ${jobs.length} jobs. ${breakdown}.${recent?` ${recent} posted in the past 7 days.`:''} Newest jobs first.`:`${location}: 1 job; ${age.label}`;
  const html=grouped?`<span class="pin-pie" style="background:${pie.gradient}" aria-hidden="true"><span class="pin-total">${jobs.length}</span></span>`:`<span class="pin-single" style="background:${age.color}" aria-hidden="true"></span>`;
  const marker=L.marker(mapPosition(newest.geo),{icon:L.divIcon({className:`pin${grouped?' pin-group':''}${recent?' pin-recent':''}`,html,iconSize:[size,size],iconAnchor:[size/2,size/2]}),title,alt:title,keyboard:true,zIndexOffset:(grouped?1000:0)+(recent?2000:0)}).addTo(layer);

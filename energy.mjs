@@ -40,7 +40,7 @@ export function energyFocus(job) {
  return signal?{label:signal[0],reason:`The job title explicitly mentions ${signal[0].toLowerCase()}.`}:null;
 }
 
-const ageOrder={blue:0,green:1,yellow:2,red:3,unknown:4};
+const ageOrder={green:0,yellow:1,red:2,unknown:3};
 const timestamp=job=>Number.isFinite(Date.parse(job?.postedAt))?Date.parse(job.postedAt):0;
 
 /** Keep age bands in order, then favor energy roles within a band, then recency.

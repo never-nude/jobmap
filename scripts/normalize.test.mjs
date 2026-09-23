@@ -37,7 +37,7 @@ test('foreign jobs, technicians, internships, and missing salary are excluded',(
  assert.equal(normalize({id:1,title:'Mechanical Engineer',location:{name:'Boston, MA'},absolute_url:'https://example.com/job'}, {type:'greenhouse',slug:'test',company:'Test'},cities,now),null);
 });
 test('age boundaries and missing dates match the legend',()=>{
- for(const [days,key] of [[0,'blue'],[7,'blue'],[8,'green'],[14,'green'],[15,'yellow'],[30,'yellow'],[31,'red']])assert.equal(jobAge(new Date(Date.parse(now)-days*86400000).toISOString(),Date.parse(now)).key,key);
+ for(const [days,key] of [[0,'green'],[7,'green'],[7.001,'yellow'],[8,'yellow'],[14,'yellow'],[15,'yellow'],[30,'yellow'],[30.001,'red'],[31,'red']])assert.equal(jobAge(new Date(Date.parse(now)-days*86400000).toISOString(),Date.parse(now)).key,key);
  assert.equal(jobAge(null).key,'unknown');
 });
 test('closed jobs disappear; outages retain flagged results for at most 24 hours',()=>{

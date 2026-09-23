@@ -1,14 +1,14 @@
 export function jobAge(postedAt,now=Date.now()){
- if(!postedAt||!Number.isFinite(Date.parse(postedAt)))return {key:'unknown',color:'#7c8996',label:'Date unavailable',days:null};
- const days=Math.max(0,Math.floor((now-Date.parse(postedAt))/86400000));
- return {key:days<=7?'blue':days<=14?'green':days<=30?'yellow':'red',color:days<=7?'#2278d0':days<=14?'#20916b':days<=30?'#d4a600':'#d24c4c',label:days===0?'Listed today':`${days}d ago`,days};
+ const posted=Date.parse(postedAt);
+ if(!postedAt||!Number.isFinite(posted)||posted>now)return {key:'unknown',color:'#7c8996',label:'Date unavailable',days:null};
+ const elapsed=now-posted,days=Math.floor(elapsed/86400000);
+ return {key:elapsed<=7*86400000?'green':elapsed<=30*86400000?'yellow':'red',color:elapsed<=7*86400000?'#20916b':elapsed<=30*86400000?'#d4a600':'#d24c4c',label:days===0?'Listed today':`${days}d ago`,days};
 }
 
 export const AGE_BANDS=[
- {key:'blue',label:'0–7 days',color:'#2278d0'},
- {key:'green',label:'8–14 days',color:'#20916b'},
- {key:'yellow',label:'15–30 days',color:'#d4a600'},
- {key:'red',label:'31+ days',color:'#d24c4c'},
+ {key:'green',label:'Past week',color:'#20916b'},
+ {key:'yellow',label:'8–30 days',color:'#d4a600'},
+ {key:'red',label:'Over 30 days',color:'#d24c4c'},
  {key:'unknown',label:'No date',color:'#7c8996'}
 ];
 const postedTime=job=>Number.isFinite(Date.parse(job?.postedAt))?Date.parse(job.postedAt):-Infinity;
