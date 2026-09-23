@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-23T11:25:42.182Z",
+  "generatedAt": "2026-09-23T11:34:54.741Z",
   "refreshMinutes": 30,
   "salaryMinimum": 100000,
   "sources": [
@@ -9,16 +9,25 @@
       "slug": "relativity",
       "company": "Relativity Space",
       "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "total": 340,
       "matches": 29
+    },
+    {
+      "type": "greenhouse",
+      "slug": "rocketlab",
+      "company": "Rocket Lab",
+      "ok": true,
+      "checkedAt": "2026-09-23T11:34:54.741Z",
+      "total": 518,
+      "matches": 12
     },
     {
       "type": "greenhouse",
       "slug": "vast",
       "company": "Vast",
       "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "total": 205,
       "matches": 11
     },
@@ -27,25 +36,16 @@
       "slug": "figureai",
       "company": "Figure AI",
       "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "total": 97,
       "matches": 2
-    },
-    {
-      "type": "greenhouse",
-      "slug": "rocketlab",
-      "company": "Rocket Lab",
-      "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
-      "total": 518,
-      "matches": 12
     },
     {
       "type": "greenhouse",
       "slug": "nuro",
       "company": "Nuro",
       "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "total": 104,
       "matches": 0
     },
@@ -54,7 +54,7 @@
       "slug": "astranis",
       "company": "Astranis",
       "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "total": 129,
       "matches": 2
     },
@@ -63,16 +63,25 @@
       "slug": "redwoodmaterials",
       "company": "Redwood Materials",
       "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "total": 140,
       "matches": 3
+    },
+    {
+      "type": "greenhouse",
+      "slug": "spacex",
+      "company": "SpaceX",
+      "ok": true,
+      "checkedAt": "2026-09-23T11:34:54.741Z",
+      "total": 2549,
+      "matches": 46
     },
     {
       "type": "greenhouse",
       "slug": "stokespacetechnologies",
       "company": "Stoke Space",
       "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "total": 69,
       "matches": 2
     },
@@ -81,16 +90,25 @@
       "slug": "flyzipline",
       "company": "Zipline",
       "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "total": 339,
       "matches": 16
+    },
+    {
+      "type": "greenhouse",
+      "slug": "andurilindustries",
+      "company": "Anduril Industries",
+      "ok": true,
+      "checkedAt": "2026-09-23T11:34:54.741Z",
+      "total": 2348,
+      "matches": 67
     },
     {
       "type": "ashby",
       "slug": "physicalintelligence",
       "company": "Physical Intelligence",
       "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "total": 35,
       "matches": 0
     },
@@ -99,34 +117,16 @@
       "slug": "rainmaker",
       "company": "Rainmaker",
       "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "total": 28,
       "matches": 0
-    },
-    {
-      "type": "greenhouse",
-      "slug": "spacex",
-      "company": "SpaceX",
-      "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
-      "total": 2549,
-      "matches": 46
-    },
-    {
-      "type": "ashby",
-      "slug": "FormEnergy",
-      "company": "Form Energy",
-      "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
-      "total": 201,
-      "matches": 22
     },
     {
       "type": "ashby",
       "slug": "crusoe",
       "company": "Crusoe",
       "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "total": 349,
       "matches": 4
     },
@@ -135,25 +135,25 @@
       "slug": "saronic",
       "company": "Saronic",
       "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "total": 206,
       "matches": 0
     },
     {
-      "type": "greenhouse",
-      "slug": "andurilindustries",
-      "company": "Anduril Industries",
+      "type": "ashby",
+      "slug": "FormEnergy",
+      "company": "Form Energy",
       "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
-      "total": 2348,
-      "matches": 67
+      "checkedAt": "2026-09-23T11:34:54.741Z",
+      "total": 201,
+      "matches": 22
     },
     {
       "type": "lever",
       "slug": "hermeus",
       "company": "Hermeus",
       "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "total": 85,
       "matches": 1
     },
@@ -162,7 +162,7 @@
       "slug": "carbon",
       "company": "Carbon, Inc.",
       "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "total": 14,
       "matches": 1
     },
@@ -171,34 +171,34 @@
       "slug": "cfsenergy",
       "company": "Commonwealth Fusion Systems",
       "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "total": 102,
       "matches": 9
-    },
-    {
-      "type": "greenhouse",
-      "slug": "fictiv",
-      "company": "Fictiv",
-      "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
-      "total": 96,
-      "matches": 0
     },
     {
       "type": "greenhouse",
       "slug": "formlabs",
       "company": "Formlabs",
       "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "total": 212,
       "matches": 3
+    },
+    {
+      "type": "greenhouse",
+      "slug": "fictiv",
+      "company": "Fictiv",
+      "ok": true,
+      "checkedAt": "2026-09-23T11:34:54.741Z",
+      "total": 96,
+      "matches": 0
     },
     {
       "type": "greenhouse",
       "slug": "agilityrobotics",
       "company": "Agility Robotics",
       "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "total": 68,
       "matches": 5
     },
@@ -207,7 +207,7 @@
       "slug": "xometry",
       "company": "Xometry",
       "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "total": 235,
       "matches": 0
     },
@@ -216,7 +216,7 @@
       "slug": "apptronik",
       "company": "Apptronik",
       "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "total": 81,
       "matches": 0
     },
@@ -225,7 +225,7 @@
       "slug": "rondoenergy",
       "company": "Rondo Energy",
       "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "total": 15,
       "matches": 3
     },
@@ -234,7 +234,7 @@
       "slug": "oklo",
       "company": "Oklo",
       "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "total": 88,
       "matches": 4
     },
@@ -243,16 +243,25 @@
       "slug": "wing",
       "company": "Wing",
       "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "total": 40,
       "matches": 2
+    },
+    {
+      "type": "lever",
+      "slug": "zoox",
+      "company": "Zoox",
+      "ok": true,
+      "checkedAt": "2026-09-23T11:34:54.741Z",
+      "total": 235,
+      "matches": 1
     },
     {
       "type": "greenhouse",
       "slug": "pathrobotics",
       "company": "Path Robotics",
       "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "total": 38,
       "matches": 0
     },
@@ -261,26 +270,17 @@
       "slug": "verkada",
       "company": "Verkada",
       "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "total": 302,
       "matches": 1
     },
     {
       "type": "greenhouse",
-      "slug": "axon",
-      "company": "Axon",
+      "slug": "planetlabs",
+      "company": "Planet",
       "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
-      "total": 522,
-      "matches": 4
-    },
-    {
-      "type": "lever",
-      "slug": "zoox",
-      "company": "Zoox",
-      "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
-      "total": 235,
+      "checkedAt": "2026-09-23T11:34:54.741Z",
+      "total": 113,
       "matches": 1
     },
     {
@@ -288,34 +288,43 @@
       "slug": "lightmatter",
       "company": "Lightmatter",
       "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "total": 61,
       "matches": 2
-    },
-    {
-      "type": "greenhouse",
-      "slug": "planetlabs",
-      "company": "Planet",
-      "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
-      "total": 113,
-      "matches": 1
     },
     {
       "type": "greenhouse",
       "slug": "psiquantum",
       "company": "PsiQuantum",
       "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "total": 67,
       "matches": 2
+    },
+    {
+      "type": "greenhouse",
+      "slug": "axon",
+      "company": "Axon",
+      "ok": true,
+      "checkedAt": "2026-09-23T11:34:54.741Z",
+      "total": 522,
+      "matches": 4
+    },
+    {
+      "type": "greenhouse",
+      "slug": "lucidmotors",
+      "company": "Lucid Motors",
+      "ok": true,
+      "checkedAt": "2026-09-23T11:34:54.741Z",
+      "total": 404,
+      "matches": 3
     },
     {
       "type": "greenhouse",
       "slug": "ionq",
       "company": "IonQ",
       "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "total": 117,
       "matches": 0
     },
@@ -324,7 +333,7 @@
       "slug": "1x",
       "company": "1X",
       "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "total": 91,
       "matches": 7
     },
@@ -333,52 +342,43 @@
       "slug": "skydio",
       "company": "Skydio",
       "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "total": 138,
       "matches": 0
-    },
-    {
-      "type": "ashby",
-      "slug": "hadrian-automation",
-      "company": "Hadrian",
-      "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
-      "total": 142,
-      "matches": 5
     },
     {
       "type": "greenhouse",
       "slug": "vardaspace",
       "company": "Varda Space Industries",
       "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "total": 91,
       "matches": 7
+    },
+    {
+      "type": "ashby",
+      "slug": "hadrian-automation",
+      "company": "Hadrian",
+      "ok": true,
+      "checkedAt": "2026-09-23T11:34:54.741Z",
+      "total": 142,
+      "matches": 5
     },
     {
       "type": "ashby",
       "slug": "lambda",
       "company": "Lambda",
       "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "total": 85,
       "matches": 4
-    },
-    {
-      "type": "lever",
-      "slug": "rigetti",
-      "company": "Rigetti Computing",
-      "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
-      "total": 12,
-      "matches": 1
     },
     {
       "type": "ashby",
       "slug": "pivotrobotics",
       "company": "Pivot Robotics",
       "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "total": 6,
       "matches": 0
     },
@@ -387,7 +387,7 @@
       "slug": "dandy",
       "company": "Dandy",
       "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "total": 75,
       "matches": 2
     },
@@ -396,16 +396,25 @@
       "slug": "atomicmachines",
       "company": "Atomic Machines",
       "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "total": 28,
       "matches": 3
+    },
+    {
+      "type": "lever",
+      "slug": "rigetti",
+      "company": "Rigetti Computing",
+      "ok": true,
+      "checkedAt": "2026-09-23T11:34:54.741Z",
+      "total": 12,
+      "matches": 1
     },
     {
       "type": "greenhouse",
       "slug": "hevenaerotech",
       "company": "Heven AeroTech",
       "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "total": 31,
       "matches": 1
     },
@@ -414,7 +423,7 @@
       "slug": "machindustries",
       "company": "Mach Industries",
       "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "total": 117,
       "matches": 0
     },
@@ -423,7 +432,7 @@
       "slug": "openai",
       "company": "OpenAI",
       "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "total": 821,
       "matches": 3
     },
@@ -432,34 +441,16 @@
       "slug": "neuralink",
       "company": "Neuralink",
       "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "total": 77,
       "matches": 1
-    },
-    {
-      "type": "lever",
-      "slug": "shieldai",
-      "company": "Shield AI",
-      "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
-      "total": 525,
-      "matches": 26
-    },
-    {
-      "type": "greenhouse",
-      "slug": "lucidmotors",
-      "company": "Lucid Motors",
-      "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
-      "total": 404,
-      "matches": 3
     },
     {
       "type": "smartrecruiters",
       "slug": "WesternDigital",
       "company": "Western Digital",
       "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "total": 0,
       "matches": 0
     },
@@ -468,7 +459,7 @@
       "slug": "BoschGroup",
       "company": "Bosch Group",
       "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "total": 4,
       "matches": 0
     },
@@ -486,7 +477,7 @@
       "slug": "Ramboll3",
       "company": "Ramboll",
       "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "total": 11,
       "matches": 7
     },
@@ -495,43 +486,25 @@
       "slug": "TurnerTownsend",
       "company": "Turner & Townsend",
       "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "total": 1,
       "matches": 1
-    },
-    {
-      "type": "smartrecruiters",
-      "slug": "ASSYSTEM",
-      "company": "ASSYSTEM",
-      "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
-      "total": 0,
-      "matches": 0
     },
     {
       "type": "smartrecruiters",
       "slug": "AFRY",
       "company": "AFRY",
       "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "total": 2,
       "matches": 0
     },
     {
       "type": "smartrecruiters",
-      "slug": "Socotec",
-      "company": "SOCOTEC",
+      "slug": "ASSYSTEM",
+      "company": "ASSYSTEM",
       "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
-      "total": 2,
-      "matches": 0
-    },
-    {
-      "type": "smartrecruiters",
-      "slug": "BESIX",
-      "company": "BESIX",
-      "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "total": 0,
       "matches": 0
     },
@@ -540,9 +513,36 @@
       "slug": "AECOM2",
       "company": "AECOM",
       "ok": true,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "total": 35,
       "matches": 31
+    },
+    {
+      "type": "smartrecruiters",
+      "slug": "Socotec",
+      "company": "SOCOTEC",
+      "ok": true,
+      "checkedAt": "2026-09-23T11:34:54.741Z",
+      "total": 2,
+      "matches": 0
+    },
+    {
+      "type": "smartrecruiters",
+      "slug": "BESIX",
+      "company": "BESIX",
+      "ok": true,
+      "checkedAt": "2026-09-23T11:34:54.741Z",
+      "total": 0,
+      "matches": 0
+    },
+    {
+      "type": "lever",
+      "slug": "shieldai",
+      "company": "Shield AI",
+      "ok": true,
+      "checkedAt": "2026-09-23T11:34:54.741Z",
+      "total": 525,
+      "matches": 26
     }
   ],
   "jobs": [
@@ -585,7 +585,7 @@
       "postedAt": "2026-09-22T23:50:50.927Z",
       "postedLabel": "First listed",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.lever.co/shieldai/7210bf7d-1129-418f-bb3f-adf43c53be8e",
       "applyUrl": "https://jobs.lever.co/shieldai/7210bf7d-1129-418f-bb3f-adf43c53be8e/apply",
       "stale": false
@@ -629,7 +629,7 @@
       "postedAt": "2026-09-22T23:37:17.180Z",
       "postedLabel": "First listed",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.lever.co/shieldai/eca2b563-23bc-4a33-8271-5ea5e7af3541",
       "applyUrl": "https://jobs.lever.co/shieldai/eca2b563-23bc-4a33-8271-5ea5e7af3541/apply",
       "stale": false
@@ -673,7 +673,7 @@
       "postedAt": "2026-09-22T23:15:56.519Z",
       "postedLabel": "First listed",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.lever.co/shieldai/cab43888-5844-48d5-a981-d26960de9bee",
       "applyUrl": "https://jobs.lever.co/shieldai/cab43888-5844-48d5-a981-d26960de9bee/apply",
       "stale": false
@@ -716,7 +716,7 @@
       "postedAt": "2026-09-22T23:11:39.939Z",
       "postedLabel": "First listed",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.lever.co/shieldai/e4797752-0ca6-4d14-b8ba-36ab35c7c206",
       "applyUrl": "https://jobs.lever.co/shieldai/e4797752-0ca6-4d14-b8ba-36ab35c7c206/apply",
       "stale": false
@@ -760,7 +760,7 @@
       "postedAt": "2026-09-22T22:04:49.084Z",
       "postedLabel": "First listed",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.lever.co/cfsenergy/b154b163-7f0d-43ee-a4d1-bf27fcbb802b",
       "applyUrl": "https://jobs.lever.co/cfsenergy/b154b163-7f0d-43ee-a4d1-bf27fcbb802b/apply",
       "stale": false
@@ -804,7 +804,7 @@
       "postedAt": "2026-09-22T21:50:20.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-22T17:52:41-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://job-boards.greenhouse.io/atomicmachines/jobs/4417118009",
       "applyUrl": "https://job-boards.greenhouse.io/atomicmachines/jobs/4417118009",
       "stale": false
@@ -848,7 +848,7 @@
       "postedAt": "2026-09-22T16:52:46.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-22T12:52:46-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://job-boards.greenhouse.io/carbon/jobs/5228930007",
       "applyUrl": "https://job-boards.greenhouse.io/carbon/jobs/5228930007",
       "stale": false
@@ -891,7 +891,7 @@
       "postedAt": "2026-09-22T14:29:59.876Z",
       "postedLabel": "First listed",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.lever.co/shieldai/6e9aabd7-12f5-4b96-a977-cb9fbace3e58",
       "applyUrl": "https://jobs.lever.co/shieldai/6e9aabd7-12f5-4b96-a977-cb9fbace3e58/apply",
       "stale": false
@@ -935,7 +935,7 @@
       "postedAt": "2026-09-22T01:23:48.081Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.smartrecruiters.com/AECOM2/744000150821709-senior-mechanical-engineer",
       "applyUrl": "https://jobs.smartrecruiters.com/AECOM2/744000150821709-senior-mechanical-engineer?oga=true",
       "stale": false
@@ -978,7 +978,7 @@
       "postedAt": "2026-09-21T19:11:21.421Z",
       "postedLabel": "First listed",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.lever.co/cfsenergy/22f774aa-1436-4beb-a8ce-2f7125d15a10",
       "applyUrl": "https://jobs.lever.co/cfsenergy/22f774aa-1436-4beb-a8ce-2f7125d15a10/apply",
       "stale": false
@@ -1022,7 +1022,7 @@
       "postedAt": "2026-09-21T18:47:49.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:47:49-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://job-boards.greenhouse.io/rondoenergy/jobs/4715235006",
       "applyUrl": "https://job-boards.greenhouse.io/rondoenergy/jobs/4715235006",
       "stale": false
@@ -1066,7 +1066,7 @@
       "postedAt": "2026-09-21T16:09:05.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T17:46:44-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://job-boards.greenhouse.io/vardaspace/jobs/8001045003",
       "applyUrl": "https://job-boards.greenhouse.io/vardaspace/jobs/8001045003",
       "stale": false
@@ -1110,7 +1110,7 @@
       "postedAt": "2026-09-21T16:07:54.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T17:45:28-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://job-boards.greenhouse.io/vardaspace/jobs/8001044003",
       "applyUrl": "https://job-boards.greenhouse.io/vardaspace/jobs/8001044003",
       "stale": false
@@ -1154,7 +1154,7 @@
       "postedAt": "2026-09-18T18:49:54.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5242381007?gh_jid=5242381007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5242381007?gh_jid=5242381007",
       "stale": false
@@ -1197,7 +1197,7 @@
       "postedAt": "2026-09-18T18:34:01.085Z",
       "postedLabel": "First listed",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.lever.co/cfsenergy/e07a386f-91f6-40ba-bcf7-530751fc4f8d",
       "applyUrl": "https://jobs.lever.co/cfsenergy/e07a386f-91f6-40ba-bcf7-530751fc4f8d/apply",
       "stale": false
@@ -1241,7 +1241,7 @@
       "postedAt": "2026-09-18T16:16:24.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-18T15:30:02-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/relativity/jobs/8547676002?gh_jid=8547676002",
       "applyUrl": "https://boards.greenhouse.io/relativity/jobs/8547676002?gh_jid=8547676002",
       "stale": false
@@ -1285,7 +1285,7 @@
       "postedAt": "2026-09-18T01:24:46.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5241704007?gh_jid=5241704007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5241704007?gh_jid=5241704007",
       "stale": false
@@ -1329,7 +1329,7 @@
       "postedAt": "2026-09-17T10:15:19.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5165492007?gh_jid=5165492007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5165492007?gh_jid=5165492007",
       "stale": false
@@ -1373,7 +1373,7 @@
       "postedAt": "2026-09-17T10:09:32.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5216801007?gh_jid=5216801007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5216801007?gh_jid=5216801007",
       "stale": false
@@ -1417,7 +1417,7 @@
       "postedAt": "2026-09-17T04:15:22.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-17T00:15:22-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://job-boards.greenhouse.io/vardaspace/jobs/7997895003",
       "applyUrl": "https://job-boards.greenhouse.io/vardaspace/jobs/7997895003",
       "stale": false
@@ -1461,7 +1461,7 @@
       "postedAt": "2026-09-17T04:08:33.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-17T00:08:33-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://job-boards.greenhouse.io/vardaspace/jobs/7997889003",
       "applyUrl": "https://job-boards.greenhouse.io/vardaspace/jobs/7997889003",
       "stale": false
@@ -1505,7 +1505,7 @@
       "postedAt": "2026-09-16T23:13:47.301Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.ashbyhq.com/openai/eda4a2d1-682f-418e-8055-222eaf7c9abd",
       "applyUrl": "https://jobs.ashbyhq.com/openai/eda4a2d1-682f-418e-8055-222eaf7c9abd/application",
       "stale": false
@@ -1549,7 +1549,7 @@
       "postedAt": "2026-09-16T19:40:49.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-16T15:40:49-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://job-boards.greenhouse.io/oklo/jobs/6188826004",
       "applyUrl": "https://job-boards.greenhouse.io/oklo/jobs/6188826004",
       "stale": false
@@ -1593,7 +1593,7 @@
       "postedAt": "2026-09-16T00:26:53.416Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.ashbyhq.com/hadrian-automation/4c478d59-08db-4226-9b92-06609d5564a4",
       "applyUrl": "https://jobs.ashbyhq.com/hadrian-automation/4c478d59-08db-4226-9b92-06609d5564a4/application",
       "stale": false
@@ -1636,7 +1636,7 @@
       "postedAt": "2026-09-15T22:08:42.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-22T13:22:47-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5239385007?gh_jid=5239385007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5239385007?gh_jid=5239385007",
       "stale": false
@@ -1680,7 +1680,7 @@
       "postedAt": "2026-09-15T18:57:27.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5239068007?gh_jid=5239068007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5239068007?gh_jid=5239068007",
       "stale": false
@@ -1724,7 +1724,7 @@
       "postedAt": "2026-09-15T17:38:53.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T13:50:39-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://lucidmotors.com/careers/search/5212471007?gh_jid=5212471007",
       "applyUrl": "https://lucidmotors.com/careers/search/5212471007?gh_jid=5212471007",
       "stale": false
@@ -1768,7 +1768,7 @@
       "postedAt": "2026-09-15T16:31:21.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-15T12:31:21-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7996051003",
       "applyUrl": "https://job-boards.greenhouse.io/rocketlab/jobs/7996051003",
       "stale": false
@@ -1812,7 +1812,7 @@
       "postedAt": "2026-09-14T20:34:23.207Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.ashbyhq.com/lambda/b514fcd5-2b08-45f6-9d3d-7b00bfd6dd95",
       "applyUrl": "https://jobs.ashbyhq.com/lambda/b514fcd5-2b08-45f6-9d3d-7b00bfd6dd95/application",
       "stale": false
@@ -1856,7 +1856,7 @@
       "postedAt": "2026-09-14T17:23:16.025Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.ashbyhq.com/lambda/a5dbc5ea-ac15-4e2f-8882-fa52a97d283b",
       "applyUrl": "https://jobs.ashbyhq.com/lambda/a5dbc5ea-ac15-4e2f-8882-fa52a97d283b/application",
       "stale": false
@@ -1898,7 +1898,7 @@
       "postedAt": "2026-09-14T17:22:02.748Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.ashbyhq.com/lambda/72862af7-d62b-417a-8b88-fdf023394eb0",
       "applyUrl": "https://jobs.ashbyhq.com/lambda/72862af7-d62b-417a-8b88-fdf023394eb0/application",
       "stale": false
@@ -1942,7 +1942,7 @@
       "postedAt": "2026-09-12T01:34:13.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T20:25:59-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/vast/jobs/4712934006?gh_jid=4712934006",
       "applyUrl": "https://boards.greenhouse.io/vast/jobs/4712934006?gh_jid=4712934006",
       "stale": false
@@ -1986,7 +1986,7 @@
       "postedAt": "2026-09-11T19:52:03.448Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.ashbyhq.com/lambda/11fe10ba-50b3-48ac-b650-041d1c9eda39",
       "applyUrl": "https://jobs.ashbyhq.com/lambda/11fe10ba-50b3-48ac-b650-041d1c9eda39/application",
       "stale": false
@@ -2029,7 +2029,7 @@
       "postedAt": "2026-09-11T18:36:05.874Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.ashbyhq.com/FormEnergy/0a74a35d-a140-4d3b-b313-12467a4558a4",
       "applyUrl": "https://jobs.ashbyhq.com/FormEnergy/0a74a35d-a140-4d3b-b313-12467a4558a4/application",
       "stale": false
@@ -2073,7 +2073,7 @@
       "postedAt": "2026-09-10T21:38:23.103Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.ashbyhq.com/FormEnergy/d0b84b0d-ac5d-4ec5-a5b4-f6712c183b79",
       "applyUrl": "https://jobs.ashbyhq.com/FormEnergy/d0b84b0d-ac5d-4ec5-a5b4-f6712c183b79/application",
       "stale": false
@@ -2117,7 +2117,7 @@
       "postedAt": "2026-09-10T18:42:31.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5234873007?gh_jid=5234873007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5234873007?gh_jid=5234873007",
       "stale": false
@@ -2161,7 +2161,7 @@
       "postedAt": "2026-09-10T18:35:21.715Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.ashbyhq.com/openai/2b87bb06-ba33-4cab-b950-0df12ca85dcf",
       "applyUrl": "https://jobs.ashbyhq.com/openai/2b87bb06-ba33-4cab-b950-0df12ca85dcf/application",
       "stale": false
@@ -2205,7 +2205,7 @@
       "postedAt": "2026-09-10T17:39:45.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5234762007?gh_jid=5234762007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5234762007?gh_jid=5234762007",
       "stale": false
@@ -2248,7 +2248,7 @@
       "postedAt": "2026-09-10T16:17:28.894Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.ashbyhq.com/openai/a8a421d1-c9bb-4e37-8418-4e4d6b2ba29d",
       "applyUrl": "https://jobs.ashbyhq.com/openai/a8a421d1-c9bb-4e37-8418-4e4d6b2ba29d/application",
       "stale": false
@@ -2292,7 +2292,7 @@
       "postedAt": "2026-09-10T16:05:51.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-10T12:05:51-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/spacex/jobs/8766964002?gh_jid=8766964002",
       "applyUrl": "https://boards.greenhouse.io/spacex/jobs/8766964002?gh_jid=8766964002",
       "stale": false
@@ -2336,7 +2336,7 @@
       "postedAt": "2026-09-10T15:07:38.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-14T12:03:10-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://job-boards.greenhouse.io/axon/jobs/7991356003",
       "applyUrl": "https://job-boards.greenhouse.io/axon/jobs/7991356003",
       "stale": false
@@ -2380,7 +2380,7 @@
       "postedAt": "2026-09-10T15:05:07.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-14T12:01:52-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://job-boards.greenhouse.io/axon/jobs/7991217003",
       "applyUrl": "https://job-boards.greenhouse.io/axon/jobs/7991217003",
       "stale": false
@@ -2424,7 +2424,7 @@
       "postedAt": "2026-09-09T20:51:21.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T13:50:39-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://lucidmotors.com/careers/search/5232864007?gh_jid=5232864007",
       "applyUrl": "https://lucidmotors.com/careers/search/5232864007?gh_jid=5232864007",
       "stale": false
@@ -2467,7 +2467,7 @@
       "postedAt": "2026-09-09T16:41:53.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5233570007?gh_jid=5233570007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5233570007?gh_jid=5233570007",
       "stale": false
@@ -2510,7 +2510,7 @@
       "postedAt": "2026-09-09T15:37:29.154Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.ashbyhq.com/FormEnergy/f4531d25-f5e6-4904-b0b0-e6b9fc22e6b7",
       "applyUrl": "https://jobs.ashbyhq.com/FormEnergy/f4531d25-f5e6-4904-b0b0-e6b9fc22e6b7/application",
       "stale": false
@@ -2554,7 +2554,7 @@
       "postedAt": "2026-09-09T15:23:41.861Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.ashbyhq.com/FormEnergy/519381db-c375-4520-aed0-3c48e9ec26eb",
       "applyUrl": "https://jobs.ashbyhq.com/FormEnergy/519381db-c375-4520-aed0-3c48e9ec26eb/application",
       "stale": false
@@ -2598,7 +2598,7 @@
       "postedAt": "2026-09-08T23:17:25.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T20:25:59-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/vast/jobs/4711793006?gh_jid=4711793006",
       "applyUrl": "https://boards.greenhouse.io/vast/jobs/4711793006?gh_jid=4711793006",
       "stale": false
@@ -2642,7 +2642,7 @@
       "postedAt": "2026-09-08T22:43:36.063Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.ashbyhq.com/hadrian-automation/c215cae4-c127-446e-bdad-71d891d07109",
       "applyUrl": "https://jobs.ashbyhq.com/hadrian-automation/c215cae4-c127-446e-bdad-71d891d07109/application",
       "stale": false
@@ -2686,7 +2686,7 @@
       "postedAt": "2026-09-08T22:22:05.353Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.ashbyhq.com/crusoe/bfe521aa-da02-40fd-b5f7-80d9572b7ceb",
       "applyUrl": "https://jobs.ashbyhq.com/crusoe/bfe521aa-da02-40fd-b5f7-80d9572b7ceb/application",
       "stale": false
@@ -2730,7 +2730,7 @@
       "postedAt": "2026-09-08T21:59:00.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5232728007?gh_jid=5232728007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5232728007?gh_jid=5232728007",
       "stale": false
@@ -2774,7 +2774,7 @@
       "postedAt": "2026-09-08T17:52:00.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5232440007?gh_jid=5232440007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5232440007?gh_jid=5232440007",
       "stale": false
@@ -2818,7 +2818,7 @@
       "postedAt": "2026-09-08T17:51:56.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5232438007?gh_jid=5232438007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5232438007?gh_jid=5232438007",
       "stale": false
@@ -2862,7 +2862,7 @@
       "postedAt": "2026-09-08T13:31:47.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5232204007?gh_jid=5232204007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5232204007?gh_jid=5232204007",
       "stale": false
@@ -2906,7 +2906,7 @@
       "postedAt": "2026-09-04T22:37:32.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-04T18:37:32-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/spacex/jobs/8780331002?gh_jid=8780331002",
       "applyUrl": "https://boards.greenhouse.io/spacex/jobs/8780331002?gh_jid=8780331002",
       "stale": false
@@ -2950,7 +2950,7 @@
       "postedAt": "2026-09-04T18:30:44.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-10T19:27:01-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/relativity/jobs/8784405002?gh_jid=8784405002",
       "applyUrl": "https://boards.greenhouse.io/relativity/jobs/8784405002?gh_jid=8784405002",
       "stale": false
@@ -2994,7 +2994,7 @@
       "postedAt": "2026-09-04T18:27:25.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-10T19:27:01-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/relativity/jobs/8784394002?gh_jid=8784394002",
       "applyUrl": "https://boards.greenhouse.io/relativity/jobs/8784394002?gh_jid=8784394002",
       "stale": false
@@ -3038,7 +3038,7 @@
       "postedAt": "2026-09-04T18:25:24.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-10T19:27:01-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/relativity/jobs/8784387002?gh_jid=8784387002",
       "applyUrl": "https://boards.greenhouse.io/relativity/jobs/8784387002?gh_jid=8784387002",
       "stale": false
@@ -3082,7 +3082,7 @@
       "postedAt": "2026-09-04T18:25:22.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-10T19:27:01-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/relativity/jobs/8784389002?gh_jid=8784389002",
       "applyUrl": "https://boards.greenhouse.io/relativity/jobs/8784389002?gh_jid=8784389002",
       "stale": false
@@ -3126,7 +3126,7 @@
       "postedAt": "2026-09-04T18:25:19.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-10T19:27:01-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/relativity/jobs/8784390002?gh_jid=8784390002",
       "applyUrl": "https://boards.greenhouse.io/relativity/jobs/8784390002?gh_jid=8784390002",
       "stale": false
@@ -3168,7 +3168,7 @@
       "postedAt": "2026-09-04T00:05:45.314Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000147374509-senior-data-center-mechanical-engineer",
       "applyUrl": "https://jobs.smartrecruiters.com/TurnerTownsend/744000147374509-senior-data-center-mechanical-engineer?oga=true",
       "stale": false
@@ -3212,7 +3212,7 @@
       "postedAt": "2026-09-03T20:28:45.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T20:25:59-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/vast/jobs/4710375006?gh_jid=4710375006",
       "applyUrl": "https://boards.greenhouse.io/vast/jobs/4710375006?gh_jid=4710375006",
       "stale": false
@@ -3256,7 +3256,7 @@
       "postedAt": "2026-09-03T19:46:48.852Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.ashbyhq.com/1x/4e0a981c-806f-47a6-bcee-b2711a42499f",
       "applyUrl": "https://jobs.ashbyhq.com/1x/4e0a981c-806f-47a6-bcee-b2711a42499f/application",
       "stale": false
@@ -3300,7 +3300,7 @@
       "postedAt": "2026-09-03T18:24:11.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-10T17:49:30-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://job-boards.greenhouse.io/verkada/jobs/5230236007",
       "applyUrl": "https://job-boards.greenhouse.io/verkada/jobs/5230236007",
       "stale": false
@@ -3344,7 +3344,7 @@
       "postedAt": "2026-09-03T18:10:09.063Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.ashbyhq.com/FormEnergy/7f691074-b05c-4b61-857d-17da14bd069d",
       "applyUrl": "https://jobs.ashbyhq.com/FormEnergy/7f691074-b05c-4b61-857d-17da14bd069d/application",
       "stale": false
@@ -3387,7 +3387,7 @@
       "postedAt": "2026-09-03T11:54:04.226Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.smartrecruiters.com/AECOM2/744000147231589-senior-mechanical-process-engineer-water-wastewater-",
       "applyUrl": "https://jobs.smartrecruiters.com/AECOM2/744000147231589-senior-mechanical-process-engineer-water-wastewater-?oga=true",
       "stale": false
@@ -3431,7 +3431,7 @@
       "postedAt": "2026-09-02T22:27:16.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-15T15:22:00-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/relativity/jobs/8780041002?gh_jid=8780041002",
       "applyUrl": "https://boards.greenhouse.io/relativity/jobs/8780041002?gh_jid=8780041002",
       "stale": false
@@ -3475,7 +3475,7 @@
       "postedAt": "2026-09-02T22:27:05.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-15T15:22:00-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/relativity/jobs/8780040002?gh_jid=8780040002",
       "applyUrl": "https://boards.greenhouse.io/relativity/jobs/8780040002?gh_jid=8780040002",
       "stale": false
@@ -3519,7 +3519,7 @@
       "postedAt": "2026-09-02T17:30:21.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-02T14:44:20-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7984496003",
       "applyUrl": "https://job-boards.greenhouse.io/rocketlab/jobs/7984496003",
       "stale": false
@@ -3563,7 +3563,7 @@
       "postedAt": "2026-09-02T16:58:42.062Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.ashbyhq.com/hadrian-automation/648f92e7-46f8-45e8-aefa-4550385bd229",
       "applyUrl": "https://jobs.ashbyhq.com/hadrian-automation/648f92e7-46f8-45e8-aefa-4550385bd229/application",
       "stale": false
@@ -3607,7 +3607,7 @@
       "postedAt": "2026-09-02T15:43:15.664Z",
       "postedLabel": "First listed",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.lever.co/cfsenergy/7d2cbeaf-bc8e-4557-821f-4310ef8de721",
       "applyUrl": "https://jobs.lever.co/cfsenergy/7d2cbeaf-bc8e-4557-821f-4310ef8de721/apply",
       "stale": false
@@ -3651,7 +3651,7 @@
       "postedAt": "2026-09-02T12:53:28.779Z",
       "postedLabel": "First listed",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.lever.co/shieldai/7a1c5185-18de-4b2c-a666-61fa3d3d549e",
       "applyUrl": "https://jobs.lever.co/shieldai/7a1c5185-18de-4b2c-a666-61fa3d3d549e/apply",
       "stale": false
@@ -3695,7 +3695,7 @@
       "postedAt": "2026-09-01T13:12:09.812Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.ashbyhq.com/dandy/6874685b-cdf4-40f7-acf5-fa1bff371f1a",
       "applyUrl": "https://jobs.ashbyhq.com/dandy/6874685b-cdf4-40f7-acf5-fa1bff371f1a/application",
       "stale": false
@@ -3738,7 +3738,7 @@
       "postedAt": "2026-08-31T21:53:35.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-08-31T17:53:35-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://careers.formlabs.com/job/8168262/apply/?gh_jid=8168262",
       "applyUrl": "https://careers.formlabs.com/job/8168262/apply/?gh_jid=8168262",
       "stale": false
@@ -3782,7 +3782,7 @@
       "postedAt": "2026-08-31T20:36:11.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-14T18:00:15-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/relativity/jobs/8766875002?gh_jid=8766875002",
       "applyUrl": "https://boards.greenhouse.io/relativity/jobs/8766875002?gh_jid=8766875002",
       "stale": false
@@ -3826,7 +3826,7 @@
       "postedAt": "2026-08-31T19:43:17.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5226649007?gh_jid=5226649007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5226649007?gh_jid=5226649007",
       "stale": false
@@ -3870,7 +3870,7 @@
       "postedAt": "2026-08-27T22:52:21.686Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.ashbyhq.com/1x/2d502918-5b0f-4eeb-a86b-8802184c5f09",
       "applyUrl": "https://jobs.ashbyhq.com/1x/2d502918-5b0f-4eeb-a86b-8802184c5f09/application",
       "stale": false
@@ -3922,7 +3922,7 @@
       "postedAt": "2026-08-27T13:36:47.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5223145007?gh_jid=5223145007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5223145007?gh_jid=5223145007",
       "stale": false
@@ -3974,7 +3974,7 @@
       "postedAt": "2026-08-27T13:30:40.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5223191007?gh_jid=5223191007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5223191007?gh_jid=5223191007",
       "stale": false
@@ -4018,7 +4018,7 @@
       "postedAt": "2026-08-27T02:42:49.600Z",
       "postedLabel": "First listed",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.lever.co/shieldai/1aa1c3ee-577a-419a-89fd-1f9815691858",
       "applyUrl": "https://jobs.lever.co/shieldai/1aa1c3ee-577a-419a-89fd-1f9815691858/apply",
       "stale": false
@@ -4062,7 +4062,7 @@
       "postedAt": "2026-08-25T20:22:44.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-01T19:48:33-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/spacex/jobs/8747961002?gh_jid=8747961002",
       "applyUrl": "https://boards.greenhouse.io/spacex/jobs/8747961002?gh_jid=8747961002",
       "stale": false
@@ -4106,7 +4106,7 @@
       "postedAt": "2026-08-25T03:07:17.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5220900007?gh_jid=5220900007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5220900007?gh_jid=5220900007",
       "stale": false
@@ -4150,7 +4150,7 @@
       "postedAt": "2026-08-25T03:02:24.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5220896007?gh_jid=5220896007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5220896007?gh_jid=5220896007",
       "stale": false
@@ -4194,7 +4194,7 @@
       "postedAt": "2026-08-24T20:50:32.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-01T19:48:33-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/spacex/jobs/8692296002?gh_jid=8692296002",
       "applyUrl": "https://boards.greenhouse.io/spacex/jobs/8692296002?gh_jid=8692296002",
       "stale": false
@@ -4238,7 +4238,7 @@
       "postedAt": "2026-08-24T18:02:56.481Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.ashbyhq.com/crusoe/9aa892be-71db-455e-9980-ffff4badfee3",
       "applyUrl": "https://jobs.ashbyhq.com/crusoe/9aa892be-71db-455e-9980-ffff4badfee3/application",
       "stale": false
@@ -4282,7 +4282,7 @@
       "postedAt": "2026-08-24T16:13:14.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-01T19:48:33-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/spacex/jobs/8737666002?gh_jid=8737666002",
       "applyUrl": "https://boards.greenhouse.io/spacex/jobs/8737666002?gh_jid=8737666002",
       "stale": false
@@ -4326,7 +4326,7 @@
       "postedAt": "2026-08-24T16:12:42.094Z",
       "postedLabel": "First listed",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.lever.co/cfsenergy/75b79161-8e1f-49f6-b3b8-cdeaded618d8",
       "applyUrl": "https://jobs.lever.co/cfsenergy/75b79161-8e1f-49f6-b3b8-cdeaded618d8/apply",
       "stale": false
@@ -4370,7 +4370,7 @@
       "postedAt": "2026-08-21T21:55:16.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-02T18:24:23-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7932677003",
       "applyUrl": "https://job-boards.greenhouse.io/rocketlab/jobs/7932677003",
       "stale": false
@@ -4414,7 +4414,7 @@
       "postedAt": "2026-08-21T21:43:54.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-02T18:26:37-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7932386003",
       "applyUrl": "https://job-boards.greenhouse.io/rocketlab/jobs/7932386003",
       "stale": false
@@ -4458,7 +4458,7 @@
       "postedAt": "2026-08-21T20:52:14.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-10T11:54:57-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://job-boards.greenhouse.io/stokespacetechnologies/jobs/6150704004",
       "applyUrl": "https://job-boards.greenhouse.io/stokespacetechnologies/jobs/6150704004",
       "stale": false
@@ -4502,7 +4502,7 @@
       "postedAt": "2026-08-21T17:15:17.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-01T19:48:33-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/spacex/jobs/8735363002?gh_jid=8735363002",
       "applyUrl": "https://boards.greenhouse.io/spacex/jobs/8735363002?gh_jid=8735363002",
       "stale": false
@@ -4546,7 +4546,7 @@
       "postedAt": "2026-08-21T04:12:54.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5123989007?gh_jid=5123989007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5123989007?gh_jid=5123989007",
       "stale": false
@@ -4590,7 +4590,7 @@
       "postedAt": "2026-08-20T22:04:40.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-01T19:48:33-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/spacex/jobs/8735057002?gh_jid=8735057002",
       "applyUrl": "https://boards.greenhouse.io/spacex/jobs/8735057002?gh_jid=8735057002",
       "stale": false
@@ -4634,7 +4634,7 @@
       "postedAt": "2026-08-20T19:43:49.457Z",
       "postedLabel": "First listed",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.lever.co/hermeus/672ff719-6150-497b-a33a-a3f8b7e6ff0e",
       "applyUrl": "https://jobs.lever.co/hermeus/672ff719-6150-497b-a33a-a3f8b7e6ff0e/apply",
       "stale": false
@@ -4678,7 +4678,7 @@
       "postedAt": "2026-08-20T19:29:19.638Z",
       "postedLabel": "First listed",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.lever.co/cfsenergy/81e3290f-777f-407f-82d8-452dde4cfb1f",
       "applyUrl": "https://jobs.lever.co/cfsenergy/81e3290f-777f-407f-82d8-452dde4cfb1f/apply",
       "stale": false
@@ -4722,7 +4722,7 @@
       "postedAt": "2026-08-20T19:07:48.628Z",
       "postedLabel": "First listed",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.lever.co/cfsenergy/568cb4d1-cd96-46df-a53a-f86e878a3f21",
       "applyUrl": "https://jobs.lever.co/cfsenergy/568cb4d1-cd96-46df-a53a-f86e878a3f21/apply",
       "stale": false
@@ -4766,7 +4766,7 @@
       "postedAt": "2026-08-20T14:15:29.032Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.smartrecruiters.com/Ramboll3/744000144569049-senior-mechanical-hvac-engineer",
       "applyUrl": "https://jobs.smartrecruiters.com/Ramboll3/744000144569049-senior-mechanical-hvac-engineer?oga=true",
       "stale": false
@@ -4810,7 +4810,7 @@
       "postedAt": "2026-08-20T14:14:56.919Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.smartrecruiters.com/Ramboll3/744000144565972-senior-mechanical-hvac-engineer",
       "applyUrl": "https://jobs.smartrecruiters.com/Ramboll3/744000144565972-senior-mechanical-hvac-engineer?oga=true",
       "stale": false
@@ -4854,7 +4854,7 @@
       "postedAt": "2026-08-20T14:13:52.837Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.smartrecruiters.com/Ramboll3/744000144568649-senior-mechanical-hvac-engineer",
       "applyUrl": "https://jobs.smartrecruiters.com/Ramboll3/744000144568649-senior-mechanical-hvac-engineer?oga=true",
       "stale": false
@@ -4898,7 +4898,7 @@
       "postedAt": "2026-08-20T14:12:41.979Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.smartrecruiters.com/Ramboll3/744000144565993-senior-mechanical-hvac-engineer",
       "applyUrl": "https://jobs.smartrecruiters.com/Ramboll3/744000144565993-senior-mechanical-hvac-engineer?oga=true",
       "stale": false
@@ -4942,7 +4942,7 @@
       "postedAt": "2026-08-20T14:09:31.998Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.smartrecruiters.com/Ramboll3/744000144566810-senior-mechanical-engineer",
       "applyUrl": "https://jobs.smartrecruiters.com/Ramboll3/744000144566810-senior-mechanical-engineer?oga=true",
       "stale": false
@@ -4986,7 +4986,7 @@
       "postedAt": "2026-08-19T22:24:34.305Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.smartrecruiters.com/AECOM2/744000144414010-process-mechanical-water-and-wastewater-engineer-lead",
       "applyUrl": "https://jobs.smartrecruiters.com/AECOM2/744000144414010-process-mechanical-water-and-wastewater-engineer-lead?oga=true",
       "stale": false
@@ -5030,7 +5030,7 @@
       "postedAt": "2026-08-19T20:50:50.038Z",
       "postedLabel": "First listed",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.lever.co/cfsenergy/8ba43a6b-fb33-4124-be1d-d8771fd0cbe5",
       "applyUrl": "https://jobs.lever.co/cfsenergy/8ba43a6b-fb33-4124-be1d-d8771fd0cbe5/apply",
       "stale": false
@@ -5074,7 +5074,7 @@
       "postedAt": "2026-08-19T18:20:18.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-01T19:48:33-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/spacex/jobs/8728763002?gh_jid=8728763002",
       "applyUrl": "https://boards.greenhouse.io/spacex/jobs/8728763002?gh_jid=8728763002",
       "stale": false
@@ -5118,7 +5118,7 @@
       "postedAt": "2026-08-19T15:53:55.896Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.ashbyhq.com/crusoe/8788e667-d8f8-4101-8390-24f33074c719",
       "applyUrl": "https://jobs.ashbyhq.com/crusoe/8788e667-d8f8-4101-8390-24f33074c719/application",
       "stale": false
@@ -5162,7 +5162,7 @@
       "postedAt": "2026-08-18T23:50:11.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-01T19:48:33-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/spacex/jobs/8700050002?gh_jid=8700050002",
       "applyUrl": "https://boards.greenhouse.io/spacex/jobs/8700050002?gh_jid=8700050002",
       "stale": false
@@ -5206,7 +5206,7 @@
       "postedAt": "2026-08-18T21:48:31.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-10T19:27:01-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/relativity/jobs/8728517002?gh_jid=8728517002",
       "applyUrl": "https://boards.greenhouse.io/relativity/jobs/8728517002?gh_jid=8728517002",
       "stale": false
@@ -5250,7 +5250,7 @@
       "postedAt": "2026-08-18T19:35:45.042Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.smartrecruiters.com/Ramboll3/744000144155384-sr-mechanical-engineer-fire-protection",
       "applyUrl": "https://jobs.smartrecruiters.com/Ramboll3/744000144155384-sr-mechanical-engineer-fire-protection?oga=true",
       "stale": false
@@ -5294,7 +5294,7 @@
       "postedAt": "2026-08-18T18:39:33.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T20:25:59-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/vast/jobs/4706013006?gh_jid=4706013006",
       "applyUrl": "https://boards.greenhouse.io/vast/jobs/4706013006?gh_jid=4706013006",
       "stale": false
@@ -5338,7 +5338,7 @@
       "postedAt": "2026-08-18T18:11:16.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-08T16:06:12-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://job-boards.greenhouse.io/vardaspace/jobs/7837867003",
       "applyUrl": "https://job-boards.greenhouse.io/vardaspace/jobs/7837867003",
       "stale": false
@@ -5382,7 +5382,7 @@
       "postedAt": "2026-08-18T17:42:23.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-01T19:48:33-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/spacex/jobs/8727087002?gh_jid=8727087002",
       "applyUrl": "https://boards.greenhouse.io/spacex/jobs/8727087002?gh_jid=8727087002",
       "stale": false
@@ -5426,7 +5426,7 @@
       "postedAt": "2026-08-18T15:28:37.762Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.ashbyhq.com/crusoe/b6b5cd98-80e9-44da-bc43-0e2c48c863c9",
       "applyUrl": "https://jobs.ashbyhq.com/crusoe/b6b5cd98-80e9-44da-bc43-0e2c48c863c9/application",
       "stale": false
@@ -5478,7 +5478,7 @@
       "postedAt": "2026-08-18T01:57:13.152Z",
       "postedLabel": "First listed",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.lever.co/shieldai/c2acfb31-06ad-490b-b860-297806ea1add",
       "applyUrl": "https://jobs.lever.co/shieldai/c2acfb31-06ad-490b-b860-297806ea1add/apply",
       "stale": false
@@ -5522,7 +5522,7 @@
       "postedAt": "2026-08-17T15:57:37.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-01T19:48:33-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/spacex/jobs/8716210002?gh_jid=8716210002",
       "applyUrl": "https://boards.greenhouse.io/spacex/jobs/8716210002?gh_jid=8716210002",
       "stale": false
@@ -5566,7 +5566,7 @@
       "postedAt": "2026-08-17T13:33:12.015Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.smartrecruiters.com/AECOM2/744000143836649-senior-mechanical-engineer-iv-hvac-system-design-",
       "applyUrl": "https://jobs.smartrecruiters.com/AECOM2/744000143836649-senior-mechanical-engineer-iv-hvac-system-design-?oga=true",
       "stale": false
@@ -5610,7 +5610,7 @@
       "postedAt": "2026-08-16T22:22:08.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5213222007?gh_jid=5213222007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5213222007?gh_jid=5213222007",
       "stale": false
@@ -5654,7 +5654,7 @@
       "postedAt": "2026-08-14T17:58:33.711Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.smartrecruiters.com/AECOM2/744000143575725-mechanical-engineer",
       "applyUrl": "https://jobs.smartrecruiters.com/AECOM2/744000143575725-mechanical-engineer?oga=true",
       "stale": false
@@ -5698,7 +5698,7 @@
       "postedAt": "2026-08-14T16:57:39.877Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.ashbyhq.com/dandy/cab15f07-b07b-4e9e-8b78-37cc2f641ba0",
       "applyUrl": "https://jobs.ashbyhq.com/dandy/cab15f07-b07b-4e9e-8b78-37cc2f641ba0/application",
       "stale": false
@@ -5742,7 +5742,7 @@
       "postedAt": "2026-08-14T16:21:00.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-01T19:48:33-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/spacex/jobs/8696986002?gh_jid=8696986002",
       "applyUrl": "https://boards.greenhouse.io/spacex/jobs/8696986002?gh_jid=8696986002",
       "stale": false
@@ -5785,7 +5785,7 @@
       "postedAt": "2026-08-14T05:45:47.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-17T13:05:10-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://www.zipline.com/open-roles/7868388003?gh_jid=7868388003",
       "applyUrl": "https://www.zipline.com/open-roles/7868388003?gh_jid=7868388003",
       "stale": false
@@ -5828,7 +5828,7 @@
       "postedAt": "2026-08-14T05:34:29.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-17T13:05:10-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://www.zipline.com/open-roles/7868371003?gh_jid=7868371003",
       "applyUrl": "https://www.zipline.com/open-roles/7868371003?gh_jid=7868371003",
       "stale": false
@@ -5871,7 +5871,7 @@
       "postedAt": "2026-08-14T05:04:34.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-17T13:05:10-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://www.zipline.com/open-roles/7868268003?gh_jid=7868268003",
       "applyUrl": "https://www.zipline.com/open-roles/7868268003?gh_jid=7868268003",
       "stale": false
@@ -5914,7 +5914,7 @@
       "postedAt": "2026-08-14T04:54:52.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-17T13:05:10-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://www.zipline.com/open-roles/7868241003?gh_jid=7868241003",
       "applyUrl": "https://www.zipline.com/open-roles/7868241003?gh_jid=7868241003",
       "stale": false
@@ -5957,7 +5957,7 @@
       "postedAt": "2026-08-14T04:27:13.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-17T13:05:10-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://www.zipline.com/open-roles/7868140003?gh_jid=7868140003",
       "applyUrl": "https://www.zipline.com/open-roles/7868140003?gh_jid=7868140003",
       "stale": false
@@ -6001,7 +6001,7 @@
       "postedAt": "2026-08-13T20:38:30.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-01T19:48:33-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/spacex/jobs/8697586002?gh_jid=8697586002",
       "applyUrl": "https://boards.greenhouse.io/spacex/jobs/8697586002?gh_jid=8697586002",
       "stale": false
@@ -6045,7 +6045,7 @@
       "postedAt": "2026-08-13T14:53:00.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-17T13:05:10-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://www.zipline.com/open-roles/7864748003?gh_jid=7864748003",
       "applyUrl": "https://www.zipline.com/open-roles/7864748003?gh_jid=7864748003",
       "stale": false
@@ -6089,7 +6089,7 @@
       "postedAt": "2026-08-12T19:39:11.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-22T13:22:35-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5208162007?gh_jid=5208162007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5208162007?gh_jid=5208162007",
       "stale": false
@@ -6133,7 +6133,7 @@
       "postedAt": "2026-08-12T19:36:17.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-22T13:22:49-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5208169007?gh_jid=5208169007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5208169007?gh_jid=5208169007",
       "stale": false
@@ -6177,7 +6177,7 @@
       "postedAt": "2026-08-12T18:49:42.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-10T19:27:01-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/relativity/jobs/8701334002?gh_jid=8701334002",
       "applyUrl": "https://boards.greenhouse.io/relativity/jobs/8701334002?gh_jid=8701334002",
       "stale": false
@@ -6221,7 +6221,7 @@
       "postedAt": "2026-08-12T17:44:24.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-10T14:49:46-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://job-boards.greenhouse.io/stokespacetechnologies/jobs/6142212004",
       "applyUrl": "https://job-boards.greenhouse.io/stokespacetechnologies/jobs/6142212004",
       "stale": false
@@ -6265,7 +6265,7 @@
       "postedAt": "2026-08-12T14:48:47.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-08-19T15:00:16-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://wing.com/careers/8698305002?gh_jid=8698305002",
       "applyUrl": "https://wing.com/careers/8698305002?gh_jid=8698305002",
       "stale": false
@@ -6309,7 +6309,7 @@
       "postedAt": "2026-08-11T22:37:51.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5182025007?gh_jid=5182025007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5182025007?gh_jid=5182025007",
       "stale": false
@@ -6352,7 +6352,7 @@
       "postedAt": "2026-08-11T16:08:22.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-17T13:05:10-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://www.zipline.com/open-roles/7850720003?gh_jid=7850720003",
       "applyUrl": "https://www.zipline.com/open-roles/7850720003?gh_jid=7850720003",
       "stale": false
@@ -6404,7 +6404,7 @@
       "postedAt": "2026-08-11T15:36:38.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5208964007?gh_jid=5208964007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5208964007?gh_jid=5208964007",
       "stale": false
@@ -6448,7 +6448,7 @@
       "postedAt": "2026-08-11T08:27:20.150Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.smartrecruiters.com/AECOM2/744000142816920-mechanical-engineer-data-centers-remote-u-s-",
       "applyUrl": "https://jobs.smartrecruiters.com/AECOM2/744000142816920-mechanical-engineer-data-centers-remote-u-s-?oga=true",
       "stale": false
@@ -6492,7 +6492,7 @@
       "postedAt": "2026-08-11T08:27:08.211Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.smartrecruiters.com/AECOM2/744000142817119-mechanical-engineer-data-centers-remote-u-s-",
       "applyUrl": "https://jobs.smartrecruiters.com/AECOM2/744000142817119-mechanical-engineer-data-centers-remote-u-s-?oga=true",
       "stale": false
@@ -6536,7 +6536,7 @@
       "postedAt": "2026-08-11T08:26:54.984Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.smartrecruiters.com/AECOM2/744000142817039-mechanical-engineer-data-centers-remote-u-s-",
       "applyUrl": "https://jobs.smartrecruiters.com/AECOM2/744000142817039-mechanical-engineer-data-centers-remote-u-s-?oga=true",
       "stale": false
@@ -6580,7 +6580,7 @@
       "postedAt": "2026-08-11T08:26:35.090Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.smartrecruiters.com/AECOM2/744000142814980-mechanical-engineer-data-centers-remote-u-s-",
       "applyUrl": "https://jobs.smartrecruiters.com/AECOM2/744000142814980-mechanical-engineer-data-centers-remote-u-s-?oga=true",
       "stale": false
@@ -6624,7 +6624,7 @@
       "postedAt": "2026-08-11T08:26:22.157Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.smartrecruiters.com/AECOM2/744000142816869-mechanical-engineer-data-centers-remote-u-s-",
       "applyUrl": "https://jobs.smartrecruiters.com/AECOM2/744000142816869-mechanical-engineer-data-centers-remote-u-s-?oga=true",
       "stale": false
@@ -6668,7 +6668,7 @@
       "postedAt": "2026-08-11T08:26:09.320Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.smartrecruiters.com/AECOM2/744000142816819-mechanical-engineer-data-centers-remote-u-s-",
       "applyUrl": "https://jobs.smartrecruiters.com/AECOM2/744000142816819-mechanical-engineer-data-centers-remote-u-s-?oga=true",
       "stale": false
@@ -6712,7 +6712,7 @@
       "postedAt": "2026-08-10T19:02:19.705Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.smartrecruiters.com/AECOM2/744000142720081-senior-mechanical-engineer-data-centers-remote-u-s-",
       "applyUrl": "https://jobs.smartrecruiters.com/AECOM2/744000142720081-senior-mechanical-engineer-data-centers-remote-u-s-?oga=true",
       "stale": false
@@ -6756,7 +6756,7 @@
       "postedAt": "2026-08-10T19:02:12.474Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.smartrecruiters.com/AECOM2/744000142717254-senior-mechanical-engineer-data-centers-remote-u-s-",
       "applyUrl": "https://jobs.smartrecruiters.com/AECOM2/744000142717254-senior-mechanical-engineer-data-centers-remote-u-s-?oga=true",
       "stale": false
@@ -6800,7 +6800,7 @@
       "postedAt": "2026-08-10T19:02:04.802Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.smartrecruiters.com/AECOM2/744000142720060-senior-mechanical-engineer-data-centers-remote-u-s-",
       "applyUrl": "https://jobs.smartrecruiters.com/AECOM2/744000142720060-senior-mechanical-engineer-data-centers-remote-u-s-?oga=true",
       "stale": false
@@ -6844,7 +6844,7 @@
       "postedAt": "2026-08-10T19:01:23.910Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.smartrecruiters.com/AECOM2/744000142716276-senior-mechanical-engineer-data-centers-remote-u-s-",
       "applyUrl": "https://jobs.smartrecruiters.com/AECOM2/744000142716276-senior-mechanical-engineer-data-centers-remote-u-s-?oga=true",
       "stale": false
@@ -6888,7 +6888,7 @@
       "postedAt": "2026-08-10T18:59:35.269Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.smartrecruiters.com/AECOM2/744000142717987-senior-mechanical-engineer-data-centers-remote-u-s-",
       "applyUrl": "https://jobs.smartrecruiters.com/AECOM2/744000142717987-senior-mechanical-engineer-data-centers-remote-u-s-?oga=true",
       "stale": false
@@ -6932,7 +6932,7 @@
       "postedAt": "2026-08-10T18:59:03.870Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.smartrecruiters.com/AECOM2/744000142718601-senior-mechanical-engineer-data-centers-remote-u-s-",
       "applyUrl": "https://jobs.smartrecruiters.com/AECOM2/744000142718601-senior-mechanical-engineer-data-centers-remote-u-s-?oga=true",
       "stale": false
@@ -6976,7 +6976,7 @@
       "postedAt": "2026-08-10T18:25:48.418Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.smartrecruiters.com/AECOM2/744000142712209-mechanical-engineering-lead-data-centers-remote-u-s-",
       "applyUrl": "https://jobs.smartrecruiters.com/AECOM2/744000142712209-mechanical-engineering-lead-data-centers-remote-u-s-?oga=true",
       "stale": false
@@ -7020,7 +7020,7 @@
       "postedAt": "2026-08-10T18:25:25.752Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.smartrecruiters.com/AECOM2/744000142712109-mechanical-engineering-lead-data-centers-remote-u-s-",
       "applyUrl": "https://jobs.smartrecruiters.com/AECOM2/744000142712109-mechanical-engineering-lead-data-centers-remote-u-s-?oga=true",
       "stale": false
@@ -7064,7 +7064,7 @@
       "postedAt": "2026-08-10T18:25:08.049Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.smartrecruiters.com/AECOM2/744000142712059-mechanical-engineering-lead-data-centers-remote-u-s-",
       "applyUrl": "https://jobs.smartrecruiters.com/AECOM2/744000142712059-mechanical-engineering-lead-data-centers-remote-u-s-?oga=true",
       "stale": false
@@ -7108,7 +7108,7 @@
       "postedAt": "2026-08-10T18:25:05.028Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.smartrecruiters.com/AECOM2/744000142711650-mechanical-engineering-lead-data-centers-remote-u-s-",
       "applyUrl": "https://jobs.smartrecruiters.com/AECOM2/744000142711650-mechanical-engineering-lead-data-centers-remote-u-s-?oga=true",
       "stale": false
@@ -7152,7 +7152,7 @@
       "postedAt": "2026-08-10T18:24:40.872Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.smartrecruiters.com/AECOM2/744000142711899-mechanical-engineering-lead-data-centers-remote-u-s-",
       "applyUrl": "https://jobs.smartrecruiters.com/AECOM2/744000142711899-mechanical-engineering-lead-data-centers-remote-u-s-?oga=true",
       "stale": false
@@ -7196,7 +7196,7 @@
       "postedAt": "2026-08-10T18:24:09.178Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.smartrecruiters.com/AECOM2/744000142711758-mechanical-engineering-lead-data-centers-remote-u-s-",
       "applyUrl": "https://jobs.smartrecruiters.com/AECOM2/744000142711758-mechanical-engineering-lead-data-centers-remote-u-s-?oga=true",
       "stale": false
@@ -7239,7 +7239,7 @@
       "postedAt": "2026-08-10T16:29:28.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-17T13:05:10-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://www.zipline.com/open-roles/7849130003?gh_jid=7849130003",
       "applyUrl": "https://www.zipline.com/open-roles/7849130003?gh_jid=7849130003",
       "stale": false
@@ -7282,7 +7282,7 @@
       "postedAt": "2026-08-10T16:20:32.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-17T13:05:10-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://www.zipline.com/open-roles/7849112003?gh_jid=7849112003",
       "applyUrl": "https://www.zipline.com/open-roles/7849112003?gh_jid=7849112003",
       "stale": false
@@ -7325,7 +7325,7 @@
       "postedAt": "2026-08-09T20:37:04.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-08-25T14:50:36-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/lightmatter/jobs/5378713008?gh_jid=5378713008",
       "applyUrl": "https://boards.greenhouse.io/lightmatter/jobs/5378713008?gh_jid=5378713008",
       "stale": false
@@ -7369,7 +7369,7 @@
       "postedAt": "2026-08-06T23:23:11.672Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.ashbyhq.com/FormEnergy/8d4663d4-c7f0-4a79-a741-9f2e4281a379",
       "applyUrl": "https://jobs.ashbyhq.com/FormEnergy/8d4663d4-c7f0-4a79-a741-9f2e4281a379/application",
       "stale": false
@@ -7413,7 +7413,7 @@
       "postedAt": "2026-08-05T22:27:25.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T20:25:59-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/vast/jobs/4702874006?gh_jid=4702874006",
       "applyUrl": "https://boards.greenhouse.io/vast/jobs/4702874006?gh_jid=4702874006",
       "stale": false
@@ -7457,7 +7457,7 @@
       "postedAt": "2026-08-05T20:06:23.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-08-05T16:06:23-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://careers.formlabs.com/job/8109816/apply/?gh_jid=8109816",
       "applyUrl": "https://careers.formlabs.com/job/8109816/apply/?gh_jid=8109816",
       "stale": false
@@ -7501,7 +7501,7 @@
       "postedAt": "2026-08-05T20:06:22.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-08-05T16:06:22-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://careers.formlabs.com/job/8109815/apply/?gh_jid=8109815",
       "applyUrl": "https://careers.formlabs.com/job/8109815/apply/?gh_jid=8109815",
       "stale": false
@@ -7545,7 +7545,7 @@
       "postedAt": "2026-08-05T17:08:37.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-08-24T11:32:20-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://job-boards.greenhouse.io/oklo/jobs/6135392004",
       "applyUrl": "https://job-boards.greenhouse.io/oklo/jobs/6135392004",
       "stale": false
@@ -7589,7 +7589,7 @@
       "postedAt": "2026-08-05T03:40:48.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5204131007?gh_jid=5204131007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5204131007?gh_jid=5204131007",
       "stale": false
@@ -7633,7 +7633,7 @@
       "postedAt": "2026-08-05T01:22:31.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-01T19:48:33-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/spacex/jobs/8681151002?gh_jid=8681151002",
       "applyUrl": "https://boards.greenhouse.io/spacex/jobs/8681151002?gh_jid=8681151002",
       "stale": false
@@ -7676,7 +7676,7 @@
       "postedAt": "2026-08-04T19:44:09.336Z",
       "postedLabel": "First listed",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.lever.co/rigetti/1f07b3ce-fb02-429e-beaf-5c4c88d135ca",
       "applyUrl": "https://jobs.lever.co/rigetti/1f07b3ce-fb02-429e-beaf-5c4c88d135ca/apply",
       "stale": false
@@ -7720,7 +7720,7 @@
       "postedAt": "2026-08-04T18:29:26.475Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.smartrecruiters.com/AECOM2/744000141559507-sr-mechanical-engineer-federal-experience",
       "applyUrl": "https://jobs.smartrecruiters.com/AECOM2/744000141559507-sr-mechanical-engineer-federal-experience?oga=true",
       "stale": false
@@ -7764,7 +7764,7 @@
       "postedAt": "2026-08-04T18:29:05.343Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.smartrecruiters.com/AECOM2/744000141559502-sr-mechanical-engineer-federal-experience",
       "applyUrl": "https://jobs.smartrecruiters.com/AECOM2/744000141559502-sr-mechanical-engineer-federal-experience?oga=true",
       "stale": false
@@ -7808,7 +7808,7 @@
       "postedAt": "2026-08-04T18:28:45.648Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.smartrecruiters.com/AECOM2/744000141560539-sr-mechanical-engineer-federal-experience",
       "applyUrl": "https://jobs.smartrecruiters.com/AECOM2/744000141560539-sr-mechanical-engineer-federal-experience?oga=true",
       "stale": false
@@ -7852,7 +7852,7 @@
       "postedAt": "2026-08-04T18:28:33.519Z",
       "postedLabel": "First listed",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.lever.co/zoox/5027566b-0449-4f0b-8ebc-6b2205799723",
       "applyUrl": "https://jobs.lever.co/zoox/5027566b-0449-4f0b-8ebc-6b2205799723/apply",
       "stale": false
@@ -7896,7 +7896,7 @@
       "postedAt": "2026-08-04T16:22:00.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5202940007?gh_jid=5202940007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5202940007?gh_jid=5202940007",
       "stale": false
@@ -7940,7 +7940,7 @@
       "postedAt": "2026-08-04T16:21:52.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-22T14:17:06-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://job-boards.greenhouse.io/rondoenergy/jobs/4693756006",
       "applyUrl": "https://job-boards.greenhouse.io/rondoenergy/jobs/4693756006",
       "stale": false
@@ -7984,7 +7984,7 @@
       "postedAt": "2026-08-04T04:45:32.266Z",
       "postedLabel": "First listed",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.lever.co/shieldai/344fe8ce-6572-47e8-a98e-934d8c937bf7",
       "applyUrl": "https://jobs.lever.co/shieldai/344fe8ce-6572-47e8-a98e-934d8c937bf7/apply",
       "stale": false
@@ -8028,7 +8028,7 @@
       "postedAt": "2026-08-03T20:05:51.711Z",
       "postedLabel": "First listed",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.lever.co/shieldai/a9bce6a3-7320-4b2f-a7b4-b93319e97611",
       "applyUrl": "https://jobs.lever.co/shieldai/a9bce6a3-7320-4b2f-a7b4-b93319e97611/apply",
       "stale": false
@@ -8072,7 +8072,7 @@
       "postedAt": "2026-08-03T17:48:50.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-08-24T11:32:20-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://job-boards.greenhouse.io/oklo/jobs/6123402004",
       "applyUrl": "https://job-boards.greenhouse.io/oklo/jobs/6123402004",
       "stale": false
@@ -8116,7 +8116,7 @@
       "postedAt": "2026-07-31T21:12:40.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-01T19:48:33-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/spacex/jobs/8661010002?gh_jid=8661010002",
       "applyUrl": "https://boards.greenhouse.io/spacex/jobs/8661010002?gh_jid=8661010002",
       "stale": false
@@ -8167,7 +8167,7 @@
       "postedAt": "2026-07-31T14:25:06.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-23T04:47:00-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/redwoodmaterials/jobs/6117129004?gh_jid=6117129004",
       "applyUrl": "https://boards.greenhouse.io/redwoodmaterials/jobs/6117129004?gh_jid=6117129004",
       "stale": false
@@ -8210,7 +8210,7 @@
       "postedAt": "2026-07-30T17:09:11.225Z",
       "postedLabel": "First listed",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.lever.co/shieldai/cbfd4516-8d31-46d7-826a-ff097c5aad58",
       "applyUrl": "https://jobs.lever.co/shieldai/cbfd4516-8d31-46d7-826a-ff097c5aad58/apply",
       "stale": false
@@ -8254,7 +8254,7 @@
       "postedAt": "2026-07-30T14:26:19.789Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.ashbyhq.com/FormEnergy/951334f1-5d09-4c02-aa23-ae64811223f1",
       "applyUrl": "https://jobs.ashbyhq.com/FormEnergy/951334f1-5d09-4c02-aa23-ae64811223f1/application",
       "stale": false
@@ -8298,7 +8298,7 @@
       "postedAt": "2026-07-29T18:34:16.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-08-24T11:32:20-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://job-boards.greenhouse.io/oklo/jobs/6130061004",
       "applyUrl": "https://job-boards.greenhouse.io/oklo/jobs/6130061004",
       "stale": false
@@ -8342,7 +8342,7 @@
       "postedAt": "2026-07-28T21:24:21.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-01T19:48:33-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/spacex/jobs/8650130002?gh_jid=8650130002",
       "applyUrl": "https://boards.greenhouse.io/spacex/jobs/8650130002?gh_jid=8650130002",
       "stale": false
@@ -8386,7 +8386,7 @@
       "postedAt": "2026-07-28T03:48:59.814Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.ashbyhq.com/1x/fda0ba2e-d1eb-4a21-a666-7e7ee6e20763",
       "applyUrl": "https://jobs.ashbyhq.com/1x/fda0ba2e-d1eb-4a21-a666-7e7ee6e20763/application",
       "stale": false
@@ -8430,7 +8430,7 @@
       "postedAt": "2026-07-27T17:29:16.339Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.smartrecruiters.com/AECOM2/744000140062179-mechanical-engineer-iv",
       "applyUrl": "https://jobs.smartrecruiters.com/AECOM2/744000140062179-mechanical-engineer-iv?oga=true",
       "stale": false
@@ -8474,7 +8474,7 @@
       "postedAt": "2026-07-24T18:29:41.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-01T19:48:33-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/spacex/jobs/8649465002?gh_jid=8649465002",
       "applyUrl": "https://boards.greenhouse.io/spacex/jobs/8649465002?gh_jid=8649465002",
       "stale": false
@@ -8518,7 +8518,7 @@
       "postedAt": "2026-07-23T21:49:41.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5195226007?gh_jid=5195226007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5195226007?gh_jid=5195226007",
       "stale": false
@@ -8562,7 +8562,7 @@
       "postedAt": "2026-07-23T21:38:56.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-01T19:48:33-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/spacex/jobs/8644018002?gh_jid=8644018002",
       "applyUrl": "https://boards.greenhouse.io/spacex/jobs/8644018002?gh_jid=8644018002",
       "stale": false
@@ -8606,7 +8606,7 @@
       "postedAt": "2026-07-23T20:47:23.777Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.ashbyhq.com/1x/fe801c98-3344-47d0-8b8f-3958fc453fc0",
       "applyUrl": "https://jobs.ashbyhq.com/1x/fe801c98-3344-47d0-8b8f-3958fc453fc0/application",
       "stale": false
@@ -8650,7 +8650,7 @@
       "postedAt": "2026-07-23T20:15:30.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-18T15:37:12-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7784479003",
       "applyUrl": "https://job-boards.greenhouse.io/rocketlab/jobs/7784479003",
       "stale": false
@@ -8694,7 +8694,7 @@
       "postedAt": "2026-07-23T20:15:29.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-18T15:36:26-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7814616003",
       "applyUrl": "https://job-boards.greenhouse.io/rocketlab/jobs/7814616003",
       "stale": false
@@ -8738,7 +8738,7 @@
       "postedAt": "2026-07-23T19:48:22.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-17T10:42:22-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7814589003",
       "applyUrl": "https://job-boards.greenhouse.io/rocketlab/jobs/7814589003",
       "stale": false
@@ -8782,7 +8782,7 @@
       "postedAt": "2026-07-23T19:48:21.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-17T10:42:20-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7814585003",
       "applyUrl": "https://job-boards.greenhouse.io/rocketlab/jobs/7814585003",
       "stale": false
@@ -8826,7 +8826,7 @@
       "postedAt": "2026-07-23T16:33:37.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-08-28T15:52:27-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7814138003",
       "applyUrl": "https://job-boards.greenhouse.io/rocketlab/jobs/7814138003",
       "stale": false
@@ -8870,7 +8870,7 @@
       "postedAt": "2026-07-23T16:33:36.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-08-28T15:51:09-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7814136003",
       "applyUrl": "https://job-boards.greenhouse.io/rocketlab/jobs/7814136003",
       "stale": false
@@ -8914,7 +8914,7 @@
       "postedAt": "2026-07-22T01:12:09.377Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.ashbyhq.com/FormEnergy/3f98cb2e-f636-47b0-b44f-54b053fb3985",
       "applyUrl": "https://jobs.ashbyhq.com/FormEnergy/3f98cb2e-f636-47b0-b44f-54b053fb3985/application",
       "stale": false
@@ -8957,7 +8957,7 @@
       "postedAt": "2026-07-21T15:32:37.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-17T13:05:10-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://www.zipline.com/open-roles/7810502003?gh_jid=7810502003",
       "applyUrl": "https://www.zipline.com/open-roles/7810502003?gh_jid=7810502003",
       "stale": false
@@ -9000,7 +9000,7 @@
       "postedAt": "2026-07-21T15:32:12.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-17T13:05:10-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://www.zipline.com/open-roles/7810444003?gh_jid=7810444003",
       "applyUrl": "https://www.zipline.com/open-roles/7810444003?gh_jid=7810444003",
       "stale": false
@@ -9043,7 +9043,7 @@
       "postedAt": "2026-07-20T20:15:54.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-17T13:05:10-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://www.zipline.com/open-roles/7810252003?gh_jid=7810252003",
       "applyUrl": "https://www.zipline.com/open-roles/7810252003?gh_jid=7810252003",
       "stale": false
@@ -9086,7 +9086,7 @@
       "postedAt": "2026-07-20T19:20:43.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-22T13:22:47-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5190505007?gh_jid=5190505007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5190505007?gh_jid=5190505007",
       "stale": false
@@ -9129,7 +9129,7 @@
       "postedAt": "2026-07-18T03:48:48.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-17T13:05:10-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://www.zipline.com/open-roles/7808622003?gh_jid=7808622003",
       "applyUrl": "https://www.zipline.com/open-roles/7808622003?gh_jid=7808622003",
       "stale": false
@@ -9173,7 +9173,7 @@
       "postedAt": "2026-07-17T23:16:02.186Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.ashbyhq.com/FormEnergy/b3431526-1805-4ace-bf33-7dfe908c3b4e",
       "applyUrl": "https://jobs.ashbyhq.com/FormEnergy/b3431526-1805-4ace-bf33-7dfe908c3b4e/application",
       "stale": false
@@ -9217,7 +9217,7 @@
       "postedAt": "2026-07-16T19:22:59.753Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.ashbyhq.com/FormEnergy/c631edc2-c421-40e2-a866-5f63549b7178",
       "applyUrl": "https://jobs.ashbyhq.com/FormEnergy/c631edc2-c421-40e2-a866-5f63549b7178/application",
       "stale": false
@@ -9261,7 +9261,7 @@
       "postedAt": "2026-07-16T19:17:14.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-16T19:05:29-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://job-boards.greenhouse.io/atomicmachines/jobs/4321917009",
       "applyUrl": "https://job-boards.greenhouse.io/atomicmachines/jobs/4321917009",
       "stale": false
@@ -9305,7 +9305,7 @@
       "postedAt": "2026-07-16T19:10:32.920Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.ashbyhq.com/FormEnergy/d4d441a1-034a-4444-821c-fc8b78d1941a",
       "applyUrl": "https://jobs.ashbyhq.com/FormEnergy/d4d441a1-034a-4444-821c-fc8b78d1941a/application",
       "stale": false
@@ -9349,7 +9349,7 @@
       "postedAt": "2026-07-16T01:21:42.544Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.ashbyhq.com/FormEnergy/17bad01d-49ee-4c4c-b654-60a9767632ad",
       "applyUrl": "https://jobs.ashbyhq.com/FormEnergy/17bad01d-49ee-4c4c-b654-60a9767632ad/application",
       "stale": false
@@ -9393,7 +9393,7 @@
       "postedAt": "2026-07-15T21:20:00.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5188161007?gh_jid=5188161007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5188161007?gh_jid=5188161007",
       "stale": false
@@ -9437,7 +9437,7 @@
       "postedAt": "2026-07-15T21:18:26.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5188063007?gh_jid=5188063007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5188063007?gh_jid=5188063007",
       "stale": false
@@ -9481,7 +9481,7 @@
       "postedAt": "2026-07-15T15:17:55.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-17T13:05:10-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://www.zipline.com/open-roles/7805269003?gh_jid=7805269003",
       "applyUrl": "https://www.zipline.com/open-roles/7805269003?gh_jid=7805269003",
       "stale": false
@@ -9525,7 +9525,7 @@
       "postedAt": "2026-07-14T22:04:52.325Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.ashbyhq.com/FormEnergy/b54ffede-d458-4f34-8029-fa1548d9cf75",
       "applyUrl": "https://jobs.ashbyhq.com/FormEnergy/b54ffede-d458-4f34-8029-fa1548d9cf75/application",
       "stale": false
@@ -9569,7 +9569,7 @@
       "postedAt": "2026-07-14T21:29:20.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-01T19:48:33-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/spacex/jobs/8628799002?gh_jid=8628799002",
       "applyUrl": "https://boards.greenhouse.io/spacex/jobs/8628799002?gh_jid=8628799002",
       "stale": false
@@ -9613,7 +9613,7 @@
       "postedAt": "2026-07-14T20:21:11.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-17T13:05:10-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://www.zipline.com/open-roles/7805042003?gh_jid=7805042003",
       "applyUrl": "https://www.zipline.com/open-roles/7805042003?gh_jid=7805042003",
       "stale": false
@@ -9657,7 +9657,7 @@
       "postedAt": "2026-07-14T15:48:54.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5186574007?gh_jid=5186574007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5186574007?gh_jid=5186574007",
       "stale": false
@@ -9700,7 +9700,7 @@
       "postedAt": "2026-07-13T15:25:50.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-17T13:05:10-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://www.zipline.com/open-roles/7802184003?gh_jid=7802184003",
       "applyUrl": "https://www.zipline.com/open-roles/7802184003?gh_jid=7802184003",
       "stale": false
@@ -9744,7 +9744,7 @@
       "postedAt": "2026-07-13T13:40:08.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-11T15:10:45-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://job-boards.greenhouse.io/axon/jobs/7801114003",
       "applyUrl": "https://job-boards.greenhouse.io/axon/jobs/7801114003",
       "stale": false
@@ -9787,7 +9787,7 @@
       "postedAt": "2026-07-12T18:03:07.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-02T18:10:02-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7782679003",
       "applyUrl": "https://job-boards.greenhouse.io/rocketlab/jobs/7782679003",
       "stale": false
@@ -9831,7 +9831,7 @@
       "postedAt": "2026-07-11T03:24:12.988Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.ashbyhq.com/FormEnergy/aeee73e4-5127-4c1c-9abe-d6ef36962263",
       "applyUrl": "https://jobs.ashbyhq.com/FormEnergy/aeee73e4-5127-4c1c-9abe-d6ef36962263/application",
       "stale": false
@@ -9875,7 +9875,7 @@
       "postedAt": "2026-07-10T21:27:20.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-01T19:48:33-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/spacex/jobs/8628971002?gh_jid=8628971002",
       "applyUrl": "https://boards.greenhouse.io/spacex/jobs/8628971002?gh_jid=8628971002",
       "stale": false
@@ -9919,7 +9919,7 @@
       "postedAt": "2026-07-10T14:14:46.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5153667007?gh_jid=5153667007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5153667007?gh_jid=5153667007",
       "stale": false
@@ -9963,7 +9963,7 @@
       "postedAt": "2026-07-09T16:03:30.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-01T19:48:33-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/spacex/jobs/8626590002?gh_jid=8626590002",
       "applyUrl": "https://boards.greenhouse.io/spacex/jobs/8626590002?gh_jid=8626590002",
       "stale": false
@@ -10007,7 +10007,7 @@
       "postedAt": "2026-07-08T17:25:58.512Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.ashbyhq.com/FormEnergy/fc524af1-240c-40c2-a9bc-7574be817b8b",
       "applyUrl": "https://jobs.ashbyhq.com/FormEnergy/fc524af1-240c-40c2-a9bc-7574be817b8b/application",
       "stale": false
@@ -10051,7 +10051,7 @@
       "postedAt": "2026-07-08T17:13:02.868Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.ashbyhq.com/FormEnergy/4949680f-c370-4b5b-be3a-3e287e1cf802",
       "applyUrl": "https://jobs.ashbyhq.com/FormEnergy/4949680f-c370-4b5b-be3a-3e287e1cf802/application",
       "stale": false
@@ -10095,7 +10095,7 @@
       "postedAt": "2026-07-08T15:37:23.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5182387007?gh_jid=5182387007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5182387007?gh_jid=5182387007",
       "stale": false
@@ -10139,7 +10139,7 @@
       "postedAt": "2026-07-08T01:20:29.007Z",
       "postedLabel": "First listed",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.lever.co/shieldai/5a5b5be3-73ed-45a1-b21b-915c0a522ac7",
       "applyUrl": "https://jobs.lever.co/shieldai/5a5b5be3-73ed-45a1-b21b-915c0a522ac7/apply",
       "stale": false
@@ -10183,7 +10183,7 @@
       "postedAt": "2026-07-07T16:10:20.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-08-07T17:25:35-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://wing.com/careers/8605189002?gh_jid=8605189002",
       "applyUrl": "https://wing.com/careers/8605189002?gh_jid=8605189002",
       "stale": false
@@ -10227,7 +10227,7 @@
       "postedAt": "2026-07-06T17:24:47.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-01T10:59:29-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://job-boards.greenhouse.io/hevenaerotech/jobs/4305648009",
       "applyUrl": "https://job-boards.greenhouse.io/hevenaerotech/jobs/4305648009",
       "stale": false
@@ -10271,7 +10271,7 @@
       "postedAt": "2026-07-06T16:46:19.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-15T15:20:47-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/relativity/jobs/8616210002?gh_jid=8616210002",
       "applyUrl": "https://boards.greenhouse.io/relativity/jobs/8616210002?gh_jid=8616210002",
       "stale": false
@@ -10314,7 +10314,7 @@
       "postedAt": "2026-07-02T15:44:33.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-07-02T11:44:33-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://www.agilityrobotics.com/about/job-post?gh_jid=6107280004",
       "applyUrl": "https://www.agilityrobotics.com/about/job-post?gh_jid=6107280004",
       "stale": false
@@ -10358,7 +10358,7 @@
       "postedAt": "2026-07-01T22:19:40.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-01T19:48:33-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/spacex/jobs/8612742002?gh_jid=8612742002",
       "applyUrl": "https://boards.greenhouse.io/spacex/jobs/8612742002?gh_jid=8612742002",
       "stale": false
@@ -10402,7 +10402,7 @@
       "postedAt": "2026-07-01T22:19:19.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-01T19:48:33-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/spacex/jobs/8612766002?gh_jid=8612766002",
       "applyUrl": "https://boards.greenhouse.io/spacex/jobs/8612766002?gh_jid=8612766002",
       "stale": false
@@ -10446,7 +10446,7 @@
       "postedAt": "2026-07-01T22:18:13.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-01T19:48:33-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/spacex/jobs/8612730002?gh_jid=8612730002",
       "applyUrl": "https://boards.greenhouse.io/spacex/jobs/8612730002?gh_jid=8612730002",
       "stale": false
@@ -10490,7 +10490,7 @@
       "postedAt": "2026-07-01T20:50:57.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-07-01T16:50:57-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://job-boards.greenhouse.io/rondoenergy/jobs/4693479006",
       "applyUrl": "https://job-boards.greenhouse.io/rondoenergy/jobs/4693479006",
       "stale": false
@@ -10534,7 +10534,7 @@
       "postedAt": "2026-07-01T19:01:26.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5147214007?gh_jid=5147214007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5147214007?gh_jid=5147214007",
       "stale": false
@@ -10578,7 +10578,7 @@
       "postedAt": "2026-06-30T22:40:06.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-10T19:27:01-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/relativity/jobs/8614918002?gh_jid=8614918002",
       "applyUrl": "https://boards.greenhouse.io/relativity/jobs/8614918002?gh_jid=8614918002",
       "stale": false
@@ -10622,7 +10622,7 @@
       "postedAt": "2026-06-30T20:46:15.356Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.ashbyhq.com/1x/d6c59043-7a78-48ba-8f35-6d47b987a871",
       "applyUrl": "https://jobs.ashbyhq.com/1x/d6c59043-7a78-48ba-8f35-6d47b987a871/application",
       "stale": false
@@ -10666,7 +10666,7 @@
       "postedAt": "2026-06-29T15:41:18.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-11T15:10:45-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://job-boards.greenhouse.io/axon/jobs/7751158003",
       "applyUrl": "https://job-boards.greenhouse.io/axon/jobs/7751158003",
       "stale": false
@@ -10710,7 +10710,7 @@
       "postedAt": "2026-06-26T23:17:17.486Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.ashbyhq.com/1x/3398e992-b02a-4d39-aabe-f4ac2bb6591d",
       "applyUrl": "https://jobs.ashbyhq.com/1x/3398e992-b02a-4d39-aabe-f4ac2bb6591d/application",
       "stale": false
@@ -10754,7 +10754,7 @@
       "postedAt": "2026-06-26T17:45:23.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-01T19:48:33-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/spacex/jobs/8599299002?gh_jid=8599299002",
       "applyUrl": "https://boards.greenhouse.io/spacex/jobs/8599299002?gh_jid=8599299002",
       "stale": false
@@ -10798,7 +10798,7 @@
       "postedAt": "2026-06-26T17:45:23.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-01T19:48:33-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/spacex/jobs/8599358002?gh_jid=8599358002",
       "applyUrl": "https://boards.greenhouse.io/spacex/jobs/8599358002?gh_jid=8599358002",
       "stale": false
@@ -10842,7 +10842,7 @@
       "postedAt": "2026-06-25T19:40:26.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-01T19:48:33-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/spacex/jobs/8607193002?gh_jid=8607193002",
       "applyUrl": "https://boards.greenhouse.io/spacex/jobs/8607193002?gh_jid=8607193002",
       "stale": false
@@ -10886,7 +10886,7 @@
       "postedAt": "2026-06-25T16:38:16.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T20:25:59-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/vast/jobs/4691214006?gh_jid=4691214006",
       "applyUrl": "https://boards.greenhouse.io/vast/jobs/4691214006?gh_jid=4691214006",
       "stale": false
@@ -10930,7 +10930,7 @@
       "postedAt": "2026-06-24T20:05:07.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-01T19:48:33-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/spacex/jobs/8606391002?gh_jid=8606391002",
       "applyUrl": "https://boards.greenhouse.io/spacex/jobs/8606391002?gh_jid=8606391002",
       "stale": false
@@ -10974,7 +10974,7 @@
       "postedAt": "2026-06-24T18:05:32.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-01T19:48:33-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/spacex/jobs/8604794002?gh_jid=8604794002",
       "applyUrl": "https://boards.greenhouse.io/spacex/jobs/8604794002?gh_jid=8604794002",
       "stale": false
@@ -11018,7 +11018,7 @@
       "postedAt": "2026-06-24T18:04:16.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5067228007?gh_jid=5067228007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5067228007?gh_jid=5067228007",
       "stale": false
@@ -11062,7 +11062,7 @@
       "postedAt": "2026-06-24T18:04:15.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5067208007?gh_jid=5067208007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5067208007?gh_jid=5067208007",
       "stale": false
@@ -11106,7 +11106,7 @@
       "postedAt": "2026-06-24T18:04:07.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5067225007?gh_jid=5067225007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5067225007?gh_jid=5067225007",
       "stale": false
@@ -11150,7 +11150,7 @@
       "postedAt": "2026-06-24T18:04:06.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5067206007?gh_jid=5067206007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5067206007?gh_jid=5067206007",
       "stale": false
@@ -11194,7 +11194,7 @@
       "postedAt": "2026-06-24T16:03:11.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-01T19:48:33-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/spacex/jobs/8594150002?gh_jid=8594150002",
       "applyUrl": "https://boards.greenhouse.io/spacex/jobs/8594150002?gh_jid=8594150002",
       "stale": false
@@ -11238,7 +11238,7 @@
       "postedAt": "2026-06-23T20:35:31.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-01T19:48:33-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/spacex/jobs/8604752002?gh_jid=8604752002",
       "applyUrl": "https://boards.greenhouse.io/spacex/jobs/8604752002?gh_jid=8604752002",
       "stale": false
@@ -11282,7 +11282,7 @@
       "postedAt": "2026-06-23T20:35:19.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-01T19:48:33-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/spacex/jobs/8604710002?gh_jid=8604710002",
       "applyUrl": "https://boards.greenhouse.io/spacex/jobs/8604710002?gh_jid=8604710002",
       "stale": false
@@ -11326,7 +11326,7 @@
       "postedAt": "2026-06-17T17:35:42.686Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.smartrecruiters.com/AECOM2/744000132697909-sr-mechanical-engineer",
       "applyUrl": "https://jobs.smartrecruiters.com/AECOM2/744000132697909-sr-mechanical-engineer?oga=true",
       "stale": false
@@ -11369,7 +11369,7 @@
       "postedAt": "2026-06-17T17:32:46.358Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.smartrecruiters.com/AECOM2/744000132697279-mechanical-engineering-lead",
       "applyUrl": "https://jobs.smartrecruiters.com/AECOM2/744000132697279-mechanical-engineering-lead?oga=true",
       "stale": false
@@ -11412,7 +11412,7 @@
       "postedAt": "2026-06-17T17:30:50.666Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.smartrecruiters.com/AECOM2/744000132696889-mechanical-engineering-lead",
       "applyUrl": "https://jobs.smartrecruiters.com/AECOM2/744000132696889-mechanical-engineering-lead?oga=true",
       "stale": false
@@ -11456,7 +11456,7 @@
       "postedAt": "2026-06-17T00:59:06.092Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.ashbyhq.com/1x/0eb854f8-97f7-43a0-8818-f138178586f8",
       "applyUrl": "https://jobs.ashbyhq.com/1x/0eb854f8-97f7-43a0-8818-f138178586f8/application",
       "stale": false
@@ -11500,7 +11500,7 @@
       "postedAt": "2026-06-12T20:49:38.992Z",
       "postedLabel": "First listed",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.lever.co/shieldai/8c9f2dfa-45e1-441b-8e58-c603f99c5d38",
       "applyUrl": "https://jobs.lever.co/shieldai/8c9f2dfa-45e1-441b-8e58-c603f99c5d38/apply",
       "stale": false
@@ -11544,7 +11544,7 @@
       "postedAt": "2026-06-12T13:48:23.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5158606007?gh_jid=5158606007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5158606007?gh_jid=5158606007",
       "stale": false
@@ -11587,7 +11587,7 @@
       "postedAt": "2026-06-11T20:13:20.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-14T18:02:36-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/relativity/jobs/8588815002?gh_jid=8588815002",
       "applyUrl": "https://boards.greenhouse.io/relativity/jobs/8588815002?gh_jid=8588815002",
       "stale": false
@@ -11630,7 +11630,7 @@
       "postedAt": "2026-06-11T20:12:08.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-14T18:02:36-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/relativity/jobs/8585896002?gh_jid=8585896002",
       "applyUrl": "https://boards.greenhouse.io/relativity/jobs/8585896002?gh_jid=8585896002",
       "stale": false
@@ -11674,7 +11674,7 @@
       "postedAt": "2026-06-08T19:19:35.923Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.smartrecruiters.com/AECOM2/744000130871981-sr-mechanical-engineer",
       "applyUrl": "https://jobs.smartrecruiters.com/AECOM2/744000130871981-sr-mechanical-engineer?oga=true",
       "stale": false
@@ -11718,7 +11718,7 @@
       "postedAt": "2026-06-05T23:06:22.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-01T19:48:33-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/spacex/jobs/8579761002?gh_jid=8579761002",
       "applyUrl": "https://boards.greenhouse.io/spacex/jobs/8579761002?gh_jid=8579761002",
       "stale": false
@@ -11762,7 +11762,7 @@
       "postedAt": "2026-06-04T17:21:54.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5143250007?gh_jid=5143250007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5143250007?gh_jid=5143250007",
       "stale": false
@@ -11805,7 +11805,7 @@
       "postedAt": "2026-06-02T21:57:20.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-14T15:40:05-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/relativity/jobs/8575820002?gh_jid=8575820002",
       "applyUrl": "https://boards.greenhouse.io/relativity/jobs/8575820002?gh_jid=8575820002",
       "stale": false
@@ -11849,7 +11849,7 @@
       "postedAt": "2026-05-29T22:02:06.671Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.ashbyhq.com/FormEnergy/33a07ac4-b995-46e0-b652-a8a0cac764a3",
       "applyUrl": "https://jobs.ashbyhq.com/FormEnergy/33a07ac4-b995-46e0-b652-a8a0cac764a3/application",
       "stale": false
@@ -11893,7 +11893,7 @@
       "postedAt": "2026-05-29T00:30:57.992Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.ashbyhq.com/FormEnergy/8ef8e5bc-7eca-4e68-9d06-beacaf015980",
       "applyUrl": "https://jobs.ashbyhq.com/FormEnergy/8ef8e5bc-7eca-4e68-9d06-beacaf015980/application",
       "stale": false
@@ -11937,7 +11937,7 @@
       "postedAt": "2026-05-28T20:05:15.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-22T16:00:29-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://job-boards.greenhouse.io/vardaspace/jobs/7751655003",
       "applyUrl": "https://job-boards.greenhouse.io/vardaspace/jobs/7751655003",
       "stale": false
@@ -11981,7 +11981,7 @@
       "postedAt": "2026-05-28T19:33:35.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-07-10T15:24:31-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://job-boards.greenhouse.io/vardaspace/jobs/7751595003",
       "applyUrl": "https://job-boards.greenhouse.io/vardaspace/jobs/7751595003",
       "stale": false
@@ -12025,7 +12025,7 @@
       "postedAt": "2026-05-28T18:02:14.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-01T19:48:33-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/spacex/jobs/8569011002?gh_jid=8569011002",
       "applyUrl": "https://boards.greenhouse.io/spacex/jobs/8569011002?gh_jid=8569011002",
       "stale": false
@@ -12068,7 +12068,7 @@
       "postedAt": "2026-05-26T18:51:57.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5146807007?gh_jid=5146807007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5146807007?gh_jid=5146807007",
       "stale": false
@@ -12112,7 +12112,7 @@
       "postedAt": "2026-05-22T21:33:39.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5144384007?gh_jid=5144384007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5144384007?gh_jid=5144384007",
       "stale": false
@@ -12156,7 +12156,7 @@
       "postedAt": "2026-05-22T17:40:07.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-01T19:48:33-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/spacex/jobs/8558427002?gh_jid=8558427002",
       "applyUrl": "https://boards.greenhouse.io/spacex/jobs/8558427002?gh_jid=8558427002",
       "stale": false
@@ -12208,7 +12208,7 @@
       "postedAt": "2026-05-21T23:54:11.166Z",
       "postedLabel": "First listed",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.lever.co/shieldai/3550353a-f5db-49ab-b9fb-00f7bdb7b692",
       "applyUrl": "https://jobs.lever.co/shieldai/3550353a-f5db-49ab-b9fb-00f7bdb7b692/apply",
       "stale": false
@@ -12252,7 +12252,7 @@
       "postedAt": "2026-05-21T19:29:19.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5144455007?gh_jid=5144455007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5144455007?gh_jid=5144455007",
       "stale": false
@@ -12296,7 +12296,7 @@
       "postedAt": "2026-05-21T15:49:57.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-01T19:48:33-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/spacex/jobs/8552471002?gh_jid=8552471002",
       "applyUrl": "https://boards.greenhouse.io/spacex/jobs/8552471002?gh_jid=8552471002",
       "stale": false
@@ -12340,7 +12340,7 @@
       "postedAt": "2026-05-20T22:37:32.908Z",
       "postedLabel": "First listed",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.lever.co/shieldai/c65332c3-5cd0-404d-97f9-e3a71895ed91",
       "applyUrl": "https://jobs.lever.co/shieldai/c65332c3-5cd0-404d-97f9-e3a71895ed91/apply",
       "stale": false
@@ -12384,7 +12384,7 @@
       "postedAt": "2026-05-20T20:12:17.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-01T19:48:33-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/spacex/jobs/8537914002?gh_jid=8537914002",
       "applyUrl": "https://boards.greenhouse.io/spacex/jobs/8537914002?gh_jid=8537914002",
       "stale": false
@@ -12428,7 +12428,7 @@
       "postedAt": "2026-05-20T19:00:31.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T20:25:59-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/vast/jobs/4683284006?gh_jid=4683284006",
       "applyUrl": "https://boards.greenhouse.io/vast/jobs/4683284006?gh_jid=4683284006",
       "stale": false
@@ -12472,7 +12472,7 @@
       "postedAt": "2026-05-20T18:25:24.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-07-13T19:29:01-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://job-boards.greenhouse.io/atomicmachines/jobs/4254028009",
       "applyUrl": "https://job-boards.greenhouse.io/atomicmachines/jobs/4254028009",
       "stale": false
@@ -12516,7 +12516,7 @@
       "postedAt": "2026-05-19T17:51:16.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T20:25:59-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/vast/jobs/4682799006?gh_jid=4682799006",
       "applyUrl": "https://boards.greenhouse.io/vast/jobs/4682799006?gh_jid=4682799006",
       "stale": false
@@ -12560,7 +12560,7 @@
       "postedAt": "2026-05-19T17:18:53.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-08T20:43:00-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/spacex/jobs/8540372002?gh_jid=8540372002",
       "applyUrl": "https://boards.greenhouse.io/spacex/jobs/8540372002?gh_jid=8540372002",
       "stale": false
@@ -12604,7 +12604,7 @@
       "postedAt": "2026-05-15T23:10:00.229Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.ashbyhq.com/FormEnergy/1235ba3b-566f-4597-8cbb-d4dd95cd1f7a",
       "applyUrl": "https://jobs.ashbyhq.com/FormEnergy/1235ba3b-566f-4597-8cbb-d4dd95cd1f7a/application",
       "stale": false
@@ -12648,7 +12648,7 @@
       "postedAt": "2026-05-14T16:31:44.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-01T19:48:33-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/spacex/jobs/8550018002?gh_jid=8550018002",
       "applyUrl": "https://boards.greenhouse.io/spacex/jobs/8550018002?gh_jid=8550018002",
       "stale": false
@@ -12691,7 +12691,7 @@
       "postedAt": "2026-05-13T18:43:56.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-08-25T14:50:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/lightmatter/jobs/5208190008?gh_jid=5208190008",
       "applyUrl": "https://boards.greenhouse.io/lightmatter/jobs/5208190008?gh_jid=5208190008",
       "stale": false
@@ -12735,7 +12735,7 @@
       "postedAt": "2026-05-12T22:17:13.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T19:12:22-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://lucidmotors.com/careers/search/5132450007?gh_jid=5132450007",
       "applyUrl": "https://lucidmotors.com/careers/search/5132450007?gh_jid=5132450007",
       "stale": false
@@ -12779,7 +12779,7 @@
       "postedAt": "2026-05-12T20:48:49.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-01T19:48:33-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/spacex/jobs/8546120002?gh_jid=8546120002",
       "applyUrl": "https://boards.greenhouse.io/spacex/jobs/8546120002?gh_jid=8546120002",
       "stale": false
@@ -12823,7 +12823,7 @@
       "postedAt": "2026-05-11T22:41:56.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5134865007?gh_jid=5134865007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5134865007?gh_jid=5134865007",
       "stale": false
@@ -12867,7 +12867,7 @@
       "postedAt": "2026-05-08T23:44:18.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-23T07:17:03-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/redwoodmaterials/jobs/5992484004?gh_jid=5992484004",
       "applyUrl": "https://boards.greenhouse.io/redwoodmaterials/jobs/5992484004?gh_jid=5992484004",
       "stale": false
@@ -12911,7 +12911,7 @@
       "postedAt": "2026-05-06T00:45:41.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T20:25:59-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/vast/jobs/4679345006?gh_jid=4679345006",
       "applyUrl": "https://boards.greenhouse.io/vast/jobs/4679345006?gh_jid=4679345006",
       "stale": false
@@ -12955,7 +12955,7 @@
       "postedAt": "2026-05-05T23:30:12.946Z",
       "postedLabel": "First listed",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.lever.co/shieldai/36691848-fa43-4c4b-9152-736f539f323c",
       "applyUrl": "https://jobs.lever.co/shieldai/36691848-fa43-4c4b-9152-736f539f323c/apply",
       "stale": false
@@ -12999,7 +12999,7 @@
       "postedAt": "2026-05-04T18:50:08.215Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.ashbyhq.com/FormEnergy/4d61360a-6528-43fe-a8ef-067d9b11b3f6",
       "applyUrl": "https://jobs.ashbyhq.com/FormEnergy/4d61360a-6528-43fe-a8ef-067d9b11b3f6/application",
       "stale": false
@@ -13043,7 +13043,7 @@
       "postedAt": "2026-04-30T21:08:21.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-01T19:48:33-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/spacex/jobs/8531605002?gh_jid=8531605002",
       "applyUrl": "https://boards.greenhouse.io/spacex/jobs/8531605002?gh_jid=8531605002",
       "stale": false
@@ -13095,7 +13095,7 @@
       "postedAt": "2026-04-29T22:20:26.899Z",
       "postedLabel": "First listed",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.lever.co/shieldai/28332c5d-703f-42e8-bb9b-ceafb14fb765",
       "applyUrl": "https://jobs.lever.co/shieldai/28332c5d-703f-42e8-bb9b-ceafb14fb765/apply",
       "stale": false
@@ -13139,7 +13139,7 @@
       "postedAt": "2026-04-28T00:26:16.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5122121007?gh_jid=5122121007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5122121007?gh_jid=5122121007",
       "stale": false
@@ -13183,7 +13183,7 @@
       "postedAt": "2026-04-24T19:35:05.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-01T19:48:33-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/spacex/jobs/8521636002?gh_jid=8521636002",
       "applyUrl": "https://boards.greenhouse.io/spacex/jobs/8521636002?gh_jid=8521636002",
       "stale": false
@@ -13227,7 +13227,7 @@
       "postedAt": "2026-04-23T23:56:41.884Z",
       "postedLabel": "First listed",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.lever.co/shieldai/e2937327-d2de-44b5-8975-a3612ef2dfbe",
       "applyUrl": "https://jobs.lever.co/shieldai/e2937327-d2de-44b5-8975-a3612ef2dfbe/apply",
       "stale": false
@@ -13271,7 +13271,7 @@
       "postedAt": "2026-04-23T20:56:04.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-01T19:48:33-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/spacex/jobs/8521329002?gh_jid=8521329002",
       "applyUrl": "https://boards.greenhouse.io/spacex/jobs/8521329002?gh_jid=8521329002",
       "stale": false
@@ -13315,7 +13315,7 @@
       "postedAt": "2026-04-17T15:36:06.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-01T19:48:33-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/spacex/jobs/8511462002?gh_jid=8511462002",
       "applyUrl": "https://boards.greenhouse.io/spacex/jobs/8511462002?gh_jid=8511462002",
       "stale": false
@@ -13359,7 +13359,7 @@
       "postedAt": "2026-04-15T21:23:38.254Z",
       "postedLabel": "First listed",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.lever.co/cfsenergy/44e7ec79-ae44-443b-ae33-2ec84eaafde0",
       "applyUrl": "https://jobs.lever.co/cfsenergy/44e7ec79-ae44-443b-ae33-2ec84eaafde0/apply",
       "stale": false
@@ -13403,7 +13403,7 @@
       "postedAt": "2026-04-09T22:10:20.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-08-02T19:13:18-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://job-boards.greenhouse.io/figureai/jobs/4672013006",
       "applyUrl": "https://job-boards.greenhouse.io/figureai/jobs/4672013006",
       "stale": false
@@ -13447,7 +13447,7 @@
       "postedAt": "2026-04-06T15:31:41.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-01T19:48:33-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/spacex/jobs/8491883002?gh_jid=8491883002",
       "applyUrl": "https://boards.greenhouse.io/spacex/jobs/8491883002?gh_jid=8491883002",
       "stale": false
@@ -13499,7 +13499,7 @@
       "postedAt": "2026-03-27T12:58:28.242Z",
       "postedLabel": "First listed",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.lever.co/shieldai/a3dfba6d-09ec-42c3-9328-dbb2b5fbdab3",
       "applyUrl": "https://jobs.lever.co/shieldai/a3dfba6d-09ec-42c3-9328-dbb2b5fbdab3/apply",
       "stale": false
@@ -13543,7 +13543,7 @@
       "postedAt": "2026-03-27T12:56:09.879Z",
       "postedLabel": "First listed",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.lever.co/shieldai/38746bcd-9f50-4c37-b661-878a4f38a466",
       "applyUrl": "https://jobs.lever.co/shieldai/38746bcd-9f50-4c37-b661-878a4f38a466/apply",
       "stale": false
@@ -13587,7 +13587,7 @@
       "postedAt": "2026-03-26T19:56:17.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5091119007?gh_jid=5091119007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5091119007?gh_jid=5091119007",
       "stale": false
@@ -13631,7 +13631,7 @@
       "postedAt": "2026-03-26T15:34:54.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-07-27T03:02:05-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/redwoodmaterials/jobs/5835808004?gh_jid=5835808004",
       "applyUrl": "https://boards.greenhouse.io/redwoodmaterials/jobs/5835808004?gh_jid=5835808004",
       "stale": false
@@ -13675,7 +13675,7 @@
       "postedAt": "2026-03-26T02:08:13.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5083561007?gh_jid=5083561007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5083561007?gh_jid=5083561007",
       "stale": false
@@ -13719,7 +13719,7 @@
       "postedAt": "2026-03-25T19:48:21.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T20:25:59-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/vast/jobs/4666738006?gh_jid=4666738006",
       "applyUrl": "https://boards.greenhouse.io/vast/jobs/4666738006?gh_jid=4666738006",
       "stale": false
@@ -13763,7 +13763,7 @@
       "postedAt": "2026-03-25T17:52:39.875Z",
       "postedLabel": "First listed",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.lever.co/shieldai/abbca258-77dc-4429-87fd-37e6f0b5adf8",
       "applyUrl": "https://jobs.lever.co/shieldai/abbca258-77dc-4429-87fd-37e6f0b5adf8/apply",
       "stale": false
@@ -13807,7 +13807,7 @@
       "postedAt": "2026-03-25T17:49:31.778Z",
       "postedLabel": "First listed",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.lever.co/shieldai/a71ef068-f820-4d86-aec3-956a7982c3b2",
       "applyUrl": "https://jobs.lever.co/shieldai/a71ef068-f820-4d86-aec3-956a7982c3b2/apply",
       "stale": false
@@ -13865,7 +13865,7 @@
       "postedAt": "2026-03-19T22:10:30.316Z",
       "postedLabel": "First listed",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.lever.co/shieldai/9f1c3c6f-6807-4cd4-bbb1-d9914841c23e",
       "applyUrl": "https://jobs.lever.co/shieldai/9f1c3c6f-6807-4cd4-bbb1-d9914841c23e/apply",
       "stale": false
@@ -13909,7 +13909,7 @@
       "postedAt": "2026-03-19T17:38:54.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-16T12:02:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/relativity/jobs/8470267002?gh_jid=8470267002",
       "applyUrl": "https://boards.greenhouse.io/relativity/jobs/8470267002?gh_jid=8470267002",
       "stale": false
@@ -13953,7 +13953,7 @@
       "postedAt": "2026-03-19T17:38:25.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-16T12:02:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/relativity/jobs/8470266002?gh_jid=8470266002",
       "applyUrl": "https://boards.greenhouse.io/relativity/jobs/8470266002?gh_jid=8470266002",
       "stale": false
@@ -13997,7 +13997,7 @@
       "postedAt": "2026-03-19T17:32:02.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-16T12:02:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/relativity/jobs/8470255002?gh_jid=8470255002",
       "applyUrl": "https://boards.greenhouse.io/relativity/jobs/8470255002?gh_jid=8470255002",
       "stale": false
@@ -14041,7 +14041,7 @@
       "postedAt": "2026-03-17T22:47:25.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5082600007?gh_jid=5082600007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5082600007?gh_jid=5082600007",
       "stale": false
@@ -14085,7 +14085,7 @@
       "postedAt": "2026-03-12T17:44:25.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-01T19:48:33-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/spacex/jobs/8460962002?gh_jid=8460962002",
       "applyUrl": "https://boards.greenhouse.io/spacex/jobs/8460962002?gh_jid=8460962002",
       "stale": false
@@ -14129,7 +14129,7 @@
       "postedAt": "2026-03-11T16:52:12.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5070023007?gh_jid=5070023007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5070023007?gh_jid=5070023007",
       "stale": false
@@ -14173,7 +14173,7 @@
       "postedAt": "2026-03-09T19:44:26.904Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.ashbyhq.com/hadrian-automation/a15a7eb7-1b0f-4b61-93db-fbfa22430efb",
       "applyUrl": "https://jobs.ashbyhq.com/hadrian-automation/a15a7eb7-1b0f-4b61-93db-fbfa22430efb/application",
       "stale": false
@@ -14217,7 +14217,7 @@
       "postedAt": "2026-03-06T23:33:20.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-18T11:40:42-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/relativity/jobs/8452868002?gh_jid=8452868002",
       "applyUrl": "https://boards.greenhouse.io/relativity/jobs/8452868002?gh_jid=8452868002",
       "stale": false
@@ -14261,7 +14261,7 @@
       "postedAt": "2026-03-04T22:30:57.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5064478007?gh_jid=5064478007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5064478007?gh_jid=5064478007",
       "stale": false
@@ -14305,7 +14305,7 @@
       "postedAt": "2026-03-03T06:35:07.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5067380007?gh_jid=5067380007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5067380007?gh_jid=5067380007",
       "stale": false
@@ -14349,7 +14349,7 @@
       "postedAt": "2026-02-19T05:38:16.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5056468007?gh_jid=5056468007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5056468007?gh_jid=5056468007",
       "stale": false
@@ -14393,7 +14393,7 @@
       "postedAt": "2026-02-18T17:58:01.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5055818007?gh_jid=5055818007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5055818007?gh_jid=5055818007",
       "stale": false
@@ -14435,7 +14435,7 @@
       "postedAt": "2026-02-18T17:07:28.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-10T19:27:01-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/relativity/jobs/8419277002?gh_jid=8419277002",
       "applyUrl": "https://boards.greenhouse.io/relativity/jobs/8419277002?gh_jid=8419277002",
       "stale": false
@@ -14479,7 +14479,7 @@
       "postedAt": "2026-02-13T15:26:42.510Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.ashbyhq.com/FormEnergy/b3c10d77-1d55-4abf-a4e3-1ec9075966ea",
       "applyUrl": "https://jobs.ashbyhq.com/FormEnergy/b3c10d77-1d55-4abf-a4e3-1ec9075966ea/application",
       "stale": false
@@ -14523,7 +14523,7 @@
       "postedAt": "2026-02-10T18:58:18.447Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.ashbyhq.com/FormEnergy/334b047a-b637-4f0c-99d1-fb644b5c5567",
       "applyUrl": "https://jobs.ashbyhq.com/FormEnergy/334b047a-b637-4f0c-99d1-fb644b5c5567/application",
       "stale": false
@@ -14582,7 +14582,7 @@
       "postedAt": "2026-02-10T00:44:31.984Z",
       "postedLabel": "First listed",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.lever.co/shieldai/6b63f120-fedc-4157-95cb-6eebe9854538",
       "applyUrl": "https://jobs.lever.co/shieldai/6b63f120-fedc-4157-95cb-6eebe9854538/apply",
       "stale": false
@@ -14624,7 +14624,7 @@
       "postedAt": "2026-02-05T18:00:06.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-10T19:27:01-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/relativity/jobs/8398812002?gh_jid=8398812002",
       "applyUrl": "https://boards.greenhouse.io/relativity/jobs/8398812002?gh_jid=8398812002",
       "stale": false
@@ -14668,7 +14668,7 @@
       "postedAt": "2026-01-27T16:35:41.201Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.smartrecruiters.com/Ramboll3/744000105899920-senior-mechanical-design-engineer-data-center-facilities",
       "applyUrl": "https://jobs.smartrecruiters.com/Ramboll3/744000105899920-senior-mechanical-design-engineer-data-center-facilities?oga=true",
       "stale": false
@@ -14712,7 +14712,7 @@
       "postedAt": "2026-01-23T04:24:11.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5032457007?gh_jid=5032457007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5032457007?gh_jid=5032457007",
       "stale": false
@@ -14756,7 +14756,7 @@
       "postedAt": "2026-01-21T19:39:30.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-02T16:29:16-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7599452003",
       "applyUrl": "https://job-boards.greenhouse.io/rocketlab/jobs/7599452003",
       "stale": false
@@ -14800,7 +14800,7 @@
       "postedAt": "2026-01-15T23:46:25.256Z",
       "postedLabel": "First listed",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.lever.co/shieldai/e949e412-bf17-416d-a460-291d20a2c599",
       "applyUrl": "https://jobs.lever.co/shieldai/e949e412-bf17-416d-a460-291d20a2c599/apply",
       "stale": false
@@ -14844,7 +14844,7 @@
       "postedAt": "2026-01-12T18:52:47.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-16T12:02:42-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/relativity/jobs/8370827002?gh_jid=8370827002",
       "applyUrl": "https://boards.greenhouse.io/relativity/jobs/8370827002?gh_jid=8370827002",
       "stale": false
@@ -14888,7 +14888,7 @@
       "postedAt": "2026-01-12T18:52:45.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-16T12:02:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/relativity/jobs/8370828002?gh_jid=8370828002",
       "applyUrl": "https://boards.greenhouse.io/relativity/jobs/8370828002?gh_jid=8370828002",
       "stale": false
@@ -14932,7 +14932,7 @@
       "postedAt": "2026-01-12T18:51:34.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-16T12:02:42-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/relativity/jobs/8370826002?gh_jid=8370826002",
       "applyUrl": "https://boards.greenhouse.io/relativity/jobs/8370826002?gh_jid=8370826002",
       "stale": false
@@ -14976,7 +14976,7 @@
       "postedAt": "2025-12-23T18:06:54.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-15T15:39:37-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://www.psiquantum.com/apply?gh_jid=7568809003",
       "applyUrl": "https://www.psiquantum.com/apply?gh_jid=7568809003",
       "stale": false
@@ -15019,7 +15019,7 @@
       "postedAt": "2025-12-22T19:25:15.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5010383007?gh_jid=5010383007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5010383007?gh_jid=5010383007",
       "stale": false
@@ -15062,7 +15062,7 @@
       "postedAt": "2025-12-22T19:25:13.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5010389007?gh_jid=5010389007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5010389007?gh_jid=5010389007",
       "stale": false
@@ -15106,7 +15106,7 @@
       "postedAt": "2025-12-19T14:51:15.437Z",
       "postedLabel": "First listed",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.lever.co/shieldai/6e5d59f1-cd4a-451b-be66-5db9af34df44",
       "applyUrl": "https://jobs.lever.co/shieldai/6e5d59f1-cd4a-451b-be66-5db9af34df44/apply",
       "stale": false
@@ -15150,7 +15150,7 @@
       "postedAt": "2025-12-18T18:25:03.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-18T14:38:42-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://job-boards.greenhouse.io/planetlabs/jobs/7476623",
       "applyUrl": "https://job-boards.greenhouse.io/planetlabs/jobs/7476623",
       "stale": false
@@ -15194,7 +15194,7 @@
       "postedAt": "2025-12-11T19:50:49.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-22T13:22:53-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/5000167007?gh_jid=5000167007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5000167007?gh_jid=5000167007",
       "stale": false
@@ -15238,7 +15238,7 @@
       "postedAt": "2025-12-02T23:00:09.289Z",
       "postedLabel": "Published / republished",
       "updatedAt": null,
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://jobs.ashbyhq.com/hadrian-automation/04372ff7-45e0-4380-9294-50f4e49c9fb4",
       "applyUrl": "https://jobs.ashbyhq.com/hadrian-automation/04372ff7-45e0-4380-9294-50f4e49c9fb4/application",
       "stale": false
@@ -15282,7 +15282,7 @@
       "postedAt": "2025-11-26T22:21:16.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T20:25:59-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/vast/jobs/4621291006?gh_jid=4621291006",
       "applyUrl": "https://boards.greenhouse.io/vast/jobs/4621291006?gh_jid=4621291006",
       "stale": false
@@ -15326,7 +15326,7 @@
       "postedAt": "2025-11-22T01:14:02.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/4990300007?gh_jid=4990300007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/4990300007?gh_jid=4990300007",
       "stale": false
@@ -15370,7 +15370,7 @@
       "postedAt": "2025-11-22T01:07:31.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/4990290007?gh_jid=4990290007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/4990290007?gh_jid=4990290007",
       "stale": false
@@ -15414,7 +15414,7 @@
       "postedAt": "2025-11-17T06:23:04.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/4980618007?gh_jid=4980618007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/4980618007?gh_jid=4980618007",
       "stale": false
@@ -15457,7 +15457,7 @@
       "postedAt": "2025-09-30T07:30:00.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/4924593007?gh_jid=4924593007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/4924593007?gh_jid=4924593007",
       "stale": false
@@ -15501,7 +15501,7 @@
       "postedAt": "2025-09-12T23:25:30.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/4869028007?gh_jid=4869028007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/4869028007?gh_jid=4869028007",
       "stale": false
@@ -15545,7 +15545,7 @@
       "postedAt": "2025-08-25T22:24:19.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-08-06T19:32:32-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://job-boards.greenhouse.io/figureai/jobs/4596421006",
       "applyUrl": "https://job-boards.greenhouse.io/figureai/jobs/4596421006",
       "stale": false
@@ -15589,7 +15589,7 @@
       "postedAt": "2025-08-20T22:17:32.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/4834719007?gh_jid=4834719007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/4834719007?gh_jid=4834719007",
       "stale": false
@@ -15633,7 +15633,7 @@
       "postedAt": "2025-08-18T22:06:32.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/4831333007?gh_jid=4831333007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/4831333007?gh_jid=4831333007",
       "stale": false
@@ -15677,7 +15677,7 @@
       "postedAt": "2025-08-11T17:41:04.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/4802167007?gh_jid=4802167007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/4802167007?gh_jid=4802167007",
       "stale": false
@@ -15721,7 +15721,7 @@
       "postedAt": "2025-07-31T14:35:37.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-18T12:15:54-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/relativity/jobs/8096658002?gh_jid=8096658002",
       "applyUrl": "https://boards.greenhouse.io/relativity/jobs/8096658002?gh_jid=8096658002",
       "stale": false
@@ -15765,7 +15765,7 @@
       "postedAt": "2025-06-11T18:19:41.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-16T12:02:42-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/relativity/jobs/8033633002?gh_jid=8033633002",
       "applyUrl": "https://boards.greenhouse.io/relativity/jobs/8033633002?gh_jid=8033633002",
       "stale": false
@@ -15809,7 +15809,7 @@
       "postedAt": "2025-06-11T18:11:15.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-16T12:02:42-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/relativity/jobs/8033611002?gh_jid=8033611002",
       "applyUrl": "https://boards.greenhouse.io/relativity/jobs/8033611002?gh_jid=8033611002",
       "stale": false
@@ -15853,7 +15853,7 @@
       "postedAt": "2025-06-11T18:11:14.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-16T12:02:42-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/relativity/jobs/8033594002?gh_jid=8033594002",
       "applyUrl": "https://boards.greenhouse.io/relativity/jobs/8033594002?gh_jid=8033594002",
       "stale": false
@@ -15897,7 +15897,7 @@
       "postedAt": "2024-12-18T23:29:37.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-06-22T12:34:11-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/neuralink/jobs/6304285003?gh_jid=6304285003",
       "applyUrl": "https://boards.greenhouse.io/neuralink/jobs/6304285003?gh_jid=6304285003",
       "stale": false
@@ -15941,7 +15941,7 @@
       "postedAt": "2024-02-07T06:35:53.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/4246157007?gh_jid=4246157007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/4246157007?gh_jid=4246157007",
       "stale": false
@@ -15985,7 +15985,7 @@
       "postedAt": "2024-02-07T06:34:22.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-21T14:54:43-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://boards.greenhouse.io/andurilindustries/jobs/4246155007?gh_jid=4246155007",
       "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/4246155007?gh_jid=4246155007",
       "stale": false
@@ -16029,7 +16029,7 @@
       "postedAt": "2023-10-31T22:58:55.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-10T19:17:24-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://job-boards.greenhouse.io/astranis/jobs/4299740006",
       "applyUrl": "https://job-boards.greenhouse.io/astranis/jobs/4299740006",
       "stale": false
@@ -16072,7 +16072,7 @@
       "postedAt": "2023-04-13T19:24:41.000Z",
       "postedLabel": "First published",
       "updatedAt": "2026-09-10T19:17:24-04:00",
-      "checkedAt": "2026-09-23T11:25:42.182Z",
+      "checkedAt": "2026-09-23T11:34:54.741Z",
       "url": "https://job-boards.greenhouse.io/astranis/jobs/4133327006",
       "applyUrl": "https://job-boards.greenhouse.io/astranis/jobs/4133327006",
       "stale": false
